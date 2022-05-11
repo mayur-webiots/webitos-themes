@@ -1,0 +1,798 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="wingo admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, wingo admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="pixelstrap">
+    <link rel="icon" href="{% static 'assets/images/favicon.png' %}" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'assets/images/favicon.png' %}" type="image/x-icon">
+    <title>wingo - Premium Admin Template</title>
+    <!-- Google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+    <!-- Font Awesome-->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/vendors/font-awesome.css' %}">
+    <!-- ico-font-->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/vendors/icofont.css' %}">
+    <!-- Themify icon-->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/vendors/themify.css' %}">
+    <!-- Flag icon-->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/vendors/flag-icon.css' %}">
+    <!-- Feather icon-->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/vendors/feather-icon.css' %}">
+    <!-- Plugins css start-->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/vendors/todo.css' %}">
+    <!-- Plugins css Ends-->
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/vendors/bootstrap.css' %}">
+    <!-- App css-->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
+    <link id="color" rel="stylesheet" href="{% static 'assets/css/color-1.css' %}" media="screen">
+    <!-- Responsive css-->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/responsive.css' %}">
+  </head>
+  <body>
+    <!-- Loader starts-->
+    <div class="loader-wrapper">
+      <div class="main-loader">
+        <div class="bar-0"></div>
+        <div class="bar-1"></div>
+        <div class="bar-2"></div>
+        <div class="bar-3"></div>
+        <div class="bar-4"></div>
+      </div>
+      <div class="loading">Loading...    </div>
+    </div>
+    <!-- Loader ends-->
+    <!-- page-wrapper Start-->
+    <div class="page-wrapper compact-wrapper" id="pageWrapper">
+      <!-- Page Header Start-->
+      <div class="page-main-header">
+        <div class="main-header-right row m-0">
+          <div class="main-header-left">
+            <div class="logo-wrapper"><a href="{% url 'index' %}"><img class="img-fluid" src="{% static 'assets/images/logo/logo.png' %}" alt=""></a></div>
+          </div>
+          <div class="toggle-sidebar"><i class="status_toggle middle" data-feather="align-center" id="sidebar-toggle"></i></div>
+          <div class="left-menu-header col">
+            <ul>
+              <li>
+                <form class="form-inline search-form">
+                  <div class="search-bg"><i class="fa fa-search"></i></div>
+                  <input class="form-control-plaintext" placeholder="Search here.....">
+                </form><span class="d-sm-none mobile-search search-bg"><i class="fa fa-search"></i></span>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-right col pull-right right-menu">
+            <ul class="nav-menus">
+              <li class="onhover-dropdown">
+                <div class="notification-box"><i data-feather="shopping-bag"></i><span class="badge badge-pill badge-secondary">4</span></div>
+                <div class="notification-dropdown cart onhover-show-div">
+                  <div class="m-3">
+                    <div class="row">
+                      <div class="col">
+                        <p> <b>5 </b>Itens in Cart</p>
+                      </div>
+                      <div class="col text-end">
+                        <p class="m-0">Cart Subtotal</p>
+                        <h5 class="txt-primary f-w-700">5000$</h5>
+                      </div>
+                    </div><a class="btn btn-dark w-100 mt-1" href="{% url 'ecommerce_checkout' %}">Process To Checkout</a>
+                  </div>
+                  <ul class="border-top custom-scrollbar"> 
+                    <li>
+                      <div class="media"><img src="{% static 'assets/images/product/small/tshirt.png' %}" alt="">
+                        <div class="media-body"><a href="{% url 'ecommerce_product' %}">Woman T-shirt - yellow</a>
+                          <h6 class="price">200$</h6>
+                          <div class="row">
+                            <div class="col-9">
+                              <h6 class="qty">Qty
+                                <input class="form-control" type="number" placeholder="1">
+                              </h6>
+                            </div>
+                            <div class="col-3 text-end d-flex"><i class="me-1" data-feather="edit"></i><i data-feather="trash-2"></i></div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="media"><img src="{% static 'assets/images/product/small/bag.png' %}" alt="">
+                        <div class="media-body"><a href="{% url 'ecommerce_product' %}">Woman bag - purple</a>
+                          <h6 class="price">100$</h6>
+                          <div class="row">
+                            <div class="col-9">
+                              <h6 class="qty">Qty
+                                <input class="form-control" type="number" placeholder="1">
+                              </h6>
+                            </div>
+                            <div class="col-3 text-end d-flex"><i class="me-1" data-feather="edit"></i><i data-feather="trash-2"></i></div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="media"><img src="{% static 'assets/images/product/small/headphone.png' %}" alt="">
+                        <div class="media-body"><a href="{% url 'ecommerce_product' %}">Unisex headphone - Red</a>
+                          <h6 class="price">2000$</h6>
+                          <div class="row">
+                            <div class="col-9">
+                              <h6 class="qty">Qty
+                                <input class="form-control" type="number" placeholder="1">
+                              </h6>
+                            </div>
+                            <div class="col-3 text-end d-flex"><i class="me-1" data-feather="edit"></i><i data-feather="trash-2"></i></div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="media"><img src="{% static 'assets/images/product/small/chair.png' %}" alt="">
+                        <div class="media-body"><a href="{% url 'ecommerce_product' %}">Ergonomic Chair</a>
+                          <h6 class="price">920$</h6>
+                          <div class="row">
+                            <div class="col-9">
+                              <h6 class="qty">Qty
+                                <input class="form-control" type="number" placeholder="1">
+                              </h6>
+                            </div>
+                            <div class="col-3 text-end d-flex"><i class="me-1" data-feather="edit"></i><i data-feather="trash-2"></i></div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="m-3 mt-1"><a class="btn btn-light w-100 mt-3" href="{% url 'ecommerce_cart' %}">View cart</a></div>
+                </div>
+              </li>
+              <li class="onhover-dropdown">
+                <div class="notification-box"><i data-feather="bell"></i><span class="badge badge-pill badge-primary">4</span></div>
+                <div class="notification-dropdown onhover-show-div">
+                  <div class="m-3"><a class="btn btn-dark w-100" href="{% url 'email_email_app' %}">You have 4 notifications</a></div>
+                  <ul class="border-top">
+                    <li>
+                      <p class="mb-0 ps-4 p-relative"><i class="fa fa-circle me-3 font-primary"> </i>Delivery processing <span class="pull-right">10 min.</span></p>
+                    </li>
+                    <li>
+                      <p class="mb-0 ps-4 p-relative"><i class="fa fa-circle me-3 font-success"></i>Order Complete<span class="pull-right">1 hr</span></p>
+                    </li>
+                    <li>
+                      <p class="mb-0 ps-4 p-relative"><i class="fa fa-circle me-3 font-info"></i>Tickets Generated<span class="pull-right">3 hr</span></p>
+                    </li>
+                    <li>
+                      <p class="mb-0 ps-4 p-relative"><i class="fa fa-circle me-3 font-warning"></i>Delivery Complete<span class="pull-right">6 hr  </span></p>
+                    </li>
+                  </ul>
+                  <div class="m-3 mt-1"><a class="btn btn-light w-100" href="{% url 'email_email_app' %}">View all</a></div>
+                </div>
+              </li>
+              <li class="onhover-dropdown"><i data-feather="message-square"></i>
+                <div class="chat-dropdown onhover-show-div">                   
+                  <div class="m-3"><a class="btn btn-dark w-100" href="{% url 'chat_chat_app' %}">You have 3 message</a></div>
+                  <ul class="border-top custom-scrollbar"> 
+                    <li>
+                      <div class="media"><img class="img-fluid rounded-circle me-3" src="{% static 'assets/images/avtar/emoji/7.png' %}" alt="">
+                        <div class="status-circle online"></div>
+                        <div class="media-body"><span>Erica Hughes</span>
+                          <p class="f-12 light-font">okay, trying now.</p>
+                        </div>
+                        <p class="badge badge-primary">32 min</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="media"><img class="img-fluid rounded-circle me-3" src="{% static 'assets/images/avtar/emoji/8.png' %}" alt="">
+                        <div class="status-circle away"></div>
+                        <div class="media-body"><span>Kori Thomas</span>
+                          <p class="f-12 light-font">i could help in some of bug?</p>
+                        </div>
+                        <p class="badge badge-success">58 min</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="media"><img class="img-fluid rounded-circle me-3" src="{% static 'assets/images/avtar/emoji/4.png' %}" alt="">
+                        <div class="status-circle offline"></div>
+                        <div class="media-body"><span>Ain Chavez</span>
+                          <p class="f-12 light-font">It's working awesome :)</p>
+                        </div>
+                        <p class="badge badge-danger">1 hr</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="media"><img class="img-fluid rounded-circle me-3" src="{% static 'assets/images/avtar/emoji/1.png' %}" alt="">
+                        <div class="status-circle offline"></div>
+                        <div class="media-body"><span>Johan deo</span>
+                          <p class="f-12 light-font">Great Thanks you !!</p>
+                        </div>
+                        <p class="badge badge-danger">2 hr</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="m-3"><a class="btn btn-light w-100" href="{% url 'chat_chat_app' %}">View all</a></div>
+                </div>
+              </li>
+              <li>
+                <div class="mode"><i class="fa fa-moon-o"></i></div>
+              </li>
+              <li><a class="text-dark" href="#!" onclick="javascript:toggleFullScreen()"><i data-feather="maximize"></i></a></li>
+              <li class="onhover-dropdown">
+                <div class="media profile-media"><img class="rounded-circle" src="{% static 'assets/images/avtar/emoji/9.png' %}" alt=""></div>
+                <ul class="profile-dropdown onhover-show-div">
+                  <li><i data-feather="user"></i><span>Account </span></li>
+                  <li><i data-feather="mail"></i><span>Inbox</span></li>
+                  <li><i data-feather="file-text"></i><span>Taskboard</span></li>
+                  <li><i data-feather="settings"></i><span>Settings</span></li>
+                  <li><a class="btn btn-light w-100" href="{% url 'login' %}"><i data-feather="log-in"></i>Log out</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="d-lg-none col mobile-toggle pull-right"><i data-feather="more-horizontal"></i></div>
+        </div>
+      </div>
+      <!-- Page Header Ends                              -->
+      <!-- Page Body Start-->
+      <div class="page-body-wrapper sidebar-icon">
+        <!-- Page Sidebar Start-->
+        <header class="main-nav">
+          <div class="logo-wrapper"><a href="{% url 'index' %}"><img class="img-fluid" src="{% static 'assets/images/logo/logo.png' %}" alt=""></a></div>
+          <div class="logo-icon-wrapper"><a href="{% url 'index' %}"><img class="img-fluid" src="{% static 'assets/images/logo/logo-icon.png' %}" alt=""></a></div>
+          <div class="morden-logo"><a href="{% url 'index' %}"><img class="img-fluid" src="{% static 'assets/images/logo/morden-logo.png' %}" alt=""></a></div>
+          <nav>
+            <div class="main-navbar">
+              <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
+              <div id="mainnav">
+                <ul class="nav-menu custom-scrollbar">
+                  <li class="back-btn">
+                    <div class="mobile-back text-end"><span>Back</span><i class="fa fa-angle-right ps-2" aria-hidden="true"></i></div>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="home"></i><span>Dashboard</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <li><a href="{% url 'index' %}">Default</a></li>
+                      <li><a href="{% url 'dashboard_ecommerce' %}">Ecommerce</a></li>
+                      <li><a href="{% url 'dashboard_project' %}">Project</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="airplay"></i><span>Widgets</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <li><a href="{% url 'widgets_general' %}">General</a></li>
+                      <li><a href="{% url 'widgets_chart' %}">Chart</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="layout"></i><span>Page layout</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <li><a href="{% url 'page_layout_boxed' %}">Boxed</a></li>
+                      <li><a href="{% url 'page_layout_rtl' %}">RTL             </a></li>
+                      <li><a href="{% url 'page_layout_dark' %}">Dark Layout             </a></li>
+                      <li><a href="{% url 'page_layout_footer_light' %}">Footer Light</a></li>
+                      <li><a href="{% url 'page_layout_footer_dark' %}">Footer Dark</a></li>
+                      <li><a href="{% url 'page_layout_footer_fixed' %}">Footer Fixed</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="box"></i><span>Project  </span></a>
+                    <ul class="nav-submenu menu-content">
+                      <li><a href="{% url 'project_project_list' %}">Project List</a></li>
+                      <li><a href="{% url 'project_create_new' %}">Create new</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title link-nav" href="{% url 'file_manager' %}"><i data-feather="git-pull-request"> </i><span>File manager       </span></a></li>
+                  <li class="dropdown"><a class="nav-link menu-title link-nav" href="{% url 'kanban_board' %}"><i data-feather="monitor"> </i><span>kanban Board</span></a></li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="shopping-bag"></i><span>Ecommerce          </span></a>
+                    <ul class="nav-submenu menu-content">        
+                      <li><a href="{% url 'ecommerce_product' %}">Product</a></li>
+                      <li><a href="{% url 'ecommerce_product_page' %}">Product page</a></li>
+                      <li><a href="{% url 'ecommerce_product_list' %}">Product list</a></li>
+                      <li><a href="{% url 'ecommerce_payment_details' %}">Payment Details</a></li>
+                      <li><a href="{% url 'ecommerce_order_history' %}">Order History</a></li>
+                      <li><a href="{% url 'ecommerce_invoice' %}">Invoice</a></li>
+                      <li><a href="{% url 'ecommerce_cart' %}">Cart</a></li>
+                      <li><a href="{% url 'ecommerce_wishlist' %}">Wishlist</a></li>
+                      <li><a href="{% url 'ecommerce_checkout' %}">Checkout</a></li>
+                      <li><a href="{% url 'ecommerce_pricing' %}">Pricing</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="mail"></i><span>Email</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <li><a href="{% url 'email_email_app' %}">Mail Inbox</a></li>
+                      <li><a href="{% url 'email_read_mail' %}">Read mail</a></li>
+                      <li><a href="{% url 'email_email_compose' %}">Compose</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="message-circle"></i><span>Chat</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <li><a href="{% url 'chat_chat_app' %}">Chat App</a></li>
+                      <li><a href="{% url 'chat_video_chat' %}">Video chat</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="users"></i><span>Users</span></a>
+                    <ul class="nav-submenu menu-content">            
+                      <li><a href="{% url 'users_users_profile' %}">Users Profile</a></li>
+                      <li><a href="{% url 'users_users_edit' %}">Users Edit</a></li>
+                      <li><a href="{% url 'users_users_card' %}">Users Cards</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title link-nav" href="{% url 'bookmarks' %}"><i data-feather="heart"> </i><span>Bookmarks</span></a></li>
+                  <li class="dropdown"><a class="nav-link menu-title link-nav" href="{% url 'contacts' %}"><i data-feather="list"> </i><span>Contacts</span></a></li>
+                  <li class="dropdown"><a class="nav-link menu-title link-nav" href="{% url 'tasks' %}"><i data-feather="check-square"> </i><span>Tasks</span></a></li>
+                  <li class="dropdown"><a class="nav-link menu-title link-nav" href="{% url 'calendar' %}"><i data-feather="calendar"> </i><span>Calender</span></a></li>
+                  <li class="dropdown"><a class="nav-link menu-title link-nav" href="{% url 'social_app' %}"><i data-feather="zap"> </i><span>Social App</span></a></li>
+                  <li class="dropdown"><a class="nav-link menu-title link-nav" href="{% url 'to_do' %}"><i data-feather="clock"> </i><span>To-Do</span></a></li>
+                  <li class="dropdown"><a class="nav-link menu-title link-nav" href="{% url 'search_website' %}"><i data-feather="search"> </i><span>Search Result</span></a></li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="file-text"></i><span>Forms</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <li><a class="submenu-title" href="javascript:void(0)">Form Controls<span class="sub-arrow"><i class="fa fa-chevron-right"></i></span></a>
+                        <ul class="nav-sub-childmenu submenu-content">
+                          <li><a href="{% url 'form_form_validation' %}">Form Validation</a></li>
+                          <li><a href="{% url 'form_base_inputs' %}">Base Inputs</a></li>
+                          <li><a href="{% url 'checkbox_and_radio' %}">Checkbox & Radio</a></li>
+                          <li><a href="{% url 'input_groups' %}">Input Groups</a></li>
+                          <li><a href="{% url 'mega_options' %}">Mega Options</a></li>
+                        </ul>
+                      </li>
+                      <li><a class="submenu-title" href="javascript:void(0)">Form Widgets<span class="sub-arrow"><i class="fa fa-chevron-right"></i></span></a>
+                        <ul class="nav-sub-childmenu submenu-content">
+                          <li><a href="{% url 'datepicker' %}">Datepicker</a></li>
+                          <li><a href="{% url 'timepicker' %}">Timepicker</a></li>
+                          <li><a href="{% url 'datetimepicker' %}">Datetimepicker</a></li>
+                          <li><a href="{% url 'daterangepicker' %}">Daterangepicker</a></li>
+                          <li><a href="{% url 'touchspin' %}">Touchspin</a></li>
+                          <li><a href="{% url 'select2' %}">Select2</a></li>
+                          <li><a href="{% url 'switch' %}">Switch</a></li>
+                          <li><a href="{% url 'typeahead' %}">Typeahead</a></li>
+                          <li><a href="{% url 'clipboard' %}">Clipboard</a></li>
+                        </ul>
+                      </li>
+                      <li><a class="submenu-title" href="javascript:void(0)">Form layout<span class="sub-arrow"><i class="fa fa-chevron-right"></i></span></a>
+                        <ul class="nav-sub-childmenu submenu-content">
+                          <li><a href="{% url 'default_form' %}">Default Forms</a></li>
+                          <li><a href="{% url 'form_wizard_1' %}">Form Wizard 1</a></li>
+                          <li><a href="{% url 'form_wizard_2' %}">Form Wizard 2</a></li>
+                          <li><a href="{% url 'form_wizard_3' %}">Form Wizard 3                 </a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="server"></i><span>Tables</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <li><a class="submenu-title" href="javascript:void(0)">Bootstrap Tables<span class="sub-arrow"><i class="fa fa-chevron-right"></i></span></a>
+                        <ul class="nav-sub-childmenu submenu-content">
+                          <li><a href="{% url 'bootstrap_basic_tables' %}">Basic Tables</a></li>
+                          <li><a href="{% url 'bootstrap_sizing_tables' %}">Sizing Tables</a></li>
+                          <li><a href="{% url 'bootstrap_border_tables' %}">Border Tables</a></li>
+                          <li><a href="{% url 'bootstrap_styling_tables' %}">Styling Tables</a></li>
+                          <li><a href="{% url 'bootstrap_table_components' %}">Table components</a></li>
+                        </ul>
+                      </li>
+                      <li><a class="submenu-title" href="javascript:void(0)">Data Tables<span class="sub-arrow"><i class="fa fa-chevron-right"></i></span></a>
+                        <ul class="nav-sub-childmenu submenu-content">
+                          <li><a href="{% url 'data_tables_basic_init' %}">Basic Init</a></li>
+                          <li><a href="{% url 'data_tables_advance_init' %}">Advance Init</a></li>
+                          <li><a href="{% url 'data_tables_styling' %}">Styling</a></li>
+                          <li><a href="{% url 'data_tables_AJAX' %}">AJAX</a></li>
+                          <li><a href="{% url 'data_tables_server_side' %}">Server Side</a></li>
+                          <li><a href="{% url 'data_tables_plug_in' %}">Plug-in</a></li>
+                          <li><a href="{% url 'data_tables_API' %}">API</a></li>
+                          <li><a href="{% url 'data_tables_data_source' %}">Data Sources</a></li>
+                        </ul>
+                      </li>
+                      <li><a class="submenu-title" href="javascript:void(0)">Ex. Data Tables<span class="sub-arrow"><i class="fa fa-chevron-right"></i></span></a>
+                        <ul class="nav-sub-childmenu submenu-content">
+                          <li><a href="{% url 'ex_data_tables_auto_fill' %}">Auto Fill</a></li>
+                          <li><a href="{% url 'ex_data_tables_basic_button' %}">Basic Button</a></li>
+                          <li><a href="{% url 'ex_data_tables_column_reorder' %}">Column Reorder</a></li>
+                          <li><a href="{% url 'ex_data_tables_fixed_header' %}">Fixed Header</a></li>
+                          <li><a href="{% url 'ex_data_tables_html_5_export' %}">HTML 5 Export</a></li>
+                          <li><a href="{% url 'ex_data_tables_key_table' %}">Key Table</a></li>
+                          <li><a href="{% url 'ex_data_tables_responsive' %}">Responsive</a></li>
+                          <li><a href="{% url 'ex_data_tables_row_reorder' %}">Row Reorder</a></li>
+                          <li><a href="{% url 'ex_data_tables_scroller' %}">Scroller</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="{% url 'js_grid_table' %}">Js Grid Table</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="box"></i><span>Ui Kits</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <li><a href="{% url 'ui_kits_state_color' %}">State color</a></li>
+                      <li><a href="{% url 'ui_kits_typography' %}">Typography</a></li>
+                      <li><a href="{% url 'ui_kits_avatars' %}">Avatars</a></li>
+                      <li><a href="{% url 'ui_kits_helper_classes' %}">helper classes</a></li>
+                      <li><a href="{% url 'ui_kits_grid' %}">Grid</a></li>
+                      <li><a href="{% url 'ui_kits_tag_pills' %}">Tag & pills</a></li>
+                      <li><a href="{% url 'ui_kits_progress_bar' %}">Progress</a></li>
+                      <li><a href="{% url 'ui_kits_modal' %}">Modal</a></li>
+                      <li><a href="{% url 'ui_kits_alert' %}">Alert</a></li>
+                      <li><a href="{% url 'ui_kits_popover' %}">Popover</a></li>
+                      <li><a href="{% url 'ui_kits_tooltip' %}">Tooltip</a></li>
+                      <li><a href="{% url 'ui_kits_loader' %}">Spinners</a></li>
+                      <li><a href="{% url 'ui_kits_dropdown' %}">Dropdown</a></li>
+                      <li><a href="{% url 'ui_kits_accordion' %}">Accordion</a></li>
+                      <li><a class="submenu-title" href="javascript:void(0)">Tabs<span class="sub-arrow"><i class="fa fa-chevron-right"></i></span></a>
+                        <ul class="nav-sub-childmenu submenu-content">
+                          <li><a href="{% url 'ui_kits_tabs_bootstrap' %}">Bootstrap Tabs</a></li>
+                          <li><a href="{% url 'ui_kits_tabs_line' %}">Line Tabs</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="{% url 'ui_kits_box_shadow' %}">Shadow</a></li>
+                      <li><a href="{% url 'ui_kits_list' %}">Lists</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="folder-plus"></i><span>Bonus Ui</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <li><a href="{% url 'bonus_ui_scrollable' %}">Scrollable</a></li>
+                      <li><a href="{% url 'bonus_ui_tree' %}">Tree view</a></li>
+                      <li><a href="{% url 'bonus_ui_bootstrap_notify' %}">Bootstrap Notify</a></li>
+                      <li><a href="{% url 'bonus_ui_rating' %}">Rating</a></li>
+                      <li><a href="{% url 'bonus_ui_dropzone' %}">dropzone</a></li>
+                      <li><a href="{% url 'bonus_ui_tour' %}">Tour</a></li>
+                      <li><a href="{% url 'bonus_ui_sweet_alert2' %}">SweetAlert2</a></li>
+                      <li><a href="{% url 'bonus_ui_modal_animated' %}">Animated Modal</a></li>
+                      <li><a href="{% url 'bonus_ui_owl_carousel' %}">Owl Carousel</a></li>
+                      <li><a href="{% url 'bonus_ui_ribbons' %}">Ribbons</a></li>
+                      <li><a href="{% url 'bonus_ui_pagination' %}">Pagination</a></li>
+                      <li><a href="{% url 'bonus_ui_steps' %}">Steps</a></li>
+                      <li><a href="{% url 'bonus_ui_breadcrumb' %}">Breadcrumb</a></li>
+                      <li><a href="{% url 'bonus_ui_range_slider' %}">Range Slider</a></li>
+                      <li><a href="{% url 'bonus_ui_image_cropper' %}">Image cropper</a></li>
+                      <li><a href="{% url 'bonus_ui_sticky' %}">Sticky</a></li>
+                      <li><a href="{% url 'bonus_ui_basic_card' %}">Basic Card</a></li>
+                      <li><a href="{% url 'bonus_ui_creative_card' %}">Creative Card</a></li>
+                      <li><a href="{% url 'bonus_ui_tabbed_card' %}">Tabbed Card</a></li>
+                      <li><a href="{% url 'bonus_ui_dragable_card' %}">Draggable Card</a></li>
+                      <li><a class="submenu-title" href="javascript:void(0)">Timeline<span class="sub-arrow"><i class="fa fa-chevron-right"></i></span></a>
+                        <ul class="nav-sub-childmenu submenu-content">
+                          <li><a href="{% url 'bonus_ui_timeline_1' %}">Timeline 1</a></li>
+                          <li><a href="{% url 'bonus_ui_timeline_2' %}">Timeline 2                   </a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="edit-3"></i><span>Builders</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <li><a href="{% url 'form_builder_1' %}"> Form Builder 1</a></li>
+                      <li><a href="{% url 'form_builder_2' %}"> Form Builder 2</a></li>
+                      <li><a href="{% url 'page_builder' %}">Page Builder</a></li>
+                      <li><a href="{% url 'button_builder' %}">Button Builder</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="cloud-drizzle"></i><span>Animation</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <li><a href="{% url 'animate' %}">Animate</a></li>
+                      <li><a href="{% url 'scroll_reveal' %}">Scroll Reveal</a></li>
+                      <li><a href="{% url 'AOS_animation' %}">AOS animation</a></li>
+                      <li><a href="{% url 'tilt_animation' %}">Tilt Animation</a></li>
+                      <li><a href="{% url 'wow_animation' %}">Wow Animation</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="command"></i><span>Icons</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <li><a href="{% url 'flag_icon' %}">Flag icon</a></li>
+                      <li><a href="{% url 'fontawesome_icon' %}">Fontawesome Icon</a></li>
+                      <li><a href="{% url 'ico_icon' %}">Ico Icon</a></li>
+                      <li><a href="{% url 'thimify_icon' %}">Thimify Icon</a></li>
+                      <li><a href="{% url 'feather_icon' %}">Feather icon</a></li>
+                      <li><a href="{% url 'whether_icon' %}">Whether Icon             </a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="cloud"></i><span>Buttons</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <li><a href="{% url 'buttons' %}">Default Style</a></li>
+                      <li><a href="{% url 'buttons_flat' %}">Flat Style</a></li>
+                      <li><a href="{% url 'buttons_edge' %}">Edge Style</a></li>
+                      <li><a href="{% url 'raised_button' %}">Raised Style</a></li>
+                      <li><a href="{% url 'button_group' %}">Button Group</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="bar-chart"></i><span>Charts</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <li><a href="{% url 'apex_chart' %}">Apex Chart</a></li>
+                      <li><a href="{% url 'google_chart' %}">Google Chart</a></li>
+                      <li><a href="{% url 'sparkline_chart' %}">Sparkline chart</a></li>
+                      <li><a href="{% url 'flot_chart' %}">Flot Chart</a></li>
+                      <li><a href="{% url 'knob_chart' %}">Knob Chart</a></li>
+                      <li><a href="{% url 'morris_chart' %}">Morris Chart</a></li>
+                      <li><a href="{% url 'chartjs' %}">Chatjs Chart</a></li>
+                      <li><a href="{% url 'chartist' %}">Chartist Chart</a></li>
+                      <li><a href="{% url 'peity_chart' %}">Peity Chart </a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title link-nav" href="{% url 'landing_page' %}" target="_blank"><i data-feather="cast"> </i><span>Landing page</span></a></li>
+                  <li class="dropdown"><a class="nav-link menu-title link-nav" href="{% url 'sample_page' %}" target="_blank"><i data-feather="file-text"> </i><span>Sample page</span></a></li>
+                  <li class="dropdown"><a class="nav-link menu-title link-nav" href="{% url 'internationalization' %}" target="_blank"><i data-feather="globe"> </i><span>Internationalization</span></a></li>
+                  <li class="dropdown"><a class="nav-link menu-title link-nav" href="../starter-kit/index.html" target="_blank"><i data-feather="anchor"></i><span>Starter kit          </span></a></li>
+                  <li class="mega-menu"><a class="nav-link menu-title" href="#"><i data-feather="layers"></i><span>Others</span></a>
+                    <div class="mega-menu-container menu-content">
+                      <div class="container">
+                        <div class="row">                
+                          <div class="col mega-box">
+                            <div class="link-section">
+                              <div class="submenu-title">
+                                <h5>Error Page</h5>
+                              </div>
+                              <ul class="submenu-content opensubmegamenu">
+                                <li><a href="{% url 'error_page_1' %}">Error Page 1</a></li>
+                                <li><a href="{% url 'error_page_2' %}">Error Page 2</a></li>
+                                <li><a href="{% url 'error_page_3' %}">Error Page 3</a></li>
+                                <li><a href="{% url 'error_page_4' %}">Error Page 4                          </a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col mega-box">
+                            <div class="link-section">
+                              <div class="submenu-title">
+                                <h5> Authentication</h5>
+                              </div>
+                              <ul class="submenu-content opensubmegamenu">
+                                <li><a href="{% url 'login' %}" target="_blank">Login Simple</a></li>
+                                <li><a href="{% url 'login_with_bg_image' %}" target="_blank">Login with bg image</a></li>
+                                <li><a href="{% url 'login_with_image_two' %}" target="_blank">Login with image two                      </a></li>
+                                <li><a href="{% url 'login_with_validation' %}" target="_blank">Login With validation</a></li>
+                                <li><a href="{% url 'login_with_tooltip' %}" target="_blank">Login with tooltip</a></li>
+                                <li><a href="{% url 'login_with_sweetalert' %}" target="_blank">Login with sweetalert</a></li>
+                                <li><a href="{% url 'register_simple' %}" target="_blank">Register Simple</a></li>
+                                <li><a href="{% url 'register_with_bg_image' %}" target="_blank">Register with Bg Image</a></li>
+                                <li><a href="{% url 'register_with_bg_video' %}" target="_blank">Register with Bg video                       </a></li>
+                                <li><a href="{% url 'unlock_user' %}">Unlock User</a></li>
+                                <li><a href="{% url 'forget_password' %}">Forget Password</a></li>
+                                <li><a href="{% url 'create_password' %}">Creat Password</a></li>
+                                <li><a href="{% url 'maintenance' %}">Maintenance</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col mega-box">
+                            <div class="link-section">
+                              <div class="submenu-title">
+                                <h5>Coming Soon</h5>
+                              </div>
+                              <ul class="submenu-content opensubmegamenu">
+                                <li><a href="{% url 'coming_simple' %}">Coming Simple</a></li>
+                                <li><a href="{% url 'coming_with_bg_video' %}">Coming with Bg video</a></li>
+                                <li><a href="{% url 'coming_with_bg_image' %}">Coming with Bg Image</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col mega-box">
+                            <div class="link-section">
+                              <div class="submenu-title">
+                                <h5>Email templates</h5>
+                              </div>
+                              <ul class="submenu-content opensubmegamenu">
+                                <li><a href="{% url 'basic_email' %}">Basic Email</a></li>
+                                <li><a href="{% url 'basic_with_header' %}">Basic With Header</a></li>
+                                <li><a href="{% url 'email_template' %}">Ecomerce Template</a></li>
+                                <li><a href="{% url 'email_template_2' %}">Email Template 2</a></li>
+                                <li><a href="{% url 'ecommerce_email' %}">Ecommerce Email</a></li>
+                                <li><a href="{% url 'order_success' %}">Order Success</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="image"></i><span>Gallery</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <li><a href="{% url 'gallery_grid' %}">Gallery Grid</a></li>
+                      <li><a href="{% url 'gallery_grid_desc' %}">Gallery Grid Desc</a></li>
+                      <li><a href="{% url 'masonry_gallery' %}">Masonry Gallery</a></li>
+                      <li><a href="{% url 'masonry_with_desc' %}">Masonry with Desc</a></li>
+                      <li><a href="{% url 'hover_effect' %}">Hover Effects</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="film"></i><span>Blog</span></a>
+                    <ul class="nav-submenu menu-content">                       
+                      <li><a href="{% url 'blog_details' %}">Blog Details</a></li>
+                      <li><a href="{% url 'blog_single' %}">Blog Single</a></li>
+                      <li><a href="{% url 'add_post' %}">Add Post</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title link-nav" href="{% url 'faq' %}"><i data-feather="help-circle"></i><span>FAQ</span></a></li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="package"></i><span>Job Search</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <li><a href="{% url 'cards_view' %}">Cards view</a></li>
+                      <li><a href="{% url 'list_view' %}">List View</a></li>
+                      <li><a href="{% url 'job_details' %}">Job Details</a></li>
+                      <li><a href="{% url 'apply' %}">Apply</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="radio"></i><span>Learning</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <li><a href="{% url 'learning_list' %}">Learning List</a></li>
+                      <li><a href="{% url 'detailed_course' %}">Detailed Course</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="map"></i><span>Maps</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <li><a href="{% url 'maps_js' %}">Maps JS</a></li>
+                      <li><a href="{% url 'vector_maps' %}">Vector Maps</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="edit"></i><span>Editors</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <li><a href="{% url 'summer_note' %}">Summer Note</a></li>
+                      <li><a href="{% url 'ck_editor' %}">CK editor</a></li>
+                      <li><a href="{% url 'mde_editor' %}">MDE editor</a></li>
+                      <li><a href="{% url 'ace_code_editor' %}">ACE code editor</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title" href="javascript:void(0)"><i data-feather="sunrise"></i><span>Knowledgebase</span></a>
+                    <ul class="nav-submenu menu-content">
+                      <li><a href="{% url 'knowledgebase' %}">Knowledgebase</a></li>
+                      <li><a href="{% url 'knowledge_category' %}">Knowledge category</a></li>
+                      <li><a href="{% url 'knowledge_detail' %}">Knowledge detail</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="nav-link menu-title link-nav" href="{% url 'support_ticket' %}"><i data-feather="users"></i><span>Support Ticket         </span></a></li>
+                </ul>
+              </div>
+              <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
+            </div>
+          </nav>
+        </header>
+        <!-- Page Sidebar Ends-->
+        <div class="page-body">
+          <div class="container-fluid">
+            <div class="page-header">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h3>To-Do</h3>
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{% url 'index' %}"><i data-feather="home"></i></a></li>
+                    <li class="breadcrumb-item">Apps   </li>
+                    <li class="breadcrumb-item active">To-Do</li>
+                  </ol>
+                </div>
+                <div class="col-sm-6">
+                  <!-- Bookmark Start-->
+                  <div class="bookmark">
+                    <ul>
+                      <li><a href="{% url 'chat_chat_app' %}" data-container="body" data-bs-toggle="popover" data-placement="top" title="" data-original-title="Chat"><i data-feather="message-square"></i></a></li>
+                      <li><a href="{% url 'ecommerce_product_page' %}" data-container="body" data-bs-toggle="popover" data-placement="top" title="" data-original-title="Icons"><i data-feather="shopping-bag">               </i></a></li>
+                      <li><a href="{% url 'users_users_profile' %}" data-container="body" data-bs-toggle="popover" data-placement="top" title="" data-original-title="Learning"><i data-feather="users"></i></a></li>
+                      <li><a href="javascript:void(0)"><i class="bookmark-search" data-feather="heart"></i></a>
+                        <form class="form-inline search-form">
+                          <div class="form-group form-control-search">
+                            <input type="text" placeholder="Search..">
+                          </div>
+                        </form>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Bookmark Ends-->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Container-fluid starts-->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h5>To-Do</h5>
+                  </div>
+                  <div class="card-body pt-0">
+                    <div class="todo">
+                      <div class="todo-list-wrapper">
+                        <div class="todo-list-container">
+                          <div class="mark-all-tasks">
+                            <div class="mark-all-tasks-container"><span class="mark-all-btn" id="mark-all-finished" role="button"><span class="btn-label">Mark all as finished</span><span class="action-box completed"><i class="icon"><i class="icon-check"></i></i></span></span><span class="mark-all-btn move-down" id="mark-all-incomplete" role="button"><span class="btn-label">Mark all as Incomplete</span><span class="action-box"><i class="icon"><i class="icon-check"></i></i></span></span></div>
+                          </div>
+                          <div class="todo-list-body">
+                            <ul id="todo-list">
+                              <li class="task">
+                                <div class="task-container">
+                                  <h4 class="task-label">Weekly Bigbazar Shopping </h4><span class="task-action-btn"><span class="action-box large delete-btn" title="Delete Task"><i class="icon"><i class="icon-trash"></i></i></span><span class="action-box large complete-btn" title="Mark Complete"><i class="icon"><i class="icon-check"></i></i></span></span>
+                                </div>
+                              </li>
+                              <li class="task">
+                                <div class="task-container">
+                                  <h4 class="task-label">Go Outside Picnic on Sunday</h4><span class="task-action-btn"><span class="action-box large delete-btn" title="Delete Task"><i class="icon"><i class="icon-trash"></i></i></span><span class="action-box large complete-btn" title="Mark Complete"><i class="icon"><i class="icon-check"></i></i></span></span>
+                                </div>
+                              </li>
+                              <li class="completed task">
+                                <div class="task-container">
+                                  <h4 class="task-label">Write a blog post </h4><span class="task-action-btn"><span class="action-box large delete-btn" title="Delete Task"><i class="icon"><i class="icon-trash"></i></i></span><span class="action-box large complete-btn" title="Mark Complete"><i class="icon"><i class="icon-check"></i></i></span></span>
+                                </div>
+                              </li>
+                              <li class="task">
+                                <div class="task-container">
+                                  <h4 class="task-label">Do the chicken dance</h4><span class="task-action-btn"><span class="action-box large delete-btn" title="Delete Task"><i class="icon"><i class="icon-trash"></i></i></span><span class="action-box large complete-btn" title="Mark Incomplete"><i class="icon"><i class="icon-check"></i></i></span></span>
+                                </div>
+                              </li>
+                              <li class="task">
+                                <div class="task-container">
+                                  <h4 class="task-label">Pay the electricity bills</h4><span class="task-action-btn"><span class="action-box large delete-btn" title="Delete Task"><i class="icon"><i class="icon-trash"></i></i></span><span class="action-box large complete-btn" title="Mark Complete"><i class="icon"><i class="icon-check"></i></i></span></span>
+                                </div>
+                              </li>
+                              <li class="task completed">
+                                <div class="task-container">
+                                  <h4 class="task-label">Make dinner reservation</h4><span class="task-action-btn"><span class="action-box large delete-btn" title="Delete Task"><i class="icon"><i class="icon-trash"></i></i></span><span class="action-box large complete-btn" title="Mark Complete"><i class="icon"><i class="icon-check"></i></i></span></span>
+                                </div>
+                              </li>
+                              <li class="task">
+                                <div class="task-container">
+                                  <h4 class="task-label">Meeting with photographer</h4><span class="task-action-btn"><span class="action-box large delete-btn" title="Delete Task"><i class="icon"><i class="icon-trash"></i></i></span><span class="action-box large complete-btn" title="Mark Complete"><i class="icon"><i class="icon-check"></i></i></span></span>
+                                </div>
+                              </li>
+                              <li class="task">
+                                <div class="task-container">
+                                  <h4 class="task-label">Birthday wish to best friend</h4><span class="task-action-btn"><span class="action-box large delete-btn" title="Delete Task"><i class="icon"><i class="icon-trash"></i></i></span><span class="action-box large complete-btn" title="Mark Complete"><i class="icon"><i class="icon-check"></i></i></span></span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="todo-list-footer">
+                            <div class="add-task-btn-wrapper"><span class="add-task-btn">
+                                <button class="btn btn-primary"><i class="icon-plus"></i> Add new task</button></span></div>
+                            <div class="new-task-wrapper">
+                              <textarea id="new-task" placeholder="Enter new task here. . ."></textarea><span class="btn btn-danger cancel-btn" id="close-task-panel">Close</span><span class="btn btn-success ms-3 add-new-task-btn" id="add-task">Add Task</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="notification-popup hide">
+                        <p><span class="task"></span><span class="notification-text"></span></p>
+                      </div>
+                    </div>
+                    <!-- HTML Template for tasks-->
+                    <script id="task-template" type="tect/template">
+                      <li class="task">
+                      <div class="task-container">
+                      <h4 class="task-label"></h4>
+                      <span class="task-action-btn">
+                      <span class="action-box large delete-btn" title="Delete Task">
+                      <i class="icon"><i class="icon-trash"></i></i>
+                      </span>
+                      <span class="action-box large complete-btn" title="Mark Complete">
+                      <i class="icon"><i class="icon-check"></i></i>
+                      </span>
+                      </span>
+                      </div>
+                      </li>
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Container-fluid ends                    -->
+        </div>
+        <!-- footer start-->
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6 footer-copyright">
+                <p class="mb-0">Copyright 2020 © wingo All rights reserved.</p>
+              </div>
+              <div class="col-md-6">
+                <p class="pull-right mb-0">Hand crafted & made with <i class="fa fa-heart font-secondary"></i></p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!-- latest jquery-->
+    <script src="{% static 'assets/js/jquery-3.5.1.min.js' %}"></script>
+    <!-- feather icon js-->
+    <script src="{% static 'assets/js/icons/feather-icon/feather.min.js' %}"></script>
+    <script src="{% static 'assets/js/icons/feather-icon/feather-icon.js' %}"></script>
+    <!-- Sidebar jquery-->
+    <script src="{% static 'assets/js/sidebar-menu.js' %}"></script>
+    <script src="{% static 'assets/js/config.js' %}">   </script>
+    <!-- Bootstrap js-->
+    <script src="{% static 'assets/js/bootstrap/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap/bootstrap.min.js' %}"></script>
+    <!-- Plugins JS start-->
+    <script src="{% static 'assets/js/todo/todo.js' %}"></script>
+    <!-- Plugins JS Ends-->
+    <!-- Theme js-->
+    <script src="{% static 'assets/js/theme-customizer/customizer.js' %}"></script>
+    <script src="{% static 'assets/js/script.js' %}"></script>
+    <!-- login js-->
+    <!-- Plugin used-->
+  </body>
+</html>

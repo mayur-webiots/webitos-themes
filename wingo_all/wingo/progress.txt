@@ -1,0 +1,23 @@
+pages of wingo that are different from zeta:
+
+zeta:                              wingo:
+
+dashboard>crypto                   dashboard>project
+pagelayout>hideNavScroll           no page...
+ui_kits>toast                      ui_kits>shadow(different)
+buttons                            buttons>(multiple_pages)
+others>comingsoon>.                others>comingsoon>CS-with-bg-video
+
+
+
+
+problems:
+
+1. modal-animate.html file is empty.
+2. bonus_ui>tour : when expand picture there are no icons for closing.
+
+
+
+
+
+continue from builder.

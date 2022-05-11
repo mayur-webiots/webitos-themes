@@ -1,0 +1,13 @@
+{% extends 'base.html' %}{% load static %}
+{% block content %}
+<div class="page-body">
+  {% include 'layout/breadcrumb.html' %}
+  <!-- Container-fluid starts-->
+  <div class="container-fluid">
+{% include 'bonus_ui/ribbons/components/ribbons-1.html' %}    
+{% include 'bonus_ui/ribbons/components/ribbons-2.html' %}    
+{% include 'bonus_ui/ribbons/components/ribbons-3.html' %}    
+  </div>
+  <!-- Container-fluid Ends-->
+</div>
+{% endblock content %}
