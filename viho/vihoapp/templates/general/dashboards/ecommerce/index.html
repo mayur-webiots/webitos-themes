@@ -1,0 +1,11 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<div class="page-body dashboard-2-main">
+    <div class="container-fluid">
+        <div class="row">
+            {% include "general/dashboards/ecommerce/top.html" %} {% include "general/dashboards/ecommerce/middle.html" %} {% include "general/dashboards/ecommerce/bottom.html" %}
+        </div>
+    </div>
+</div>
+{% endblock %} {% block scriptcontent %}
+<script src="{% static 'assets/js/dashboard/dashboard_2.js' %}"></script>
+{% endblock %}

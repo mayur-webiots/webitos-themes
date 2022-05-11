@@ -1,0 +1,39 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-light theme-nav fixed-top">
+    <div class="container"><a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'tovo_website/assets/images/logo.png' %}" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse default-nav" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto" id="mymenu">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
+          <li class="nav-item"><a class="nav-link" href="#feature">feature</a></li>
+          <li class="nav-item"><a class="nav-link" href="#screenshot">screenshot</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">team</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#blog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">blog</a>
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a class="nav-link" href="{% url 'blog' %}">blog list</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'blog_details' %}">blog details</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'blogs_leftside' %}">leftsidebar</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'blogs_rightside' %}">rightsidebar</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'blog_details_with_leftsidebar' %}">details leftsidebar</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'blog_details_with_rightsidebar' %}">details rightsidebar</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#price" data-menuanchor="price">price</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact" data-menuanchor="contact">contact us</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Other page</a>
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a class="nav-link" href="{% url 'other_page_sign_in' %}">sign in</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'other_page_sign_up' %}">sign up</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'other_page_forget_pwd' %}">Forget Password</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'other_page_thank_you' %}">Thank you</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'other_page_review' %}">Review</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'other_page_404' %}">404</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'other_page_faq' %}">FAQ</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'other_page_download' %}">Download</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

@@ -1,0 +1,26 @@
+{% extends "base.html" %} {% load static %} 
+{%block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'assets/css/whether-icon.css'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'assets/css/date-picker.css'%}">
+{% endblock %}
+{% block content %}
+<div class="page-body">
+    {% include "layout/breadcrumb.html" %}
+    <div class="container-fluid general-widget">
+        <div class="row">
+            {% include "general/widgets/general/section1.html" %} {% include "general/widgets/general/section2.html" %} {% include "general/widgets/general/section3.html" %} {% include "general/widgets/general/section4.html" %} {% include "general/widgets/general/section5.html"%}
+            {% include "general/widgets/general/section6.html" %} {% include "general/widgets/general/section7.html" %} {% include "general/widgets/general/section8.html" %}
+
+        </div>
+    </div>
+</div>
+{% endblock %} {% block scriptcontent %}
+
+<script src="{% static 'assets/js/datepicker/date-picker/datepicker.js' %}"></script>
+<script src="{% static 'assets/js/datepicker/date-picker/datepicker.en.js' %}"></script>
+<script src="{% static 'assets/js/datepicker/date-picker/datepicker.custom.js' %}"></script>
+<script src="{% static 'assets/js/general-widget.js' %}"></script>
+<script src="{% static 'assets/js/height-equal.js' %}"></script>
+<script src="{% static 'assets/js/tooltip-init.js' %}"></script>
+
+{% endblock %}

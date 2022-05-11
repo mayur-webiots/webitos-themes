@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block css %}
+      <!-- Plugins css start-->
+ <link rel="stylesheet" type="text/css" href="{% static 'assets/css/calendar.css'%}">    
+   <!-- Plugins css Ends-->
+{% endblock  %}
+
+{% block content %}
+
+      <div class="page-body">
+        {% include "layout/breadcrumb.html" %}
+        <div class="container-fluid calendar-basic">
+
+                {% include "applications/calendar/components/calendar.html" %}
+
+             </div>
+        </div>
+
+{% endblock %}
+
+
+{% block scriptcontent %}
+
+      <!-- Plugins JS start-->
+      <script src="{% static 'assets/js/calendar/tui-code-snippet.min.js'%}"></script>
+      <script src="{% static 'assets/js/calendar/tui-time-picker.min.js'%}"></script>
+      <script src="{% static 'assets/js/calendar/tui-date-picker.min.js'%}"></script>
+      <script src="{% static 'assets/js/calendar/moment.min.js'%}"></script>
+      <script src="{% static 'assets/js/calendar/chance.min.js'%}"></script>
+      <script src="{% static 'assets/js/calendar/tui-calendar.js'%}"></script>
+      <script src="{% static 'assets/js/calendar/calendars.js'%}"></script>
+      <script src="{% static 'assets/js/calendar/schedules.js'%}"></script>
+      <script src="{% static 'assets/js/calendar/app.js'%}"></script>
+      <script src="{% static 'assets/js/tooltip-init.js'%}"></script>
+      <!-- Plugins JS Ends-->
+{% endblock  %}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+              

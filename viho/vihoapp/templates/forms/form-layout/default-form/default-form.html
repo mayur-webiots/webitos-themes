@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css %}
+      <!-- Plugins css start-->
+      <!-- Plugins css Ends-->
+{% endblock  %}
+
+{% block content %}
+
+      <div class="page-body">
+        {% include "layout/breadcrumb.html" %}
+          <div class="container-fluid">
+              
+                {% include "forms/form-layout/default-form/components/default-form.html" %}
+                {% include "forms/form-layout/default-form/components/horizontal-form.html" %}
+                {% include "forms/form-layout/default-form/components/mega-form.html" %}
+                {% include "forms/form-layout/default-form/components/inline-form.html" %}
+
+             </div>
+        </div>
+
+{% endblock %}
+
+{% block scriptcontent %}
+      <!-- Plugins JS start-->
+      <script src="{% static 'assets/js/tooltip-init.js'%}"></script>
+      <!-- Plugins JS Ends-->
+{% endblock  %}    
+
+
+
+
+      

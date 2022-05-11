@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<div class="page-body">
+    {% include "layout/breadcrumb.html" %}
+    <div class="container-fluid chart-widget">
+        <div class="row">
+            {% include "general/widgets/charts/sale.html" %} {% include "general/widgets/charts/project.html" %} {% include "general/widgets/charts/product.html" %} {% include "general/widgets/charts/marketing-express.html" %} {% include "general/widgets/charts/total-earning.html"%}
+            {% include "general/widgets/charts/live-product.html" %} {% include "general/widgets/charts/turnover.html" %} {% include "general/widgets/charts/monthly-sale.html" %} {% include "general/widgets/charts/uses.html" %} {% include "general/widgets/charts/browser-uses.html"%}
+
+        </div>
+    </div>
+</div>
+{% endblock %} {% block scriptcontent %}
+<script src="{% static 'assets/js/chart-widget.js' %}"></script>
+<script src="{% static 'assets/js/tooltip-init.js' %}"></script>
+
+{% endblock %}

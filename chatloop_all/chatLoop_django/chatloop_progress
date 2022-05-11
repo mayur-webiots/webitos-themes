@@ -1,0 +1,16 @@
+completed:
+
+linked all the pages
+exteding templates, creating base.html and components 
+validating inputs
+testing
+
+to do:
+
+
+
+problems:
+doesn't have repassword in signup page.
+
+do not know about .pug file, do i need to make changes in that as well?
+are json files to be linked or added?

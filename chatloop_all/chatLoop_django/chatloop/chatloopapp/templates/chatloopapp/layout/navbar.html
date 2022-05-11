@@ -1,0 +1,42 @@
+{% load static %}
+<!-- Nav start-->
+<nav class="navbar navbar-expand-lg theme-nav fixed-top">
+    <div class="container"><a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'chatloopapp/assets/images/logo.png' %}" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="fa fa-align-justify" aria-hidden="true"></i></span></button>
+      <div class="collapse navbar-collapse" id="mainmenu">
+        <ul class="navbar-nav ms-auto" id="mymenu">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
+          <li class="nav-item"><a class="nav-link" href="#feature">feature</a></li>
+          <li class="nav-item"><a class="nav-link" href="#screenshots">screenshot</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">team</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#news" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a class="nav-link" href="{% url 'blog' %}">blog list</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'blog_details' %}">blog details</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'blogs_leftside' %}">leftsidebar</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'blogs_rightside' %}">rightsidebar</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'blog_details_with_leftsidebar' %}">details leftsidebar</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'blog_details_with_rightsidebar' %}">details rightsidebar</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#contact">contact us</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Other Page</a>
+            <ul class="dropdown-menu">
+              <li class="nav-item"><a class="nav-link" href="{% url 'other_page_sign_in' %}">Sign In</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'other_page_sign_up' %}">Sign Up</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'other_page_forgot_pass' %}">Forget Password</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'other_page_thank_you' %}">Thank You</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'other_page_review' %}">Review</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'other_page_faq' %}">FAQ</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'other_page_coming_soon' %}">Coming Soon</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'other_page_download' %}">Download</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'other_page_request' %}">Request Demo</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'other_page_404' %}">404</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Nav end-->

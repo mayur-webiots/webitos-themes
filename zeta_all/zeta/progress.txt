@@ -1,0 +1,79 @@
+in progress:
+Defaul
+
+problems:
+some JSON error [in data_tables_server_side]	,	[ex_data_tables_column_reorder]
+
+some error in [ex_data_tables_auto_fill],[ex_data_tables_html_5_export]  but same error comes even in the template.
+some error in ,html 5 data export, data_tables_server_side
+
+
+
+active links in side bar / deafult always remain active
+
+
+Info:
+even if i change names of dashboard and default in the template the name doesnt changes in the side bar. Names of everything else changes.
+
+things remaining to do:
+in documentation, add the initial migration command instructions in authentication.
+
+
+NMTS:
+
+get started button doesnt work when page converted to rtl in dashboard page.
+
+when ui dropdown page is converted to mobile view, there is a problem with overlay 
+
+
+there is no link for compact.html and compact-dark.html inside the website.
+
+in image cropper in bonus ui when you hover over lock icon, it shows code in tooltip inside of lock.
+
+in bookmark , when we write a new book mark, textfields are not proper
+
+form wizard 2 start at step 4
+
+kanban page, clicking on cards, shows html in modal.
+
+in knowledgebase knowledgebase page, middle 3 cars title are same color as background
+
+
+in jsgrid table , search and clear have x icon  on the right of the table.
+
+
+
+in unlock_user page, once you click show , it disappears,even in template, email icon.
+
+
+things to add:
+
+when we switch to dark mode and redirect to other page, it should also be in dark mode.
+create documentation for django, do not forget to mention how ltr works in documentation.
+authentication
+todo
+
+
+total paths:201
+total pages: 210
+
+solved:
+.... when extending icons , icon click not working(my)
+
+
+
+
+documentation:
+
+
+left: 	
+	tree;
+		static>asstets>fonts>feather
+		static>asstets>fonts>flag-icon
+
+
+
+bootstrap min .js not loading in animate or aos
+
+
+next theme .. wingo.

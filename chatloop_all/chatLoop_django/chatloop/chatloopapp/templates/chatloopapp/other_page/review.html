@@ -1,0 +1,259 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chatloop | Mobile App Landing HTML Templates</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Chat Loop Apps Template from pixelstrap">
+    <meta name="keywords" content="Chat Loop Apps Template from pixelstrap">
+    <meta name="author" content="App">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- favicon-->
+    <link rel="shortcut icon" href="{% static 'chatloopapp/assets/images/favicon.png' %}">
+    <!-- Font Family-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="{% static 'chatloopapp/assets/css/bootstrap.css' %}">
+    <!-- Animation CSS-->
+    <link rel="stylesheet" href="{% static 'chatloopapp/assets/css/animate.min.css' %}">
+    <!-- Owl carousel .css-->
+    <link rel="stylesheet" href="{% static 'chatloopapp/assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'chatloopapp/assets/css/owl.theme.default.min.css' %}">
+    <!-- font-awesome css-->
+    <link rel="stylesheet" href="{% static 'chatloopapp/assets/css/font-awesome.min.css' %}">
+    <!-- swiper slider-->
+    <link rel="stylesheet" href="{% static 'chatloopapp/assets/css/swiper.min.css' %}">
+    <!-- Style .css-->
+    <link id="color" rel="stylesheet" href="{% static 'chatloopapp/assets/css/color1.css' %}" media="screen">
+  </head>
+  <body class="inner-page">
+    <!-- loader-->
+    <div class="loader-wrapper">
+      <div id="loader">
+        <div id="shadow"></div>
+        <div id="box"></div>
+      </div>
+    </div>
+    <!-- loader end-->
+    <!-- Nav start-->
+    <nav class="navbar navbar-expand-lg theme-nav fixed-top">
+      <div class="container"><a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'chatloopapp/assets/images/logo.png' %}" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="fa fa-align-justify" aria-hidden="true"></i></span></button>
+        <div class="collapse navbar-collapse" id="mainmenu">
+          <ul class="navbar-nav ms-auto" id="mymenu">
+            <li class="nav-item"><a class="nav-link" href="{% url 'index' %}#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'index' %}#about">about</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'index' %}#feature">feature</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'index' %}#screenshots">screenshot</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'index' %}#team">team</a></li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="{% url 'index' %}#news" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link" href="{% url 'blog' %}">blog list</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'blog_details' %}">blog details</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'blogs_leftside' %}">leftsidebar</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'blogs_rightside' %}">rightsidebar</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'blog_details_with_leftsidebar' %}">details leftsidebar</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'blog_details_with_rightsidebar' %}">details rightsidebar</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'index' %}#contact">contact us</a></li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Other Page</a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link" href="{% url 'other_page_sign_in' %}">Sign In</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'other_page_sign_up' %}">Sign Up</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'other_page_forgot_pass' %}">Forget Password</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'other_page_thank_you' %}">Thank You</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'other_page_review' %}">Review</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'other_page_faq' %}">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'other_page_coming_soon' %}">Coming Soon</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'other_page_download' %}">Download</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'other_page_request' %}">Request Demo</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'other_page_404' %}">404</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Nav end-->
+    <div class="page-margin">
+      <!-- breadcrumb start-->
+      <div class="breadcrumb-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-6 d-align-center">
+              <h2 class="title"><span> Review</span></h2>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <nav class="theme-breadcrumb" aria-label="breadcrumb">
+                <ol class="breadcrumb bg-transparent mb-0">
+                  <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+                  <li class="breadcrumb-item active"><a href="#">Review</a></li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- breadcrumb end-->
+      <!-- review Section start-->
+      <section class="review-block blog-page">
+        <div class="container">
+          <div class="row margin-bottom">
+            <div class="col-lg-4 col-md-6">
+              <div class="review-box"><img class="img-fluid" src="{% static 'chatloopapp/assets/images/review.png' %}" alt="review">
+                <h5>John Martin</h5>
+                <div class="rating-star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
+                <div class="review-message">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="review-box"><img class="img-fluid" src="{% static 'chatloopapp/assets/images/review.png' %}" alt="review">
+                <h5>John Martin</h5>
+                <div class="rating-star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
+                <div class="review-message">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="review-box"><img class="img-fluid" src="{% static 'chatloopapp/assets/images/review.png' %}" alt="review">
+                <h5>John Martin</h5>
+                <div class="rating-star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
+                <div class="review-message">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="review-box"><img class="img-fluid" src="{% static 'chatloopapp/assets/images/review.png' %}" alt="review">
+                <h5>John Martin</h5>
+                <div class="rating-star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
+                <div class="review-message">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="review-box"><img class="img-fluid" src="{% static 'chatloopapp/assets/images/review.png' %}" alt="review">
+                <h5>John Martin</h5>
+                <div class="rating-star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
+                <div class="review-message">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="review-box"><img class="img-fluid" src="{% static 'chatloopapp/assets/images/review.png' %}" alt="review">
+                <h5>John Martin</h5>
+                <div class="rating-star"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
+                <div class="review-message">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="animation-circle absolute"><i></i><i></i><i></i></div>
+        <div class="animation-circle-inverse"><i></i><i></i><i></i></div>
+      </section>
+      <!-- review Section End-->
+    </div>
+    <!-- copy-right-section-->
+    <footer class="cpoy-right-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="social-footer">
+              <ul>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-12 text-center">
+            <p class="copyright">2018-19 Copyright by themeforest Powered by Pixelstrep</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end copy right section-->
+    <!-- Tap to top-->
+    <div class="tap-top">
+      <div><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+    </div>
+    <!-- Tap to top end-->
+    <!-- facebook chat section start-->
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- Your customer chat code-->
+    <div class="fb-customerchat" attribution="setup_tool" page_id="2123438804574660" theme_color="#5f57ea" logged_in_greeting="Hi! Welcome to PixelStrap Themes  How can we help you?" logged_out_greeting="Hi! Welcome to PixelStrap Themes  How can we help you?"></div>
+    <!-- facebook chat section end--><!--[if lt IE 9]>
+<div class="ie-warning">
+<h1>Warning!!</h1>
+<p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+<div class="iew-container">
+<ul class="iew-download">
+<li>
+<a href="http://www.google.com/chrome/">
+<img src="{% static 'chatloopapp/assets/images/browsers/chrome.png' %}" alt="">
+<div>Chrome</div>
+</a>
+</li>
+<li>
+<a href="https://www.mozilla.org/en-US/firefox/new/">
+<img src="{% static 'chatloopapp/assets/images/browsers/firefox.png' %}" alt="">
+<div>Firefox</div>
+</a>
+</li>
+<li>
+<a href="http://www.opera.com">
+<img src="{% static 'chatloopapp/assets/images/browsers/opera.png' %}" alt="">
+<div>Opera</div>
+</a>
+</li>
+<li>
+<a href="https://www.apple.com/safari/">
+<img src="{% static 'chatloopapp/assets/images/browsers/safari.png' %}" alt="">
+<div>Safari</div>
+</a>
+</li>
+<li>
+<a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+<img src="{% static 'chatloopapp/assets/images/browsers/ie.png' %}" alt="">
+<div>IE (9 & above)</div>
+</a>
+</li>
+</ul>
+</div>
+<p>Sorry for the inconvenience!</p>
+</div>
+<![endif]-->
+    <!-- js file-->
+    <script src="{% static 'chatloopapp/assets/js/jquery-3.3.1.min.js' %}"></script>
+    <!-- bootstrap js file-->
+    <script src="{% static 'chatloopapp/assets/js/bootstrap.min.js' %}"></script>
+    <!-- popper js file-->
+    <script src="{% static 'chatloopapp/assets/js/popper.min.js' %}"></script>
+    <!-- Owl carousel js file-->
+    <script src="{% static 'chatloopapp/assets/js/owl.carousel.min.js' %}"></script>
+    <!-- tilt js file-->
+    <script src="{% static 'chatloopapp/assets/js/tilt.jquery.js' %}"></script>
+    <!-- script js file-->
+    <script src="{% static 'chatloopapp/assets/js/script.js' %}"></script>
+  </body>
+</html>

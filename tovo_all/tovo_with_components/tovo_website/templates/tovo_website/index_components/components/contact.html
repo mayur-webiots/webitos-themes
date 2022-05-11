@@ -1,0 +1,49 @@
+{% load static %}
+<!-- Contact Section start-->
+<section class="contact" id="contact">
+    <div class="contact-decor">
+      <div class="contact-circle1"><img src="{% static 'tovo_website/assets/images/main-banner12.png' %}" alt=""></div>
+      <div class="contact-circle2"><img src="{% static 'tovo_website/assets/images/main-banner1.png' %}" alt=""></div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-8 col-sm-12">
+          <div class="contact-us">
+            <div class="w-100">
+              <h2 class="title"><span>contact </span>information</h2>
+              <form class="theme-form" id="myform" action="{% url 'index' %}" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                  <div class="row">
+                    <div class="alert alert-success alert-dismissible d-none" id="mail_alert_class"><a class="close" href="#" data-dismiss="alert" aria-label="close">×</a>
+                      <div id="alert_mail"></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6 md-fgrup-margin">
+                      <input class="form-control"  type="text" name="fullname" placeholder="your name" required="required">
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                      <input class="form-control" type="number" name="phone" placeholder="phone" required="required">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input class="form-control"  type="email" name="email" placeholder="email address" required="required">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control"  name="message" rows="4" placeholder="message" required="required"></textarea>
+                </div>
+                <div class="form-button">
+                  <input class="btn btn-custom theme-color"  type="submit" name="send" value="send">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 d-medium-none-lg">
+          <div class="contact-right"><img class="img-fluid" src="{% static 'tovo_website/assets/images/Contact-info.png' %}" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section End-->

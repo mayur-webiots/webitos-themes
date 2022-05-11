@@ -1,0 +1,153 @@
+{% extends 'chatloopapp/blog/base.html' %}
+{% load static %}
+{% block content %}
+<div class="page-margin">
+  <!-- breadcrumb start-->
+  <div class="breadcrumb-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 d-align-center">
+          <h2 class="title"><span> Blog</span></h2>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <nav class="theme-breadcrumb" aria-label="breadcrumb">
+            <ol class="breadcrumb bg-transparent mb-0">
+              <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+              <li class="breadcrumb-item active"><a href="#">Blog</a></li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- breadcrumb end-->
+  <!-- blog Section start-->
+  <section class="blog-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="row blog-list">
+            <div class="col-lg-6 col-md-12">
+              <div class="item news-slid"><a href="{% url 'blog_details' %}">
+                  <div class="news-box"><img class="img-fluid" src="{% static 'chatloopapp/assets/images/blog/1.jpg' %}" alt="news-1"></div></a>
+                <div class="news-text">
+                  <div class="blog-hover">
+                    <h4>lorem ipsum dolor sit amet</h4>
+                    <ul class="list-inline blog-details-list">
+                      <li><a href="#">John Doe</a></li>
+                      <li><a href="#">1 Oct</a></li>
+                      <li><a href="#">25 comments</a></li>
+                      <li><a href="#">3 View</a></li>
+                    </ul>
+                  </div>
+                  <p>lorem ipsum dolor sit amet, consecteturamet adipisicing elit, tempor incididunt ut labore. lorem ipsum dolor sit amet.</p><a class="btn-theme" href="{% url 'blog_details' %}">View more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="item news-slid"><a href="{% url 'blog_details' %}">
+                  <div class="news-box"><img class="img-fluid" src="{% static 'chatloopapp/assets/images/blog/2.jpg' %}" alt="news-1"></div></a>
+                <div class="news-text">
+                  <div class="blog-hover">
+                    <h4>lorem ipsum dolor sit amet</h4>
+                    <ul class="list-inline blog-details-list">
+                      <li><a href="#">John Doe</a></li>
+                      <li><a href="#">2 Oct</a></li>
+                      <li><a href="#">25 comments</a></li>
+                      <li><a href="#">3 View</a></li>
+                    </ul>
+                  </div>
+                  <p>lorem ipsum dolor sit amet, consecteturamet adipisicing elit, tempor incididunt ut labore. lorem ipsum dolor sit amet.</p><a class="btn-theme" href="{% url 'blog_details' %}">View more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="item news-slid"><a href="{% url 'blog_details' %}">
+                  <div class="news-box"><img class="img-fluid" src="{% static 'chatloopapp/assets/images/blog/3.jpg' %}" alt="news-1"></div></a>
+                <div class="news-text">
+                  <div class="blog-hover">
+                    <h4>lorem ipsum dolor sit amet</h4>
+                    <ul class="list-inline blog-details-list">
+                      <li><a href="#">John Doe</a></li>
+                      <li><a href="#">3 Oct</a></li>
+                      <li><a href="#">25 comments</a></li>
+                      <li><a href="#">3 View</a></li>
+                    </ul>
+                  </div>
+                  <p>lorem ipsum dolor sit amet, consecteturamet adipisicing elit, tempor incididunt ut labore. lorem ipsum dolor sit amet.</p><a class="btn-theme" href="{% url 'blog_details' %}">View more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="item news-slid"><a href="{% url 'blog_details' %}">
+                  <div class="news-box"><img class="img-fluid" src="{% static 'chatloopapp/assets/images/blog/4.jpg' %}" alt="news-1"></div></a>
+                <div class="news-text">
+                  <div class="blog-hover">
+                    <h4>lorem ipsum dolor sit amet</h4>
+                    <ul class="list-inline blog-details-list">
+                      <li><a href="#">John Doe</a></li>
+                      <li><a href="#">1 Oct</a></li>
+                      <li><a href="#">25 comments</a></li>
+                      <li><a href="#">4 View</a></li>
+                    </ul>
+                  </div>
+                  <p>lorem ipsum dolor sit amet, consecteturamet adipisicing elit, tempor incididunt ut labore. lorem ipsum dolor sit amet.</p><a class="btn-theme" href="{% url 'blog_details' %}">View more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="item news-slid"><a href="{% url 'blog_details' %}">
+                  <div class="news-box"><img class="img-fluid" src="{% static 'chatloopapp/assets/images/blog/5.jpg' %}" alt="news-1"></div></a>
+                <div class="news-text">
+                  <div class="blog-hover">
+                    <h4>lorem ipsum dolor sit amet</h4>
+                    <ul class="list-inline blog-details-list">
+                      <li><a href="#">John Doe</a></li>
+                      <li><a href="#">5 Oct</a></li>
+                      <li><a href="#">25 comments</a></li>
+                      <li><a href="#">3 View</a></li>
+                    </ul>
+                  </div>
+                  <p>lorem ipsum dolor sit amet, consecteturamet adipisicing elit, tempor incididunt ut labore. lorem ipsum dolor sit amet.</p><a class="btn-theme" href="{% url 'blog_details' %}">View more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="item news-slid"><a href="{% url 'blog_details' %}">
+                  <div class="news-box"><img class="img-fluid" src="{% static 'chatloopapp/assets/images/blog/6.jpg' %}" alt="news-1"></div></a>
+                <div class="news-text">
+                  <div class="blog-hover">
+                    <h4>lorem ipsum dolor sit amet</h4>
+                    <ul class="list-inline blog-details-list">
+                      <li><a href="#">John Doe</a></li>
+                      <li><a href="#">6 Oct</a></li>
+                      <li><a href="#">25 comments</a></li>
+                      <li><a href="#">3 View</a></li>
+                    </ul>
+                  </div>
+                  <p>lorem ipsum dolor sit amet, consecteturamet adipisicing elit, tempor incididunt ut labore. lorem ipsum dolor sit amet.</p><a class="btn-theme" href="{% url 'blog_details' %}">View more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- paginations-->
+        <div class="col-md-12">
+          <nav class="blog-pagination" aria-label="Page navigation">
+            <ul class="pagination justify-content-center blog-pagin">
+              <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#" aria-label="Next"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- paginations end   -->
+      </div>
+    </div>
+    <div class="animation-circle absolute"><i></i><i></i><i></i></div>
+    <div class="animation-circle-inverse"><i></i><i></i><i></i></div>
+  </section>
+</div>
+{% endblock content %}

@@ -1,0 +1,80 @@
+{% load static %}
+<!-- blog Section Start-->
+<section class="blog" id="blog">
+    <div class="about-decor">
+      <div class="about-circle1"><img src="{% static 'tovo_website/assets/images/team1.png' %}" alt=""></div>
+      <div class="about-circle2"><img src="{% static 'tovo_website/assets/images/main-banner1.png' %}" alt=""></div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 class="title">latest <span>blog</span></h2>
+        </div>
+        <div class="col-sm-12">
+          <div class="blog-carousel owl-carousel owl-theme">
+            <div class="blog-item">
+              <div class="blog-block">
+                <div class="blog-box">
+                  <div class="overflow-hidden"><a href="{% url 'blog_details' %}"><img src="{% static 'tovo_website/assets/images/blog/8.jpg' %}" alt=""></a></div>
+                </div>
+              </div>
+              <div class="blog-text">
+                <h6>12 march 2015</h6><a href="{% url 'blog_details' %}">
+                  <h3>The first line of Lorem Ipsum Lorem ipsum dolor sit amet comes from a line in section 1.10.32.</h3></a>
+                <h5>posted by Mark jkcno, 10 hits, 50 comment</h5>
+              </div>
+            </div>
+            <div class="blog-item">
+              <div class="blog-block">
+                <div class="blog-box">
+                  <div class="overflow-hidden"><a href="{% url 'blog_details' %}"><img src="{% static 'tovo_website/assets/images/blog/blog3.jpg' %}" alt=""></a></div>
+                </div>
+              </div>
+              <div class="blog-text">
+                <h6>25 january 2018</h6><a href="{% url 'blog_details' %}">
+                  <h3>There are many variations of passages of Lorem Ipsum available, </h3></a>
+                <h5>posted by johan doe, 1 hits, 5 comment</h5>
+              </div>
+            </div>
+            <div class="blog-item">
+              <div class="blog-block">
+                <div class="blog-box">
+                  <div class="overflow-hidden"><a href="{% url 'blog_details' %}"><img src="{% static 'tovo_website/assets/images/blog/6.jpg' %}" alt=""></a></div>
+                </div>
+              </div>
+              <div class="blog-text">
+                <h6>15 jun 2016</h6><a href="{% url 'blog_details' %}">
+                  <h3>Lorem Ipsum has been the industry's standard dummy text </h3></a>
+                <h5>posted by johanson let, 15 hits, 30 comment</h5>
+              </div>
+            </div>
+            <div class="blog-item">
+              <div class="blog-block">
+                <div class="blog-box">
+                  <div class="overflow-hidden"><a href="{% url 'blog_details' %}"><img src="{% static 'tovo_website/assets/images/blog/7.jpg' %}" alt=""></a></div>
+                </div>
+              </div>
+              <div class="blog-text">
+                <h6>10 February 2012</h6><a href="{% url 'blog_details' %}">
+                  <h3>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</h3></a>
+                <h5>posted by John Shipmen, 6 hits, 8 comment</h5>
+              </div>
+            </div>
+            <div class="blog-item">
+              <div class="blog-block">
+                <div class="blog-box">
+                  <div class="overflow-hidden"><a href="{% url 'blog_details' %}"><img src="{% static 'tovo_website/assets/images/blog/9.jpg' %}" alt=""></a></div>
+                </div>
+              </div>
+              <div class="blog-text">
+                <h6>28 December 2017</h6><a href="{% url 'blog_details' %}">
+                  <h3>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</h3></a>
+                <h5>posted by Walo Boni, 9 hits, 4 comment</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- blog Section End-->

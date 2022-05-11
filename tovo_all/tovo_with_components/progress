@@ -1,0 +1,34 @@
+
+All pages converted to django template
+
+
+
+Problems:
+
+1. javascript validation not working, because of mailer.php in contactus.js
+	tried replacing it with {% url 'index' %}, still not working.
+	
+2. No link for sign-up page in login page
+
+3. In forget password 00 are already present in otp and also in phone number which creates inconvinience for the user, name them placeholders.
+
+things to do on 3/05/2022
+
+sign-up sign-in according to viho code
+adding login required and the functionality of ?next=
+
+ask if the template needs to be converted into components.
+
+how to show backend validation messages properly?
+--------------------------------------
+
+have to convert template component wise?
+
+have to do back-end of login, sign-up,contact-us?
+
+
+problem:
+classes for body in blog section and index are different change them.
+solution:
+pass context from backend for the body class for each page 
+
