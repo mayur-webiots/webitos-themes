@@ -1,5 +1,4 @@
 {% load static %}
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -35,36 +34,7 @@
     <!-- page-wrapper Start-->
     <div class="page-wrapper compact-wrapper">
       <div>
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid custom-container">
-            <div class="row w-100">
-              <div class="col-md-3 col-4"><a class="navbar-brand" href="{% url 'documentation_index' %}">                   <img src="{% static 'documentation/assets/images/logo/logo.png' %}" alt=""></a></div>
-              <div class="col-lg-6 col-2"> 
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars">   </i></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav menu">
-                    <li class="nav-item active"><a class="nav-link" href="https://1.envato.market/3GVzd" role="button" aria-haspopup="true" aria-expanded="false" target="_blank">Purchase</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://pixelstrap.freshdesk.com/" role="button" aria-haspopup="true" aria-expanded="false" target="_blank">Support</a></li>
-                    <li class="nav-item"><a class="nav-link" href="http://admin.pixelstrap.com/zeta/theme/landing-page.html" role="button" aria-haspopup="true" aria-expanded="false" target="_blank">Demo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="http://admin.pixelstrap.com/zeta/theme/landing-page.html#framework" role="button" aria-haspopup="true" aria-expanded="false" target="_blank">Feature              </a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-3 col-6">
-                <ul class="nav-right">
-                  <li>
-                    <div class="d-lg-none d-block"><a class="toggle-sidebar" href="#"><i class="fa fa-sliders"></i></a></div>
-                  </li>
-                  <li>
-                    <div class="btn-group"><a class="decrease btn btn-doc" href="#" title="Decrease font size">A-</a><a class="reset btn btn-doc" href="#" title="Default font size">A</a><a class="increase btn btn-doc" href="#" title="Increase font size">A+</a></div>
-                  </li>
-                  <li><a class="btn btn-dark mode" href="#" title="Dark"><i class="fa fa-moon-o"></i><span>Dark
-                        <!-- Page Body Start--></span></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </nav>
+        {% include 'documentation/components/navbar.html' %}
       </div>
       <div class="body-wrapper sticky_menu">
         <div class="document-area" id="sticky-page">
@@ -72,7 +42,6 @@
           <div class="container-fluid custom-container">
             <div class="row doc-container">
               {% include 'documentation/components/sidebar.html' %}
-
               <div class="col-xxl-10 col-xl-9 content component-col">
                 <div id="section-1">
                   <div class="card">
@@ -83,10 +52,10 @@
                         <h5>Basic UI Elements</h5>
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                           <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#Button" role="tab" aria-selected="false" data-original-title="" title="">Button</a></li>
-                          <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#tag-pills" role="tab" aria-selected="true" data-original-title="" title="">Tag &amp; Pills</a></li>
-                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#progress-bar" role="tab" aria-selected="false" data-original-title="" title="">Progress Bar</a></li>
+                          <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#tag-pills" role="tab" aria-selected="true" data-original-title="" title="">Tag &amp; pills</a></li>
+                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#progress-bar" role="tab" aria-selected="false" data-original-title="" title="">progress bar</a></li>
                           <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#alert" role="tab" aria-selected="false" data-original-title="" title="">Alert</a></li>
-                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#popovers" role="tab" aria-selected="false" data-original-title="" title="">Popover</a></li>
+                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#popovers" role="tab" aria-selected="false" data-original-title="" title="">popover</a></li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
                           <div class="tab-pane fade" id="Button" role="tabpanel">
@@ -97,7 +66,6 @@
                               <button class="btn btn-info mb-2" type="button" data-original-title="" title="">Info</button>
                               <button class="btn btn-warning mb-2" type="button" data-original-title="" title="">Warning</button>
                               <button class="btn btn-danger mb-2" type="button" data-original-title="" title="">Danger</button>
-                              <button class="btn btn-light mb-2" type="button" data-original-title="" title="">Light</button>
                               <div class="code-box-copy mt-3">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#button" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="button">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary Button&lt;/button&gt;
@@ -191,9 +159,9 @@
                           </div>
                           <div class="tab-pane fade" id="popovers" role="tabpanel">
                             <div class="fluid-container py-4">
-                              <button class="btn btn-primary example-popover me-1 mb-2" type="button" data-bs-toggle="popover" title="" data-bs-content="And here's some amazing content. It's very engaging. Right?" data-original-title="Popover title">Click To Toggle Popover</button><a class="example-popover btn btn-secondary mb-2" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-content="And here's some amazing content. It's very engaging. Right?" data-original-title="Popover title">
+                              <button class="btn btn-primary example-popover me-1 mb-2" type="button" data-bs-toggle="popover" title="" data-bs-content="And here's some amazing content. It's very engaging. Right?" data-original-title="Popover title">Click to toggle popover</button><a class="example-popover btn btn-secondary mb-2" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="" data-bs-content="And here's some amazing content. It's very engaging. Right?" data-original-title="Popover title">
                                 Dismissible
-                                Popover</a>
+                                popover</a>
                               <button class="example-popover btn btn-success mb-2" type="button" data-bs-trigger="hover" data-container="body" data-bs-toggle="popover" data-bs-placement="bottom" title="" data-offset="-20px -20px" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="Popover title">On Hover Tooltip</button>
                               <div class="code-box-copy mt-3">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#popovercode" title="Copy"><i class="fa fa-files-o"></i></button>
@@ -205,7 +173,7 @@
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#popoverjs" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="popoverjs">&lt;!--popover js--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/popover-custom.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/popover-custom.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -228,7 +196,7 @@
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#tooltipjs" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="tooltipjs">&lt;!--tooltip js--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/tooltip-init.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/tooltip-init.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -397,8 +365,8 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                           <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#scrollable" role="tab" aria-selected="true" data-original-title="" title="">Scrollable</a></li>
                           <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tree" role="tab" aria-selected="false" data-original-title="" title="">Tree</a></li>
                           <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#notify" role="tab" aria-selected="false" data-original-title="" title="">Notify</a></li>
-                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#rating" role="tab" aria-selected="false" data-original-title="" title="">Rating</a></li>
-                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#dropzone" role="tab" aria-selected="false" data-original-title="" title="">Dropzone</a></li>
+                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#rating" role="tab" aria-selected="false" data-original-title="" title="">rating</a></li>
+                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#dropzone" role="tab" aria-selected="false" data-original-title="" title="">dropzone</a></li>
                           <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tour" role="tab" aria-selected="true" data-original-title="" title="">Tour</a></li>
                         </ul>
                         <div class="tab-content" id="myTabContent4">
@@ -411,10 +379,10 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#scrollablecode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="scrollablecode">&lt;!--Scrollable css--&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static &apos;asset/css/scrollable.css&apos; &percnt;&rcub;&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static 'documentation/assets/css/scrollable.css&quot;&gt;
 &lt;!--scrollable js--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/scrollable/scrollable-custom.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/scrollable/perfect-scrollbar.min.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/scrollable/scrollable-custom.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/scrollable/perfect-scrollbar.min.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -427,10 +395,10 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#treecode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="treecode">&lt;!-- Tree css --&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static &apos;asset/css/tree.css&apos; &percnt;&rcub;&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static 'documentation/assets/css/tree.css&quot;&gt;
 &lt;!-- Tree js--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/tree/jstree.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/tree/tree.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/tree/jstree.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/tree/tree.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -443,8 +411,8 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#notifycode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="notifycode">&lt;!-- bootstrap notify js --&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/notify/bootstrap-notify.min.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/notify/notify-script.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/notify/bootstrap-notify.min.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/notify/notify-script.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -457,10 +425,10 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#rangeslidecode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="rangeslidecode">&lt;!-- range slider css start here --&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static &apos;asset/css/rating.css&apos; &percnt;&rcub;&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static 'documentation/assets/css/rating.css&quot;&gt;
 &lt;!-- Ion Range Slider js --&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/rating/jquery.barrating.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/rating/rating-script.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/rating/jquery.barrating.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/rating/rating-script.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -473,10 +441,10 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#dropzonecode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="dropzonecode">&lt;!-- Dropzone start here --&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static &apos;asset/css/dropzone.css&apos; &percnt;&rcub;&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static 'documentation/assets/css/dropzone.css&quot;&gt;
 &lt;!-- Dropzone js --&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/dropzone/dropzone.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/dropzone/dropzone-script.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/dropzone/dropzone.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/dropzone/dropzone-script.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -489,18 +457,18 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#tourcode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="tourcode">&lt;!-- tour js --&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/tour/intro.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/tour/intro-init.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/tour/intro.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/tour/intro-init.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
                         </div>
                         <ul class="nav nav-tabs m-t-35" id="myTab5" role="tablist">
-                          <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#sweet-alert" role="tab" aria-selected="false" data-original-title="" title="">Sweet Alert</a></li>
-                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#demo-animated" role="tab" aria-selected="false" data-original-title="" title="">Animated Modal</a></li>
-                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#owl-carousel" role="tab" aria-selected="false" data-original-title="" title="">Owl Carousel</a></li>
-                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#range-slider" role="tab" aria-selected="false" data-original-title="" title="">Range Slider</a></li>
-                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#image-cropper" role="tab" aria-selected="false" data-original-title="" title="">Image Cropper</a></li>
+                          <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#sweet-alert" role="tab" aria-selected="false" data-original-title="" title="">sweet alert</a></li>
+                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#demo-animated" role="tab" aria-selected="false" data-original-title="" title="">Animated modal</a></li>
+                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#owl-carousel" role="tab" aria-selected="false" data-original-title="" title="">owl carousel</a></li>
+                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#range-slider" role="tab" aria-selected="false" data-original-title="" title="">Range slider</a></li>
+                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#image-cropper" role="tab" aria-selected="false" data-original-title="" title="">Image cropper</a></li>
                           <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#sticky" role="tab" aria-selected="false" data-original-title="" title="">Sticky</a></li>
                         </ul>
                         <div class="tab-content" id="myTabContent5">
@@ -513,8 +481,8 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#sweetalertcode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="sweetalertcode">&lt;!-- Sweet alert jquery--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/sweet-alert/sweetalert.min.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/sweet-alert/app.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/sweet-alert/sweetalert.min.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/sweet-alert/app.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -527,9 +495,9 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#modalanimatecode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="modalanimatecode">&lt;!-- animate css --&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static &apos;asset/css/animate.css&apos; &percnt;&rcub;&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static 'documentation/assets/css/animate.css&quot;&gt;
 &lt;!-- Modal js--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/modal-animated.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/modal-animated.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -542,9 +510,9 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#owlcode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="owlcode">&lt;!-- Owl css --&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static &apos;asset/css/owlcarousel.css&apos; &percnt;&rcub;&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static 'documentation/assets/css/owlcarousel.css&quot;&gt;
 &lt;!-- owlcarousel js--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/owlcarousel/owl.carousel.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/owlcarousel/owl.carousel.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -557,10 +525,10 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#rangeslidercode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="rangeslidercode">&lt;!-- range slider css start here --&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static &apos;asset/css/range-slider.css&apos; &percnt;&rcub;&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static 'documentation/assets/css/range-slider.css&quot;&gt;
 &lt;!-- Ion Range Slider js --&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/range-slider/ion.rangeSlider.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/range-slider/rangeslider-script.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/range-slider/ion.rangeSlider.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/range-slider/rangeslider-script.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -573,10 +541,10 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#imagecroppercode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="imagecroppercode">&lt;!--Image cropper css--&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static &apos;asset/css/image-cropper.css&apos; &percnt;&rcub;&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static 'documentation/assets/css/image-cropper.css&quot;&gt;
 &lt;!--Cropper jquery--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/image-cropper/cropper.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/image-cropper/cropper-main.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/image-cropper/cropper.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/image-cropper/cropper-main.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -589,9 +557,9 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#stickycode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="stickycode">&lt;!-- sticky css --&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static &apos;asset/css/sticky.css&apos; &percnt;&rcub;&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static 'documentation/assets/css/sticky.css&quot;&gt;
 &lt;!--Sticky note js--&gt;
-&lt;script src=&apos;&lcub;&percnt; static &apos;asset/js/sticky/sticky.js&apos;&gt;&lt;/script&gt;</code></pre>
+&lt;script src=&apos;{% static 'documentation/assets/js/sticky/sticky.js&apos;&gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -604,7 +572,7 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                         <h5>Animations</h5>
                         <ul class="nav nav-tabs" id="myTab6" role="tablist">
                           <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#animate" role="tab" aria-selected="true" data-original-title="" title="">Animate</a></li>
-                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#scroll-reveal" role="tab" aria-selected="false" data-original-title="" title="">Scroll Reveal</a></li>
+                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#scroll-reveal" role="tab" aria-selected="false" data-original-title="" title="">scroll reveal</a></li>
                           <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#aos" role="tab" aria-selected="false" data-original-title="" title="">AOS</a></li>
                           <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tilt" role="tab" aria-selected="false" data-original-title="" title="">Tilt</a></li>
                           <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#wow" role="tab" aria-selected="true" data-original-title="" title="">Wow</a></li>
@@ -619,9 +587,9 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#animatecode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="animatecode">&lt;!-- animate custom js --&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/animation/animate-custom.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/animate-custom.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;
 &lt;!-- Animate icon --&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;&lcub;&percnt; static &apos;asset/css/animate.css&apos; &percnt;&rcub;&quot;&gt;</code></pre>
+&lt;link rel=&quot;stylesheet&quot; href=&quot;&lcub;&percnt; static 'documentation/assets/css/animate.css&quot;&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -631,8 +599,8 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#scrollrevealcode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="scrollrevealcode">&lt;!-- Scroll Reveal jquery--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/animation/scroll-reveal/scrollreveal.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/modernizr.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/scroll-reveal/scrollreveal.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/modernizr.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -642,11 +610,11 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#aoscode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="aoscode">&lt;!-- AOS icon --&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static &apos;asset/css/aos.css&apos; &percnt;&rcub;&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static 'documentation/assets/css/aos/aos.css&quot;&gt;
 &lt;!-- AOS js--&gt;
-&lt;script src=&apos;&lcub;&percnt; static &apos;asset/js/isotope.pkgd.js&apos;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/animation/aos/aos.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/animation/aos/aos-init.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
+&lt;script src=&apos;{% static 'documentation/assets/js/isotope.pkgd.js&apos;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/aos/aos.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/aos/aos-init.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -656,8 +624,8 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#tiltcode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="tiltcode">&lt;!-- Tilt js--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/animation/tilt/tilt.jquery.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/animation/tilt/tilt-custom.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/tilt/tilt.jquery.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/tilt/tilt-custom.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -667,8 +635,8 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#wowcode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="wowcode">&lt;!-- WOW js--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/wow/wow.min.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/wow/wow-init.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/wow/wow.min.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/wow/wow-init.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -690,7 +658,7 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                         <hr class="hr">
                         <h5 class="my-4">Forms</h5>
                         <ul class="nav nav-tabs" id="myTab7" role="tablist">
-                          <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#form-validation" role="tab" aria-selected="true" data-original-title="" title="">Form-Validation</a></li>
+                          <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#form-validation" role="tab" aria-selected="true" data-original-title="" title="">form-validation</a></li>
                         </ul>
                         <div class="tab-content" id="myTabContent7">
                           <div class="tab-pane fade show active" id="form-validation" role="tabpanel">
@@ -698,7 +666,7 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                             <div class="mb-4">
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#formvalidationcode" title="Copy"><i class="fa fa-files-o"></i></button>
-                                <pre><code class="language-html" id="formvalidationcode">&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/form-validation-custom.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
+                                <pre><code class="language-html" id="formvalidationcode">&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/form-validation-custom.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -710,11 +678,11 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                         <hr>
                         <h5>Tables</h5>
                         <ul class="nav nav-tabs" id="myTab8" role="tablist">
-                          <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#bootstrap-tables" role="tab" aria-selected="true" data-original-title="" title="">Bootstrap Tables</a></li>
-                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#data-tables" role="tab" aria-selected="true" data-original-title="" title="">Data Tables</a></li>
+                          <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#bootstrap-tables" role="tab" aria-selected="true" data-original-title="" title="">Bootstrap tables</a></li>
+                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#data-tables" role="tab" aria-selected="true" data-original-title="" title="">Data tables</a></li>
                           <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#extension-data-tables" role="tab" aria-selected="true" data-original-title="" title="">
-                              Extension Data
-                              Tables</a></li>
+                              extension data
+                              tables</a></li>
                         </ul>
                         <div class="tab-content" id="myTabContent8">
                           <div class="tab-pane fade show active" id="bootstrap-tables" role="tabpanel">
@@ -843,8 +811,8 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                             <div class="mb-4">
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#datatablecode" title="Copy"><i class="fa fa-files-o"></i></button>
-                                <pre><code class="language-html" id="datatablecode">&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/datatable/datatables/jquery.dataTables.min.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/datatable/datatables/datatable.custom.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
+                                <pre><code class="language-html" id="datatablecode">&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/datatable/datatables/jquery.dataTables.min.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/datatable/datatable/datatables/datatable.custom.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -854,23 +822,23 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#jsgridcode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="jsgridcode">&lt;!--JSGrid css--&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static &apos;asset/css/datatables.css&apos; &percnt;&rcub;&quot; /&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static &apos;asset/css/datatable-extension.css&apos; &percnt;&rcub;&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static 'documentation/assets/css/datatables.css&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static 'documentation/assets/css/datatable-extension.css&quot;&gt;
 &lt;!--Datatable extension js--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/datatable/datatables/jquery.dataTables.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/datatable/datatable-extension/dataTables.buttons.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/datatable/datatable-extension/jszip.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/datatable/datatable-extension/pdfmake.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/datatable/datatable-extension/vfs_fonts.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/datatable/datatable-extension/dataTables.autoFill.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/datatable/datatable-extension/dataTables.select.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/datatable/datatable-extension/buttons.print.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/datatable/datatable-extension/buttons.html5.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/datatable/datatable-extension/dataTables.bootstrap4.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/datatable/datatable-extension/dataTables.responsive.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/datatable/datatable-extension/responsive.bootstrap4.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/datatable/datatable-extension/dataTables.keyTable.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/datatable/datatable-extension/custom.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/datatables/jquery.dataTables.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/datatable-extension/dataTables.buttons.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/datatable-extension/jszip.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/datatable-extension/pdfmake.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/datatable-extension/vfs_fonts.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/datatable-extension/dataTables.autoFill.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/datatable-extension/dataTables.select.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/datatable-extension/buttons.print.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/datatable-extension/buttons.html5.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/datatable-extension/dataTables.bootstrap4.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/datatable-extension/dataTables.responsive.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/datatable-extension/responsive.bootstrap4.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/datatable-extension/dataTables.keyTable.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/datatable-extension/custom.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -918,9 +886,9 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#dragcode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="dragcode">&lt;!--Sortable JS--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/jquery.ui.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/dragable/sortable.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/dragable/sortable-custom.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/dragable/jquery.ui.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/dragable/sortable.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/dragable/sortable-custom.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -967,8 +935,8 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#timelinecode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="timelinecode">&lt;!-- Timeline js--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/timeline/timeline-v-1/main.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/modernizr.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/timeline-v-1/main.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/modernizr.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -978,8 +946,8 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#timelinecode2" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="timelinecode2">&lt;!-- Timeline js--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/timeline/timeline-v-2/jquery.timeliny.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/timeline-v-2/timeline-v-2-custom.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/timeline-v-2/jquery.timeliny.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/timeline-v-2/timeline-v-2-custom.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -992,8 +960,8 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                         <h5>Charts</h5>
                         <ul class="nav nav-tabs" id="myTab11" role="tablist">
                           <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#chart-google" role="tab" aria-selected="true" data-original-title="" title="">Google Charts</a></li>
-                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#chart-sparkline" role="tab" aria-selected="true" data-original-title="" title="">Sparkline Charts</a></li>
-                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#chart-flot" role="tab" aria-selected="true" data-original-title="" title="">Flot Charts</a></li>
+                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#chart-sparkline" role="tab" aria-selected="true" data-original-title="" title="">sparkline charts</a></li>
+                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#chart-flot" role="tab" aria-selected="true" data-original-title="" title="">Flot charts</a></li>
                           <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#chart-peity" role="tab" aria-selected="true" data-original-title="" title="">Peity Charts</a></li>
                         </ul>
                         <div class="tab-content" id="myTabContent11">
@@ -1003,8 +971,8 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#googlecode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="googlecode">&lt;!-- google Chart JS--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/chart/google/google-chart-loader.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/chart/google/google-chart.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/google/google-chart-loader.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/google/google-chart.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -1014,8 +982,8 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#sparklinecode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="sparklinecode">&lt;!--Sparkline Chart JS--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/chart/sparkline/sparkline.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/chart/sparkline/sparkline-script.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/sparkline/sparkline.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/sparkline/sparkline-script.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -1025,15 +993,15 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#flotcode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="flotcode">&lt;!-- flot Chart JS--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/chart/flot-chart/excanvas.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/chart/flot-chart/jquery.flot.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/chart/flot-chart/jquery.flot.time.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/chart/flot-chart/jquery.flot.symbol.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/chart/flot-chart/jquery.flot.categories.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/chart/flot-chart/jquery.flot.stack.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/chart/flot-chart/flot-script.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/chart/flot-chart/jquery.flot.pie.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/chart/flot-chart/jquery.flot.symbol.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/flot-chart/excanvas.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/flot-chart/jquery.flot.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/flot-chart/jquery.flot.time.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/flot-chart/jquery.flot.symbol.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/flot-chart/jquery.flot.categories.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/flot-chart/jquery.flot.stack.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/flot-chart/flot-script.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/flot-chart/jquery.flot.pie.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/flot-chart/jquery.flot.symbol.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -1043,17 +1011,17 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#peitycode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="peitycode">&lt;!--Sparkline Chart JS--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/chart/peity-chart/peity.jquery.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/chart/peity-chart/peity-custom.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/peity-chart/peity.jquery.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/peity-chart/peity-custom.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
                         </div>
                         <ul class="nav nav-tabs m-t-45" id="myTab12" role="tablist">
-                          <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#chart-morris" role="tab" aria-selected="true" data-original-title="" title="">Morris Charts</a></li>
-                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#chart-chatjs" role="tab" aria-selected="true" data-original-title="" title="">Chartjs Charts</a></li>
-                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#chart-chartlist" role="tab" aria-selected="true" data-original-title="" title="">Chartist Charts</a></li>
-                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#chart-knob" role="tab" aria-selected="true" data-original-title="" title="">Knob Charts</a></li>
+                          <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#chart-morris" role="tab" aria-selected="true" data-original-title="" title="">morris Charts</a></li>
+                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#chart-chatjs" role="tab" aria-selected="true" data-original-title="" title="">Chatjs charts</a></li>
+                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#chart-chartlist" role="tab" aria-selected="true" data-original-title="" title="">Chartist charts</a></li>
+                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#chart-knob" role="tab" aria-selected="true" data-original-title="" title="">Knob charts</a></li>
                         </ul>
                         <div class="tab-content" id="myTabContent12">
                           <div class="tab-pane fade show active" id="chart-morris" role="tabpanel">
@@ -1062,10 +1030,10 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#morriscode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="morriscode">&lt;!-- Morris Chart JS--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/chart/morris-chart/raphael.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/chart/morris-chart/morris.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/chart/morris-chart/prettify.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/chart/morris-chart/morris-script.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/morris-chart/raphael.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/morris-chart/morris.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/morris-chart/prettify.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/morris-chart/morris-script.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -1075,8 +1043,8 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#chartjscode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="chartjscode">&lt;!-- Chart JS--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/chart/chartjs/chart.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/chart/chartjs/chart.custom.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/chartjs/Chart.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/chartjs/chart.custom.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -1086,10 +1054,10 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#chartist" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="chartist">&lt;!-- Chartist --&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static &apos;asset/css/chartist.css&apos; &percnt;&rcub;&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static 'documentation/assets/css/chartist.css&quot;&gt;
 &lt;!-- Chartist --&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/chart/chartist/chartist.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/chart/chartist/chartist-custom.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/chartist/chartist.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/chartist/chartist-custom.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -1099,14 +1067,15 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#knobcode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="knobcode">&lt;!--Knob Chart JS--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/chart/knob/knob.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/chart/knob/knob-chart.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/knob/knob.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/knob/knob-chart.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
                         </div>
                         <ul class="nav nav-tabs m-t-45" id="myTab15" role="tablist">
                           <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#chart-apex" role="tab" aria-selected="true" data-original-title="" title="">Apex Charts</a></li>
+                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#chart-echart" role="tab" aria-selected="true" data-original-title="" title="">Echarts</a></li>
                         </ul>
                         <div class="tab-content" id="myTabContent15">
                           <div class="tab-pane fade show active" id="chart-apex" role="tabpanel">
@@ -1115,9 +1084,27 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#apexcode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="apexcode">&lt;!-- Apex Chart JS--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/chart/apex-chart/apex-chart.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/chart/apex-chart/stock-prices.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/chart/apex-chart/chart-custom.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/apex-chart/apex-chart.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/apex-chart/stock-prices.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/apex-chart/chart-custom.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="chart-echart" role="tabpanel">
+                            <h6 class="pt-4 pb-2">To use css and java script you have to add the following style and script tag</h6>
+                            <div class="mb-4">
+                              <div class="code-box-copy">
+                                <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#echartcode" title="Copy"><i class="fa fa-files-o"></i></button>
+                                <pre><code class="language-html" id="echartcode">&lt;!-- Echart css --&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static 'documentation/assets/css/vendors/echart.css&quot;&gt;
+&lt;!-- Echart JS--&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/echart/esl.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/echart/config.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/echart/pie-chart/facePrint.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/echart/pie-chart/testHelper.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/echart/pie-chart/custom-transition-texture.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/echart/data/symbols.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/chart/echart/custom.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -1130,7 +1117,7 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                         <h5>Maps</h5>
                         <ul class="nav nav-tabs" id="myTab13" role="tablist">
                           <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#g-map" role="tab" aria-selected="true" data-original-title="" title="">Map Js</a></li>
-                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#vector-map" role="tab" aria-selected="true" data-original-title="" title="">Vector Map</a></li>
+                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#vector-map" role="tab" aria-selected="true" data-original-title="" title="">Vector map</a></li>
                         </ul>
                         <div class="tab-content" id="myTabContent13">
                           <div class="tab-pane fade show active" id="g-map" role="tabpanel">
@@ -1139,12 +1126,12 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#mapcode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="mapcode">&lt;!--Map css--&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static &apos;asset/css/mapsjs-ui.css&apos; &percnt;&rcub;&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static 'documentation/assets/css/mapsjs-ui.css&quot;&gt;
 &lt;!-- Map js--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/map-js/mapsjs-core.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/map-js/mapsjs-service.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/map-js/mapsjs-ui.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/map-js/mapsjs-mapevents.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/map-js/mapsjs-core.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/map-js/mapsjs-service.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/map-js/mapsjs-ui.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/map-js/mapsjs-mapevents.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -1154,17 +1141,17 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#vectorcode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="vectorcode">&lt;!--Vector Map css--&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static &apos;asset/css/vector-map.css&apos; &percnt;&rcub;&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static 'documentation/assets/css/vector-map.css&quot;&gt;
 &lt;!--vector map js--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/vector-map/jquery-jvectormap-2.0.2.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/vector-map/map/jquery-jvectormap-world-mill-en.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/vector-map/map/jquery-jvectormap-us-aea-en.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/vector-map/map/jquery-jvectormap-uk-mill-en.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/vector-map/map/jquery-jvectormap-au-mill.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/vector-map/map/jquery-jvectormap-chicago-mill-en.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/vector-map/map/jquery-jvectormap-in-mill.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/vector-map/map/jquery-jvectormap-asia-mill.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/vector-map/map-vector.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/vector-map/jquery-jvectormap-2.0.2.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/vector-map/map/jquery-jvectormap-world-mill-en.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/vector-map/map/jquery-jvectormap-us-aea-en.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/vector-map/map/jquery-jvectormap-uk-mill-en.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/vector-map/map/jquery-jvectormap-au-mill.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/vector-map/map/jquery-jvectormap-chicago-mill-en.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/vector-map/map/jquery-jvectormap-in-mill.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/vector-map/map/jquery-jvectormap-asia-mill.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/vector-map/map-vector.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -1176,9 +1163,9 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                         <hr>
                         <h5>Editors</h5>
                         <ul class="nav nav-tabs" id="myTab14" role="tablist">
-                          <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#summer-note" role="tab" aria-selected="true" data-original-title="" title="">Summer Note</a></li>
+                          <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#summer-note" role="tab" aria-selected="true" data-original-title="" title="">Summer note</a></li>
                           <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#ckeditor" role="tab" aria-selected="true" data-original-title="" title="">Ckeditor</a></li>
-                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#simple-mde" role="tab" aria-selected="true" data-original-title="" title="">Simple MDE</a></li>
+                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#simple-mde" role="tab" aria-selected="true" data-original-title="" title="">Simple Mde</a></li>
                           <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#ace-code" role="tab" aria-selected="true" data-original-title="" title="">Ace Code</a></li>
                         </ul>
                         <div class="tab-content" id="myTabContent14">
@@ -1188,10 +1175,10 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#summercode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="summercode">&lt;!-- Summernote css --&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;&lcub;&percnt; static &apos;asset/css/summernote.css&apos; &percnt;&rcub;&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;&lcub;&percnt; static 'documentation/assets/css/summernote.css&quot;&gt;
 &lt;!--Summer-note js--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/editor/summernote/summernote.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/editor/summernote/summernote.custom.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/summernote/summernote.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/summernote/summernote.custom.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -1201,10 +1188,10 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#ckcode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="ckcode">&lt;!--ckeditor js--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/editor/ckeditor/ckeditor.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/editor/ckeditor/styles.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/editor/ckeditor/adapters/jquery.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/editor/ckeditor/ckeditor.custom.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/ckeditor/ckeditor.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/ckeditor/styles.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/ckeditor/adapters/jquery.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/ckeditor/ckeditor.custom.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -1214,10 +1201,10 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#mdecode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="mdecode">&lt;!-- Simple-MDE css --&gt;
-&lt;link rel=&quot;stylesheet prefetch&quot; href=&quot;&lcub;&percnt; static &apos;asset/css/simple-mde.css&apos; &percnt;&rcub;&quot;&gt;
+&lt;link rel=&quot;stylesheet prefetch&quot; href=&quot;&lcub;&percnt; static 'documentation/assets/css/simple-mde.css&quot;&gt;
 &lt;!-- Simple MDE editor jquery--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/simple-mde/simplemde.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/simple-mde/simplemde.custom.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/simple-mde/simplemde.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/simple-mde/simplemde.custom.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -1227,8 +1214,8 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#acecode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="acecode">&lt;!--ace code editor js--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/ace-editor/ace.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;asset/js/ace-editor/ace-custom.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/ace-editor/ace.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/ace-editor/ace-custom.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -1256,8 +1243,8 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
                           <li class="nav-item"><a class="nav-link" href="#section-1-7" data-original-title="" title=""><i class="fa fa-angle-right"></i>                                Cards</a></li>
                           <li class="nav-item"><a class="nav-link" href="#section-1-8" data-original-title="" title=""><i class="fa fa-angle-right"></i>                                Timeline</a></li>
                           <li class="nav-item"><a class="nav-link" href="#section-1-9" data-original-title="" title=""><i class="fa fa-angle-right"></i>                                Charts</a></li>
-                          <li class="nav-item"><a class="nav-link" href="#section-1-10" data-original-title="" title=""><i class="fa fa-angle-right"></i>                                Maps</a></li>
-                          <li class="nav-item"><a class="nav-link" href="#section-1-11" data-original-title="" title=""><i class="fa fa-angle-right"></i>                                Editors</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#section-1-10" data-original-title="" title=""><i class="fa fa-angle-right"></i>                                maps</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#section-1-11" data-original-title="" title=""><i class="fa fa-angle-right"></i>                                Editors   </a></li>
                         </ul>
                       </li>
                     </ul>

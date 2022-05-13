@@ -85,26 +85,80 @@
                         </div>
                       </div>
                     </div>
-                    {% comment %} <div class="card gulp-section">
+                    <div class="card gulp-section">
                       <div class="card-header">
-                        <h4 class="mb-0">Gulp Tasks</h4>
+                        <h4 class="mb-0">Setting Up Django</h4>
+                      </div>
+                      <div class="card-header">
+                        <h5 class="mb-0">For Windows:</h5>
                       </div>
                       <div class="card-body p-t-0">
-                        <p>First, you must download and install node.js. NPM stands for node packaged modules and is a way to manage development dependencies through Node.js.</p>
-                        <p>Download the Node.js source code or a pre-built installer for your platform, and start developing, you can download it from <a href="#">anodejs.org.</a></p>
-                        <p>You can check it in your terminal window using these commands node --version and npm --version.</p>
-                        <p><a href="#">GulpJS </a>is a toolkit for automating painful or time-consuming tasks in your development workflow, so you can stop messing around and build something.
-                          <ul>
-                            <li>Navigate to the root main/directory,default</li>
-                            <li>Then use $ npm i command (install node js)</li>
-                            <li>$ gulp command (for run project)</li>
-                          </ul>
+                        
+                        
+                        <h6>Install python</h6>
+                        <p>- Django is a Python web framework, thus requiring Python to be installed on your machine. </p>
+                        <p>To install Python on your machine go to <a href="https://python.org/download/">https://python.org/download/</a>, and download a Windows MSI installer for Python. Once downloaded, run the MSI installer and follow the on-screen instructions.
+
                         </p>
-                        <p>NPM use the package.json file and automatically install the required local dependencies listed in it.</p>
-                        <p>dependencies are<strong>: gulp, browser-sync, gulp-autoprefixer, gulp-livereload, gulp-pug, gulp-sass, livereload</strong></p>
-                        <We>have added all necessary gulp task in gulpfile.js, for more details about plugin refer this link <a href="https://gulpjs.com/plugins/">https://gulpjs.com/plugins/</a></We>
+                        <p>After installation, open the command prompt and check the Python version by executing <strong>python --version</strong>. If you encounter a problem, make sure you have set the <strong> PATH </strong>variable correctly. You might need to adjust your <strong> PATH</strong> environment variable to include paths to the Python executable and additional scripts. For example, if your Python is installed in <strong> C:\Python34\, </strong> the following paths need to be added to <strong> PATH:</strong></p>
+                        <div class="code-box-copy mb-4">
+                          <pre><code class="language-html" id="popoverjs">C:\Python34\;C:\Python34\Scripts;</code></pre>
+                        </div>
+                        <h6>Install pip</h6>
+
+                        <p>PIP is a package manager for Python that uses the Python Package Index to install Python packages. PIP will later be used to install Django from PyPI. If you’ve installed Python 3.4, pip is included so you may skip this section.</p>
+
+                         <p> Open a command prompt and execute <strong>easy_install pip</strong>. This will install pip on your system. This command will work if you have successfully installed Setuptools.</p>
+                          
+                         <p> Alternatively, go to <a href="http://www.pip-installer.org/en/latest/installing.html">http://www.pip-installer.org/en/latest/installing.html</a> for installing/upgrading instructions.</p>
+                        
+                        
+                        
+                        <h6 class="mt-3">Install Django</h6>
+                        <p>Django can be installed easily using <strong> pip.</strong></p>
+                        <p>In the command prompt, execute the following command: <strong> pip install django </strong>. This will download and install Django.</p>
+                          <p>After the installation has completed, you can verify your Django installation by executing <strong> django-admin --version </strong> in the command prompt.</p>
+
+                          <div class="card-header">
+                            <h5 class="mb-0">For Linux:</h5>
+                          </div>
+                          
+                          <p>If you have launched a new server,Then we recommend to update the server with below command</p>
+                          <div class="code-box-copy mb-4">
+                            <pre><code class="language-html" id="popoverjs">sudo apt-get update</code></pre>
+                          </div>
+
+                          <h6>Install python</h6>
+
+                          <p>By default, Python 3 is installed on your, but if your system doesn’t have Python installed, Execute the below commands to install it</p>
+                          <div class="code-box-copy mb-4">
+                            <pre><code class="language-html" id="popoverjs">sudo apt-get install python3</code></pre>
+                          </div>
+
+                          <p>To check the version</p>
+                          <div class="code-box-copy mb-4">
+                            <pre><code class="language-html" id="popoverjs">$ python3 -V</code></pre>
+                          </div>
+
+                          <h6>Install pip</h6>
+                          <p>To install pip,Use below command</p>
+                          <div class="code-box-copy mb-4">
+                            <pre><code class="language-html" id="popoverjs">sudo apt-get install python3-pip</code></pre>
+                          </div>
+                          
+                          <h6>Install Django</h6>
+                          <p>You can also use pip to install Django on Ubuntu systems</p>
+                          <div class="code-box-copy mb-4">
+                            <pre><code class="language-html" id="popoverjs">pip3 install Django</code></pre>
+                          </div>
+                          <div class="mb-6">
+                          <h4>Finally</h4>
+                          <h6>Now that you have installed django successfully, open you command prompt or terminal, navigate to the project directory where manage.py file is present.</h6>
+                          <h6>Now use "<strong>python manage.py runserver</strong>" command to run the local server.</h6>
+                          <h6>You can now open the website in you browser on the default link <a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a></h6>
+                        </div>
+                        </div>
                       </div>
-                    </div> {% endcomment %}
                     <div class="card new-arrival-sec">
                       <div class="card-header">
                         <h4 class="mb-0">What's Next?</h4>

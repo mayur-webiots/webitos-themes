@@ -1,5 +1,4 @@
 {% load static %}
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -34,43 +33,14 @@
     <!-- page-wrapper Start-->
     <div class="page-wrapper compact-wrapper">
       <div>
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid custom-container">
-            <div class="row w-100">
-              <div class="col-md-3 col-4"><a class="navbar-brand" href="{% url 'documentation_index' %}">                   <img src="{% static 'documentation/assets/images/logo/logo.png' %}" alt=""></a></div>
-              <div class="col-lg-6 col-2"> 
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars">   </i></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav menu">
-                    <li class="nav-item active"><a class="nav-link" href="https://1.envato.market/3GVzd" role="button" aria-haspopup="true" aria-expanded="false" target="_blank">Purchase</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://pixelstrap.freshdesk.com/" role="button" aria-haspopup="true" aria-expanded="false" target="_blank">Support</a></li>
-                    <li class="nav-item"><a class="nav-link" href="http://admin.pixelstrap.com/zeta/theme/landing-page.html" role="button" aria-haspopup="true" aria-expanded="false" target="_blank">Demo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="http://admin.pixelstrap.com/zeta/theme/landing-page.html#framework" role="button" aria-haspopup="true" aria-expanded="false" target="_blank">Feature              </a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-3 col-6">
-                <ul class="nav-right">
-                  <li>
-                    <div class="d-lg-none d-block"><a class="toggle-sidebar" href="#"><i class="fa fa-sliders"></i></a></div>
-                  </li>
-                  <li>
-                    <div class="btn-group"><a class="decrease btn btn-doc" href="#" title="Decrease font size">A-</a><a class="reset btn btn-doc" href="#" title="Default font size">A</a><a class="increase btn btn-doc" href="#" title="Increase font size">A+</a></div>
-                  </li>
-                  <li><a class="btn btn-dark mode" href="#" title="Dark"><i class="fa fa-moon-o"></i><span>Dark
-                        <!-- Page Body Start--></span></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </nav>
+        {% include 'documentation/components/navbar.html' %}
       </div>
       <div class="body-wrapper sticky_menu">
         <section class="document-area" id="sticky-page">
           <div class="overlay_bg"></div>
           <div class="container-fluid custom-container">
             <div class="row doc-container">
-              {% include "documentation/components/sidebar.html" %}
+              {% include 'documentation/components/sidebar.html' %}
               <div class="col-lg-9 content">
                 <div class="row">
                   <div class="col-sm-12">
@@ -80,13 +50,13 @@
                     <div class="card getting-started-sec">
                       <div class="card-body p-0">
                         <div class="alert-box alert alert-primary mb-0">
-                          <p class="mt-0">Zeta Admin is a responsive HTML template that is based on the CSS framework Bootstrap 5 and it is built with Sass and django template language.Django template Language eliminates the repetation of code and makes it easier to customize.  If you are unfamiliar with Bootstrap, visit their website and read through the documentation. All of Bootstrap components have been modified to fit the style of Zeta Admin and provide a consistent look throughout the template.</p>
+                          <p class="mt-0">Wingo Admin is a responsive HTML template that is based on the CSS framework Bootstrap 5 and it is built with Sass, Gulp and Pug. Sass compiler makes it easier to code and customize. If you are unfamiliar with Bootstrap or Gulp, visit their website and read through the documentation. All of Bootstrap components have been modified to fit the style of Wingo Admin and provide a consistent look throughout the template.</p>
                           <hr>
                           <p>Before you start working with the template, we suggest you go through the pages that are bundled with the theme. Most of the template example pages contain quick tips on how to create or use a component which can be really helpful when you need to create something on the fly.</p>
                         </div>
                       </div>
                     </div>
-                    {% comment %} <div class="card gulp-section">
+                    <div class="card gulp-section">
                       <div class="card-header">
                         <h4 class="mb-0">Gulp Tasks</h4>
                       </div>
@@ -105,7 +75,7 @@
                         <p>dependencies are<strong>: gulp, browser-sync, gulp-autoprefixer, gulp-livereload, gulp-pug, gulp-sass, livereload</strong></p>
                         <We>have added all necessary gulp task in gulpfile.js, for more details about plugin refer this link <a href="https://gulpjs.com/plugins/">https://gulpjs.com/plugins/</a></We>
                       </div>
-                    </div> {% endcomment %}
+                    </div>
                     <div class="card new-arrival-sec">
                       <div class="card-header">
                         <h4 class="mb-0">What's Next?</h4>
@@ -126,18 +96,6 @@
                         <div class="arrival-content-main"><a href="{% url 'documentation_app' %}">
                             <div class="arrival-content"><i class="fa fa-angle-double-right"></i>
                               <h5>Applications</h5>
-                            </div></a></div>
-                        <div class="arrival-content-main"><a href="{% url 'documentation_to_do' %}">
-                            <div class="arrival-content"><i class="fa fa-angle-double-right"></i>
-                              <h5>To-Do Application</h5>
-                            </div></a></div>
-                        <div class="arrival-content-main"><a href="{% url 'documentation_authentication' %}">
-                            <div class="arrival-content"><i class="fa fa-angle-double-right"></i>
-                              <h5>Authentication</h5>
-                            </div></a></div>
-                        <div class="arrival-content-main"><a href="{% url 'documentation_customizer' %}">
-                            <div class="arrival-content"><i class="fa fa-angle-double-right"></i>
-                              <h5>Customizer</h5>
                             </div></a></div>
                       </div>
                     </div>

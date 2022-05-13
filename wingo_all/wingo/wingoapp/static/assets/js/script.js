@@ -48,12 +48,21 @@
 $('.loader-wrapper').fadeOut('slow', function() {
     $(this).remove();
 });
+$(document).ready(function(){
+  document.body.classList.add(localStorage.getItem("body"));
 
+});
 $(".mode").on("click", function () {
     $('.mode i').toggleClass("fa-moon-o").toggleClass("fa-lightbulb-o");
     $('body').toggleClass("dark-only");
     var color = $(this).attr("data-attr");
-    localStorage.setItem('body', 'dark-only');
+    var darkInBody = document.body.classList.contains('dark-only');
+    if(darkInBody){
+      localStorage.setItem("body","dark-only");
+    }
+    else{
+      localStorage.setItem("body","");
+    }
 });
 
 

@@ -64,12 +64,12 @@
               <div class="checkbox">
                 <input id="checkbox1" type="checkbox">
                 <label class="text-muted" for="checkbox1">Remember password</label>
-              </div><a class="link" href="forget-password.html">Forgot password?</a>
+              </div><a class="link" href="{% url 'forget_password' %}">Forgot password?</a>
             </div>
             <div class="form-group">
               <button class="btn btn-primary btn-block" type="submit">Sign in</button>
             </div>
-            <p>Don't have account?<a class="ms-2" href="sign-up.html">Create Account</a></p>
+            <p>Don't have account?<a class="ms-2" href="{% url 'register_simple' %}">Create Account</a></p>
           </form>
         </div>
       </div>

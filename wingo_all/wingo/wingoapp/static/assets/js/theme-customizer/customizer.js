@@ -8,6 +8,8 @@ $('<div class="customizer-links"> <div class="nav flex-column nac-pills" id="c-p
 
 //live customizer js
 $(document).ready(function() {
+  document.body.classList.add(localStorage.getItem("layout"));
+
     $(".customizer-links").click(function(){
         $(".customizer-contain").addClass("open");
         $(".customizer-links").addClass("open");
@@ -72,6 +74,7 @@ $(document).ready(function() {
         $(".main-layout li").removeClass('active');
         $(this).addClass("active");
         var layout = $(this).attr("data-attr");
+        localStorage.setItem("layout",layout);
         $("body").attr("class", layout);
         $("html").attr("dir", layout);
     });
@@ -79,6 +82,7 @@ $(document).ready(function() {
         $(".main-layout .box-layout").removeClass('active');
         $(this).addClass("active");
         var layout = $(this).attr("data-attr");
+        localStorage.setItem("layout","box-layout");
         $("body").attr("class", "box-layout");
         $("html").attr("dir", layout);
     });

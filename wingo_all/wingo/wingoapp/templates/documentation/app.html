@@ -1,5 +1,4 @@
 {% load static %}
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -35,36 +34,7 @@
     <!-- page-wrapper Start-->
     <div class="page-wrapper compact-wrapper">
       <div>
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid custom-container">
-            <div class="row w-100">
-              <div class="col-md-3 col-4"><a class="navbar-brand" href="{% url 'documentation_index' %}">                   <img src="{% static 'documentation/assets/images/logo/logo.png' %}" alt=""></a></div>
-              <div class="col-lg-6 col-2"> 
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars">   </i></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav menu">
-                    <li class="nav-item active"><a class="nav-link" href="https://1.envato.market/3GVzd" role="button" aria-haspopup="true" aria-expanded="false" target="_blank">Purchase</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://pixelstrap.freshdesk.com/" role="button" aria-haspopup="true" aria-expanded="false" target="_blank">Support</a></li>
-                    <li class="nav-item"><a class="nav-link" href="http://admin.pixelstrap.com/zeta/theme/landing-page.html" role="button" aria-haspopup="true" aria-expanded="false" target="_blank">Demo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="http://admin.pixelstrap.com/zeta/theme/landing-page.html#framework" role="button" aria-haspopup="true" aria-expanded="false" target="_blank">Feature              </a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-3 col-6">
-                <ul class="nav-right">
-                  <li>
-                    <div class="d-lg-none d-block"><a class="toggle-sidebar" href="#"><i class="fa fa-sliders"></i></a></div>
-                  </li>
-                  <li>
-                    <div class="btn-group"><a class="decrease btn btn-doc" href="#" title="Decrease font size">A-</a><a class="reset btn btn-doc" href="#" title="Default font size">A</a><a class="increase btn btn-doc" href="#" title="Increase font size">A+</a></div>
-                  </li>
-                  <li><a class="btn btn-dark mode" href="#" title="Dark"><i class="fa fa-moon-o"></i><span>Dark
-                        <!-- Page Body Start--></span></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </nav>
+        {% include 'documentation/components/navbar.html' %}
       </div>
       <div class="body-wrapper sticky_menu">
         <section class="document-area" id="sticky-page">
@@ -72,7 +42,6 @@
           <div class="container-fluid custom-container">
             <div class="row doc-container">
               {% include 'documentation/components/sidebar.html' %}
-
               <div class="col-xxl-10 col-xl-9 content component-col">
                 <div id="section-5">
                   <div class="card">
@@ -82,8 +51,8 @@
                       <div id="section51">
                         <h5 class="mt-4">Users</h5>
                         <ul class="nav nav-tabs" id="myTab15" role="tablist">
-                          <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#users-profile" role="tab" aria-selected="true" data-original-title="" title="">Users Profile</a></li>
-                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#users-card" role="tab" aria-selected="false" data-original-title="" title="">Users Card</a></li>
+                          <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#users-profile" role="tab" aria-selected="true" data-original-title="" title="">Users profile</a></li>
+                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#users-card" role="tab" aria-selected="false" data-original-title="" title="">Users card</a></li>
                         </ul>
                         <div class="tab-content" id="myTabContent15">
                           <div class="tab-pane fade show active" id="users-profile" role="tabpanel">
@@ -117,17 +86,17 @@
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#calendercode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="calendercode">&lt;!-- calendar css --&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static &apos;assets/css/calendar.css&apos; &percnt;&rcub;&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lcub;&percnt; static 'documentation/assets/css/calendar.css&quot;&gt;
 &lt;!--Calendar js--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;assets/js/calendar/tui-code-snippet.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;assets/js/calendar/tui-time-picker.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;assets/js/calendar/tui-date-picker.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;assets/js/calendar/moment.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;assets/js/calendar/chance.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;assets/js/calendar/tui-calendar.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;assets/js/calendar/calendars.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;assets/js/calendar/schedules.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;assets/js/calendar/app.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/calendar/tui-code-snippet.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/calendar/tui-time-picker.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/calendar/tui-date-picker.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/calendar/moment.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/calendar/chance.min.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/calendar/tui-calendar.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/calendar/calendars.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/calendar/schedules.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/calendar/app.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
@@ -139,14 +108,14 @@
                         <hr>
                         <h5>Gallery</h5>
                         <ul class="nav nav-tabs" id="myTab17" role="tablist">
-                          <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#gallery-desk" role="tab" aria-selected="false" data-original-title="" title="">Gallery With Desc</a></li>
-                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#Massonry" role="tab" aria-selected="false" data-original-title="" title="">Masonry Gallery</a></li>
-                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#Masonry-desk" role="tab" aria-selected="false" data-original-title="" title="">Masonry Gallery Desc</a></li>
+                          <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#gallery-desk" role="tab" aria-selected="false" data-original-title="" title="">Gallery with desc</a></li>
+                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#Massonry" role="tab" aria-selected="false" data-original-title="" title="">Masonry gallery</a></li>
+                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#Masonry-desk" role="tab" aria-selected="false" data-original-title="" title="">Masonry gallery desc</a></li>
                           <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#hover-effects" role="tab" aria-selected="true" data-original-title="" title="">Hover Effects</a></li>
                         </ul>
                         <div class="tab-content" id="myTabContent17">
                           <div class="tab-pane fade show active" id="gallery-desk" role="tabpanel">
-                            <h6 class="pt-4 pb-2">For this you have to add the same css and js which are used for grid gallery</h6>
+                            <h6 class="pt-4 pb-2">for this you have to add the same css and js which are used for grid gallery</h6>
                           </div>
                           <div class="tab-pane fade" id="Massonry" role="tabpanel">
                             <h6 class="pt-4 pb-2">To use java script you have to add the grid gallery js also following script tag</h6>
@@ -154,12 +123,12 @@
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#masonrycode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="masonrycode">&lt;!--Masonry gallery js--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;assets/js/masonry-gallery.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/masonry-gallery.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
                           <div class="tab-pane fade" id="Masonry-desk" role="tabpanel">
-                            <h6 class="pt-4 pb-2">For this you have to add the same css and js which are used for masonry gallery</h6>
+                            <h6 class="pt-4 pb-2">for this you have to add the same css and js which are used for masonry gallery</h6>
                           </div>
                           <div class="tab-pane fade" id="hover-effects" role="tabpanel">
                             <h6 class="pt-4 pb-2">You don&apos;t need to add any additional css or js for the gallery hover page</h6>
@@ -182,12 +151,12 @@
                               <div class="code-box-copy">
                                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#emailcode" title="Copy"><i class="fa fa-files-o"></i></button>
                                 <pre><code class="language-html" id="emailcode">&lt;!--Email js--&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;assets/js/email-app.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/email-app.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
                               </div>
                             </div>
                           </div>
                           <div class="tab-pane fade" id="email-compose" role="tabpanel">
-                            <h6 class="pt-4 pb-2">For this you have to add the same js which are used for Email application</h6>
+                            <h6 class="pt-4 pb-2">for this you have to add the same js which are used for Email application</h6>
                           </div>
                         </div>
                       </div>
@@ -212,7 +181,7 @@
                             <h6 class="pt-4 pb-2">To use java script you have to add the following script tag</h6>
                           </div>
                           <div class="tab-pane fade" id="video-chat" role="tabpanel">
-                            <h6 class="pt-4 pb-2">For this you don&apos;t need to add any additional css or js</h6>
+                            <h6 class="pt-4 pb-2">for this you don&apos;t need to add any additional css or js</h6>
                           </div>
                         </div>
                       </div>
@@ -225,7 +194,7 @@
                         <div class="mb-4">
                           <div class="code-box-copy">
                             <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#supportcode" title="Copy"><i class="fa fa-files-o"></i></button>
-                            <pre><code class="language-html" id="supportcode">&lt;script src=&quot;&lcub;&percnt; static &apos;assets/js/support-ticket-custom.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
+                            <pre><code class="language-html" id="supportcode">&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/support-ticket-custom.js&apos; &percnt;&rcub;&quot; &gt;&lt;/script&gt;</code></pre>
                           </div>
                         </div>
                       </div>
@@ -239,10 +208,9 @@
                           <div class="code-box-copy">
                             <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#todocode" title="Copy"><i class="fa fa-files-o"></i></button>
                             <pre><code class="language-html" id="todocode">&lt;!-- To-do js --&gt;
-&lt;script src=&quot;&lcub;&percnt; static &apos;assets/js/todo/todo.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;&lcub;&percnt; static 'documentation/assets/js/todo/todo.js&apos; &percnt;&rcub;&quot;&gt;&lt;/script&gt;</code></pre>
                           </div>
                         </div>
-                        
                       </div>
                     </div>
                     <div id="section59">
@@ -258,7 +226,7 @@
                         <h5 class="mt-0">Ecommerce</h5>
                         <ul class="nav nav-tabs" id="myTab20" role="tablist">
                           <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#product" role="tab" aria-selected="true" data-original-title="" title="">Product</a></li>
-                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#product-page" role="tab" aria-selected="false" data-original-title="" title="">Product Page</a></li>
+                          <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#product-page" role="tab" aria-selected="false" data-original-title="" title="">Product page</a></li>
                           <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#payment-product" role="tab" aria-selected="false" data-original-title="" title="">Product List</a></li>
                           <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#payment-details" role="tab" aria-selected="false" data-original-title="" title="">Payment Details</a></li>
                           <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#ordre-history" role="tab" aria-selected="false" data-original-title="" title="">Order History  </a></li>

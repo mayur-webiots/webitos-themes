@@ -826,47 +826,47 @@ def buttons(request):
 @login_required(login_url="/login")
 def apex_chart(request):
     context={"breadcrumb":{"Charts":"parent","child":"child"}}
-    return render(request,'charts/chart-apex.html',context)
+    return render(request,'charts/chart-apex/chart-apex.html',context)
 
 @login_required(login_url="/login")
 def google_chart(request):
     context={"breadcrumb":{"Charts":"parent","child":"Google Chart"}}
-    return render(request,'charts/chart-google.html',context)
+    return render(request,'charts/chart-google/chart-google.html',context)
 
 @login_required(login_url="/login")
 def sparkline_chart(request):
     context={"breadcrumb":{"Charts":"parent","child":"Spakline Chart"}}
-    return render(request,'charts/chart-sparkline.html',context)
+    return render(request,'charts/chart-sparkline/chart-sparkline.html',context)
 
 @login_required(login_url="/login")
 def flot_chart(request):
     context={"breadcrumb":{"Charts":"parent","child":"Flot Chart"}}
-    return render(request,'charts/chart-flot.html',context)
+    return render(request,'charts/chart-flot/chart-flot.html',context)
 
 @login_required(login_url="/login")
 def knob_chart(request):
     context={"breadcrumb":{"Charts":"parent","child":"Know Chart"}}
-    return render(request,'charts/chart-knob.html',context)
+    return render(request,'charts/chart-knob/chart-knob.html',context)
 
 @login_required(login_url="/login")
 def morris_chart(request):
     context={"breadcrumb":{"Charts":"parent","child":"Morris Chart"}}
-    return render(request,'charts/chart-morris.html',context)
+    return render(request,'charts/chart-morris/chart-morris.html',context)
 
 @login_required(login_url="/login")
 def chartjs(request):
     context={"breadcrumb":{"Charts":"parent","child":"ChartJS Chart"}}
-    return render(request,'charts/chartjs.html',context)
+    return render(request,'charts/chartjs/chartjs.html',context)
 
 @login_required(login_url="/login")
 def chartist(request):
     context={"breadcrumb":{"Charts":"parent","child":"Chartist Chart"}}
-    return render(request,'charts/chartist.html',context)
+    return render(request,'charts/chartist/chartist.html',context)
 
 @login_required(login_url="/login")
 def peity_chart(request):
     context={"breadcrumb":{"Charts":"parent","child":"Peity Chart"}}
-    return render(request,'charts/chart-peity.html',context)
+    return render(request,'charts/chart-peity/chart-peity.html',context)
 
 # landing page view
 

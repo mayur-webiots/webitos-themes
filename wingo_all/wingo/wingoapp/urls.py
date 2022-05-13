@@ -89,16 +89,17 @@ urlpatterns = [
     # to do path
 
     path('to_do',views.to_do,name='to_do'),
-    # path('to_do_database',views.to_do_database,name='to_do_database'),
-    # path('delete/<str:pk>/', views.deleteTask, name="delete"),
-    # path('updateTask/<str:pk>/', views.updateTask,name='updateTask'),
-    # path('markAllComplete/', views.markAllComplete, name='markAllComplete'),
-    # path('markAllIncomplete/', views.markAllIncomplete, name='markAllIncomplete'),
+    path('to_do_database',views.to_do_database,name='to_do_database'),
+    path('delete/<str:pk>/', views.deleteTask, name="delete"),
+    path('updateTask/<str:pk>/', views.updateTask,name='updateTask'),
+    path('markAllComplete/', views.markAllComplete, name='markAllComplete'),
+    path('markAllIncomplete/', views.markAllIncomplete, name='markAllIncomplete'),
+    
     # search website path
 
     path('search_website',views.search_website,name='search_website'),
 
-    # form path
+    # form paths
 
     path('form_form_validation',views.form_form_validation,name='form_form_validation'),
     path('form_base_inputs',views.form_base_inputs,name='form_base_inputs'),
@@ -384,9 +385,17 @@ urlpatterns = [
     path('documentation_layout_setting',views.documentation_layout_setting,name='documentation_layout_setting'),
     path('documentation_options',views.documentation_options,name='documentation_options'),
     path('documentation_tree',views.documentation_tree,name='documentation_tree'),
-    path('documentation_to_do',views.documentation_to_do,name='documentation_to_do'),
-    path('documentation_authentication',views.documentation_authentication,name='documentation_authentication'),
-    path('documentation_customizer',views.documentation_customizer,name='documentation_customizer'),
+
+    # django documentation paths
+
+    path('documentation_django_to_do',views.documentation_django_to_do,name='documentation_django_to_do'),
+    path('documentation_django_authentication',views.documentation_django_authentication,name='documentation_django_authentication'),
+    path('documentation_django_customizer',views.documentation_django_customizer,name='documentation_django_customizer'),
+    path('documentation_django_options',views.documentation_django_options,name='documentation_django_options'),
+    path('documentation_django_components',views.documentation_django_components,name='documentation_django_components'),
+    path('documentation_django_getting_started',views.documentation_django_getting_started,name='documentation_django_getting_started'),
+    path('documentation_django_tree',views.documentation_django_tree,name='documentation_django_tree'),
+    path('documentation_django_app',views.documentation_django_app,name='documentation_django_app'),
 
 
 

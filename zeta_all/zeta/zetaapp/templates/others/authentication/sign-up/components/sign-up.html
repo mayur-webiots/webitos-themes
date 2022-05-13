@@ -22,7 +22,10 @@
               <h6>Enter your personal details to create account</h6>
               {% csrf_token %}
                     {{ form }}
-                    <input type="submit" value="Signup">
+                    <div class="form-group">
+                      <button class="btn btn-primary btn-block" type="submit">Create Account</button>
+                    </div>
+                    {% comment %} <input type="submit" value="Signup"> {% endcomment %}
               {% comment %} <div class="form-group">
                 <label>Your Name</label>
                 <div class="small-group">
