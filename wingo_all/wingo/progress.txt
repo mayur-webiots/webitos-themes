@@ -15,9 +15,24 @@ problems:
 
 1. modal-animate.html file is empty.
 2. bonus_ui>tour : when expand picture there are no icons for closing.
+3. charts>apex chart: there is no radial bar chart at the bottom (even at in the uploaded html page)
+4. job_search>job_details: it is same page as job list view ,even in the live site( ??pasted job detiails page from zeta site. )
+
+minor :
+1. tables>datatables>plug-in ,last table,office column,no arrow for dropdown(in html template)
+
+templates from forms copied.
+
+
+starter kit modify.
+
+starterkit, documentation, authentication, to-do add task functionalities.
+
+after completing review and modify tovo and chatloop.
 
 
 
-
-
-continue from builder.
+12-05-2022:
+today's update:
+- completed building folder structure and extended all pages.
+- started working on starter kit.

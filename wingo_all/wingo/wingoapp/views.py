@@ -21,7 +21,7 @@ def dashboard_ecommerce(request):
 
 
 def dashboard_project(request):
-    context={"breadcrumb":{"parent":"Dashboard","child":"Crypto-Dashboard"}}
+    context={"breadcrumb":{"parent":"Dashboard","child":"project-Dashboard"}}
     return render(request,'general/dashboard/project/dashboard-03.html',context)
 
 # widgets pages
@@ -787,102 +787,102 @@ def wow_animation(request):
 
 def flag_icon(request):
     context={"breadcrumb":{"parent":"Icons","child":"Flag Icons"}}
-    return render(request,'icons/flag-icon.html',context)
+    return render(request,'icons/flag-icon/flag-icon.html',context)
 
 
 def fontawesome_icon(request):
     context={"breadcrumb":{"parent":"Icons","child":"Fontawesome Icons"}}
-    return render(request,'icons/font-awesome.html',context)
+    return render(request,'icons/font-awesome/font-awesome.html',context)
 
 
 def ico_icon(request):
     context={"breadcrumb":{"parent":"Icons","child":"ICO Icons"}}
-    return render(request,'icons/ico-icon.html',context)
+    return render(request,'icons/ico-icon/ico-icon.html',context)
 
 
 def thimify_icon(request):
     context={"breadcrumb":{"parent":"Icons","child":"Themify Icons"}}
-    return render(request,'icons/themify-icon.html',context)
+    return render(request,'icons/themify-icon/themify-icon.html',context)
 
 
 def feather_icon(request):
     context={"breadcrumb":{"parent":"Icons","child":"Feather Icons"}}
-    return render(request,'icons/feather-icon.html',context)
+    return render(request,'icons/feather-icon/feather-icon.html',context)
 
 
 def whether_icon(request):
     context={"breadcrumb":{"parent":"Icons","child":"Weather Icon"}}
-    return render(request,'icons/whether-icon.html',context)
+    return render(request,'icons/whether-icon/whether-icon.html',context)
 
 # buttons views
 
 
 def buttons(request):
     context={"breadcrumb":{"parent":"Buttons","child":"Default Style"}}
-    return render(request,'buttons/buttons.html',context)
+    return render(request,'buttons/buttons/buttons.html',context)
 
 def buttons_flat(request):
     context={"breadcrumb":{"parent":"Buttons","child":"Button-flat"}}
-    return render(request,'buttons/buttons-flat.html',context)
+    return render(request,'buttons/buttons-flat/buttons-flat.html',context)
 
 def buttons_edge(request):
     context={"breadcrumb":{"parent":"Buttons","child":"Button-Edge"}}
-    return render(request,'buttons/buttons-edge.html',context)
+    return render(request,'buttons/buttons-edge/buttons-edge.html',context)
 
 def raised_button(request):
     context={"breadcrumb":{"parent":"Buttons","child":"Raised-Buttons"}}
-    return render(request,'buttons/raised-button.html',context)
+    return render(request,'buttons/raised-button/raised-button.html',context)
 
 def button_group(request):
     context={"breadcrumb":{"parent":"Buttons","child":"Button-Group"}}
-    return render(request,'buttons/button-group.html',context)
+    return render(request,'buttons/button-group/button-group.html',context)
 
 # charts views
 
 
 def apex_chart(request):
-    context={"breadcrumb":{"Charts":"parent","child":"child"}}
-    return render(request,'charts/chart-apex.html',context)
+    context={"breadcrumb":{"parent":"charts","child":"Apex Chart"}}
+    return render(request,'charts/chart-apex/chart-apex.html',context)
 
 
 def google_chart(request):
-    context={"breadcrumb":{"Charts":"parent","child":"Google Chart"}}
-    return render(request,'charts/chart-google.html',context)
+    context={"breadcrumb":{"parent":"charts","child":"Google Chart"}}
+    return render(request,'charts/chart-google/chart-google.html',context)
 
 
 def sparkline_chart(request):
-    context={"breadcrumb":{"Charts":"parent","child":"Spakline Chart"}}
-    return render(request,'charts/chart-sparkline.html',context)
+    context={"breadcrumb":{"parent":"charts","child":"Spakline Chart"}}
+    return render(request,'charts/chart-sparkline/chart-sparkline.html',context)
 
 
 def flot_chart(request):
-    context={"breadcrumb":{"Charts":"parent","child":"Flot Chart"}}
-    return render(request,'charts/chart-flot.html',context)
+    context={"breadcrumb":{"parent":"charts","child":"Flot Chart"}}
+    return render(request,'charts/chart-flot/chart-flot.html',context)
 
 
 def knob_chart(request):
-    context={"breadcrumb":{"Charts":"parent","child":"Know Chart"}}
-    return render(request,'charts/chart-knob.html',context)
+    context={"breadcrumb":{"parent":"charts","child":"Know Chart"}}
+    return render(request,'charts/chart-knob/chart-knob.html',context)
 
 
 def morris_chart(request):
-    context={"breadcrumb":{"Charts":"parent","child":"Morris Chart"}}
-    return render(request,'charts/chart-morris.html',context)
+    context={"breadcrumb":{"parent":"charts","child":"Morris Chart"}}
+    return render(request,'charts/chart-morris/chart-morris.html',context)
 
 
 def chartjs(request):
-    context={"breadcrumb":{"Charts":"parent","child":"ChartJS Chart"}}
-    return render(request,'charts/chartjs.html',context)
+    context={"breadcrumb":{"parent":"charts","child":"ChartJS Chart"}}
+    return render(request,'charts/chartjs/chartjs.html',context)
 
 
 def chartist(request):
-    context={"breadcrumb":{"Charts":"parent","child":"Chartist Chart"}}
-    return render(request,'charts/chartist.html',context)
+    context={"breadcrumb":{"parent":"charts","child":"Chartist Chart"}}
+    return render(request,'charts/chartist/chartist.html',context)
 
 
 def peity_chart(request):
-    context={"breadcrumb":{"Charts":"parent","child":"Peity Chart"}}
-    return render(request,'charts/chart-peity.html',context)
+    context={"breadcrumb":{"parent":"charts","child":"Peity Chart"}}
+    return render(request,'charts/chart-peity/chart-peity.html',context)
 
 # landing page view
 
@@ -1064,7 +1064,7 @@ def coming_with_bg_image(request):
 
 def coming_with_bg_video(request):
     context={"breadcrumb":{"parent":"parent","child":"child"}}
-    return render(request,'others/coming_soon/comingsoon-bg-cideo/comingsoon-bg-video.html',context)
+    return render(request,'others/coming_soon/comingsoon-bg-video/comingsoon-bg-video.html',context)
 
     # email templates views
 
