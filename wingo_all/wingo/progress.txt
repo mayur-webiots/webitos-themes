@@ -24,11 +24,8 @@ minor :
 templates from forms copied.
 
 
-starter kit modify.
-
-starterkit, documentation, authentication, to-do add task functionalities.
-
-after completing review and modify tovo and chatloop.
+left:
+    documentation>getting-started intro modify.
 
 
 

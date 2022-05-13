@@ -1,3 +1,8 @@
 {
-    "salesforcedx-vscode-slds.enhancements.autoSuggest": false
+    "salesforcedx-vscode-slds.enhancements.autoSuggest": false,
+    "spellright.language": [],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex"
+    ]
 }

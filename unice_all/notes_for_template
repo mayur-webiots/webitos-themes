@@ -1,0 +1,15 @@
+	check every page before extending.
+
+	Blog page:
+		- all pages have same header and footer.
+		
+	blog page layouts:
+			(pages)> - faq
+				 -collection
+				 -typography
+				 - about us
+				 - team
+				 
+			(all element pages)
+			
+	

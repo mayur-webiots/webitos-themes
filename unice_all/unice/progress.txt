@@ -1,0 +1,10 @@
+continue creating views from blog>blog>masonry.
+
+13-05-2022:
+
+today's update:
+-completed starter-kit of wingo template
+- completed documentation of wingo template
+- added authentication in wingo template
+- added to-do functionality in wingo.
+- started working on unice template.
