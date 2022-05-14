@@ -58,7 +58,7 @@
         <div class="row">
             <div class="col">
                 <nav>
-                    <a class="d-inline-block m-r-auto" href="index.html"><img alt="" class="img-fluid"
+                    <a class="d-inline-block m-r-auto" href="{% url 'index' %}"><img alt="" class="img-fluid"
                                                                               src="{% static 'assets/images/logo/5.png' %}"></a>
                     <div class="responsive-btn"><a class="toggle-nav" href="#"><i aria-hidden="true"
                                                                                   class="fa fa-bars"></i></a></div>
@@ -69,19 +69,19 @@
                        <ul class="main-menu">
                             <li><a class="dropdown" href="#">home</a>
                                 <ul>
-                                    <li><a href="agency_layout.html">agency</a></li>
-                                    <li><a href="index.html">app landing 1</a></li>
-                                    <li><a href="app_landing_layout.html">app landing 2</a></li>
-                                    <li><a href="events_layout.html">event</a></li>
-                                    <li><a href="gym_layout.html">gym</a></li>
-                                    <li><a href="music_layout.html">music</a></li>
-                                    <li><a href="resume_layout.html">resume</a></li>
-                                    <li><a href="sass_modern_layout.html">saas1</a></li>
-                                    <li><a href="sass_layout.html">saas2</a></li>
-                                    <li><a href="wedding_layout.html">wedding</a></li>
-                                    <li><a href="yoga_layout.html">yoga</a></li>
-                                    <li><a href="ecommerce_layout.html">Ecommerce</a></li>
-                                    <li><a href="portfolio-metro.html">portfolio-metro</a></li>
+                                    <li><a href="{% url 'agency' %}">agency</a></li>
+                                    <li><a href="{% url 'index' %}">app landing 1</a></li>
+                                    <li><a href="{% url 'app_landing_2' %}">app landing 2</a></li>
+                                    <li><a href="{% url 'event' %}">event</a></li>
+                                    <li><a <a href="{% url 'gym' %}">gym</a></li>
+                                    <li><a <a href="{% url 'music' %}">music</a></li>
+                                    <li><a <a href="{% url 'resume' %}">resume</a></li>
+                                    <li><a <a href="{% url 'saas1' %}">saas1</a></li>
+                                    <li><a href="{% url 'saas2' %}">saas2</a></li>
+                                    <li><a href="{% url 'wedding' %}">wedding</a></li>
+                                    <li><a href="{% url 'yoga' %}">yoga</a></li>
+                                    <li><a href="{% url 'ecommerce' %}">Ecommerce</a></li>
+                                    <li><a href="{% url 'portfolio_metro' %}">portfolio-metro</a></li>
                                 </ul>
                             </li>
                             <li><a class="dropdown" href="#">blog</a>
@@ -89,68 +89,68 @@
 
                                     <li class="sub-menu"><a class="sub-menu-title" href="#">blog grid view</a>
                                         <ul>
-                                            <li><a href="blog-leftsidebar.html">left sidebar</a></li>
-                                            <li><a href="blog-rightsidebar.html">Right sidebar</a></li>
-                                            <li><a href="blog-nosidebar.html">No sidebar</a></li>
+                                            <li><a href="{% url 'left_sidebar' %}">left sidebar</a></li>
+                                            <li><a href="{% url 'right_sidebar' %}">Right sidebar</a></li>
+                                            <li><a href="{% url 'no_sidebar' %}">No sidebar</a></li>
 
-                                            <li><a href="blog-full-width-left-sidebar.html">full width left sidebar</a></li>
-                                            <li><a href="blog-full-width-right-sidebar.html">full width right sidebar</a></li>
-                                            <li><a href="blog-full-width-nosidebar.html">full width no sidebar</a></li>
+                                            <li><a href="{% url 'full_width_left__sidebar' %}">full width left sidebar</a></li>
+                                            <li><a href="{% url 'full_width_right_sidebar' %}">full width right sidebar</a></li>
+                                            <li><a href="{% url 'full_width_no_sidebar' %}">full width no sidebar</a></li>
                                         </ul>
                                     </li>
 
                                     <li class="sub-menu"><a class="sub-menu-title" href="#">blog List view</a>
                                         <ul>
 
-                                            <li><a href="blog-list-leftsidebar.html">Left sidebar</a></li>
-                                            <li><a href="blog-list-rightsidebar.html">Right sidebar</a></li>
-                                            <li><a href="blog-list-nosidebar.html">No sidebar</a></li>
+                                            <li><a href="{% url 'list_view_left_sidebar' %}">Left sidebar</a></li>
+                                            <li><a href="{% url 'list_view_right_sidebar' %}">Right sidebar</a></li>
+                                            <li><a href="{% url 'list_view_no_sidebar' %}">No sidebar</a></li>
 
                                         </ul>
                                     </li>
 
                                     <li class="sub-menu"><a class="sub-menu-title" href="#">blog List Creative</a>
                                         <ul>
-                                            <li><a href="blog-creative-left-sidebar.html">left sidebar</a>
+                                            <li><a href="{% url 'creative_left_sidebar' %}">left sidebar</a>
                                             </li>
-                                            <li><a href="blog-creative-right-sidebar.html">right sidebar</a>
+                                            <li><a href="{% url 'creative_right_sidebar' %}">right sidebar</a>
                                             </li>
-                                            <li><a href="blog-creative-no-sidebar.html">No sidebar</a>
+                                            <li><a href="{% url 'creative_no_sidebar' %}">No sidebar</a>
                                             </li>
                                         </ul>
                                     </li>
 
                                     <li class="sub-menu"><a class="sub-menu-title" href="#">blog mix layout</a>
                                         <ul>
-                                            <li><a href="blog-list-mix-left-sidebar.html">List mix with Left sidebar</a></li>
-                                            <li><a href="blog-list-mix-right-sidebar.html">List mix with right sidebar</a></li>
-                                            <li><a href="blog-list-mix-no-sidebar.html">List mix with no sidebar</a></li>
-                                            <li><a href="blog-list-full-width-no-sidebar.html">List full width no sidebar</a></li>
-                                            <li><a href="blog-grid-mix-with-right-sidebar.html">grid mix with right sidebar</a></li>
-                                            <li><a href="blog-list-post-full-width-no-sidebar.html">grid mix with no sidebar</a></li>
+                                            <li><a href="{% url 'list_mix_with_left_sidebar' %}">List mix with Left sidebar</a></li>
+                                            <li><a href="{% url 'list_mix_with_right_sidebar' %}">List mix with right sidebar</a></li>
+                                            <li><a href="{% url 'list_mix_with_no_sidebar' %}">List mix with no sidebar</a></li>
+                                            <li><a href="{% url 'list_full_width_no_sidebar' %}">List full width no sidebar</a></li>
+                                            <li><a href="{% url 'grid_mix_with_right_sidebar' %}">grid mix with right sidebar</a></li>
+                                            <li><a href="{% url 'grid_mix_with_no_sidebar' %}">grid mix with no sidebar</a></li>
                                         </ul>
                                     </li>
 
                                     <li class="sub-menu"><a class="sub-menu-title" href="#">blog details</a>
                                         <ul>
-                                            <li><a href="blog-detail-left-sidebar.html">Left sidebar</a></li>
-                                            <li><a href="blog-detail.html">Right sidebar</a></li>
-                                            <li><a href="blog-detail-no-sidebar.html">No sidebar</a></li>
-                                            <li><a href="blog-detail-gallery.html">gallery layout</a></li>
-                                            <li><a href="blog-detail-video.html">Video layout</a></li>
+                                            <li><a href="{% url 'details_left_sidebar' %}">Left sidebar</a></li>
+                                            <li><a href="{% url 'details_right_sidebar' %}">Right sidebar</a></li>
+                                            <li><a href="{% url 'details_no_sidebar' %}">No sidebar</a></li>
+                                            <li><a href="{% url 'details_gallery_layout' %}">gallery layout</a></li>
+                                            <li><a href="{% url 'details_video_layout' %}">Video layout</a></li>
                                         </ul>
                                     </li>
 
                                     <li class="sub-menu"><a class="sub-menu-title" href="#">blog masonry</a>
                                         <ul>
-                                            <li><a href="blog-masonry-left-side.html">2 columns</a></li>
-                                            <li><a href="blog-masonry-full-3-col.html">3 columns</a></li>
-                                            <li><a href="blog-masonry-full-4-col.html">4 columns</a></li>
-                                            <li><a href="blog-masonry-left-side.html">left columns</a></li>
-                                            <li><a href="blog-masonry-right-side.html">right sidebar</a></li>
-                                            <li><a href="blog-masonry-no-side.html"> no sidebar</a></li>
-                                            <li><a href="blog-list-full-width-no-sidebar.html">Grid list mix</a></li>
-                                            <li><a href="blog-list-mix-no-sidebar.html">Grid list creative mix</a></li>
+                                            <li><a href="{% url 'masonry_2_columns' %}">2 columns</a></li>
+                                            <li><a href="{% url 'masonry_3_columns' %}">3 columns</a></li>
+                                            <li><a href="{% url 'masonry_4_columns' %}">4 columns</a></li>
+                                            <li><a href="{% url 'masonry_left_columns' %}">left columns</a></li>
+                                            <li><a href="{% url 'masonry_right_sidebar' %}">right sidebar</a></li>
+                                            <li><a href="{% url 'masonry_no_sidebar' %}"> no sidebar</a></li>
+                                            <li><a href="{% url 'masonry_grid_list_mix' %}">Grid list mix</a></li>
+                                            <li><a href="{% url 'masonry_grid_list_creative_mix' %}">Grid list creative mix</a></li>
                                         </ul>
                                     </li>
 
@@ -159,23 +159,23 @@
                             <li>
                                 <a class="dropdown" href="#">pages</a>
                                 <ul>
-                                    <li><a href="404.html">404</a></li>
-                                    <li><a href="faq.html">faqs</a></li>
-                                    <li><a href="collection.html">collection</a></li>
-                                    <li><a href="typography.html">typography</a></li>
-                                    <li><a href="maintenance.html">Maintenance</a></li>
-                                    <li><a href="about-us.html">About us</a></li>
+                                    <li><a href="{% url 'pages_404' %}">404</a></li>
+                                    <li><a href="{% url 'faqs' %}">faqs</a></li>
+                                    <li><a href="{% url 'collection' %}">collection</a></li>
+                                    <li><a href="{% url 'typography' %}">typography</a></li>
+                                    <li><a href="{% url 'maintenance' %}">Maintenance</a></li>
+                                    <li><a href="{% url 'about_us' %}">About us</a></li>
                                     <li class="sub-menu"><a href="#">team</a>
                                         <ul>
-                                            <li><a class="sub-menu-title" href="team.html">team</a></li>
-                                            <li><a href="team-grid.html">team grid</a></li>
-                                            <li><a href="team-list.html">team list</a></li>
+                                            <li><a class="sub-menu-title" href="{% url 'team' %}">team</a></li>
+                                            <li><a href="{% url 'team_grid' %}">team grid</a></li>
+                                            <li><a href="{% url 'team_list' %}">team list</a></li>
                                         </ul>
                                     </li>
                                     <li class="sub-menu"><a class="sub-menu-title" href="#">coming soon</a>
                                         <ul>
-                                            <li><a href="coming-soon.html">coming soon 1</a></li>
-                                            <li><a href="coming-soon2.html">coming soon 2</a></li>
+                                            <li><a href="{% url 'coming_soon_1' %}">coming soon 1</a></li>
+                                            <li><a href="{% url 'coming_soon_2' %}">coming soon 2</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -187,33 +187,33 @@
                                             <div class="col-lg-4">
                                                 <div class="menu-container">
                                                     <ul class="menu-icon">
-                                                        <li><a href="alert.html"><i class="icon-alert"></i>alerts</a></li>
-                                                        <li><a href="accordion.html"><i class="icon-layout-accordion-merged"></i>accordion</a></li>
-                                                        <li><a href="boxshadow.html"><i class="icon-layers"></i>box shadow</a></li>
-                                                        <li><a href="button.html"><i class="icon-write"></i>buttons</a></li>
-                                                        <li><a href="contact.html"><i class="icon-map-alt"></i>contact</a></li>
+                                                        <li><a href="{% url 'alerts' %}"><i class="icon-alert"></i>alerts</a></li>
+                                                        <li><a href="{% url 'accordion' %}"><i class="icon-layout-accordion-merged"></i>accordion</a></li>
+                                                        <li><a href="{% url 'boxshadow' %}"><i class="icon-layers"></i>box shadow</a></li>
+                                                        <li><a href="{% url 'buttons' %}"><i class="icon-write"></i>buttons</a></li>
+                                                        <li><a href="{% url 'contact' %}"><i class="icon-map-alt"></i>contact</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div class="col-lg-4">
                                                 <div class="menu-container">
                                                     <ul class="menu-icon">
-                                                        <li><a href="event-schedule.html"><i class="icon-list"></i>event-schedule</a></li>
-                                                        <li><a href="gallery.html"><i class="icon-gallery"></i>gallery</a></li>
-                                                        <li><a href="pricing.html"><i class="icon-money"></i>pricing</a></li>
-                                                        <li><a href="counter.html"><i class="icon-time"></i>counter</a></li>
-                                                        <li><a href="countdown.html"><i class="icon-alarm-clock"></i>countdown</a></li>
+                                                        <li><a href="{% url 'event_schedule' %}"><i class="icon-list"></i>event-schedule</a></li>
+                                                        <li><a href="{% url 'gallery' %}"><i class="icon-gallery"></i>gallery</a></li>
+                                                        <li><a href="{% url 'pricing' %}"><i class="icon-money"></i>pricing</a></li>
+                                                        <li><a href="{% url 'counter' %}"><i class="icon-time"></i>counter</a></li>
+                                                        <li><a href="{% url 'countdown' %}"><i class="icon-alarm-clock"></i>countdown</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
                                             <div class="col-lg-4">
                                                 <div class="menu-container">
                                                     <ul class="menu-icon">
-                                                        <li><a href="progress.html"><i class="icon-bar-chart"></i>progress bar</a></li>
-                                                        <li><a href="testimonial.html"><i class="icon-thought"></i>testimonial</a></li>
-                                                        <li><a href="video.html"><i class="icon-video-camera"></i>video</a></li>
-                                                        <li><a href="services.html"><i class="icon-headphone"></i>service</a></li>
-                                                        <li><a href="subscribe.html"><i class="icon-share-alt"></i>subscribe</a></li>
+                                                        <li><a href="{% url 'progress_bar' %}"><i class="icon-bar-chart"></i>progress bar</a></li>
+                                                        <li><a href="{% url 'testimonial' %}"><i class="icon-thought"></i>testimonial</a></li>
+                                                        <li><a href="{% url 'video' %}"><i class="icon-video-camera"></i>video</a></li>
+                                                        <li><a href="{% url 'service' %}"><i class="icon-headphone"></i>service</a></li>
+                                                        <li><a href="{% url 'subscribe' %}"><i class="icon-share-alt"></i>subscribe</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -230,15 +230,15 @@
                                                     <a class="menu-head" data-bs-target=".demo2" data-bs-toggle="collapse"
                                                        href="#">portfolio</a>
                                                     <ul>
-                                                        <li><a href="portfolio-basic-2-col.html">2 column </a></li>
-                                                        <li><a href="portfolio-basic-3-col.html">3 column </a></li>
-                                                        <li><a href="portfolio-basic-4-col.html">4 column </a></li>
-                                                        <li><a href="portfolio-title-3-col.html">3 column with title</a></li>
-                                                        <li><a href="portfolio-title-4-col.html">4 column with title</a></li>
-                                                        <li><a href="portfolio-parallex.html">With parallex effect</a></li>
-                                                        <li><a href="portfolio-centered-slides.html">centered slides</a></li>
-                                                        <li><a href="portfolio-full-screen-vertical.html">vertical slider with portfolio</a></li>
-                                                        <li><a href="portfolio-multiple-carousel.html">4 slide with center slider</a></li>
+                                                        <li><a href="{% url 'portfolio_2_column' %}">2 column </a></li>
+                                                        <li><a href="{% url 'portfolio_3_column' %}">3 column </a></li>
+                                                        <li><a href="{% url 'portfolio_4_column' %}">4 column </a></li>
+                                                        <li><a href="{% url 'portfolio_3_column_with_title' %}">3 column with title</a></li>
+                                                        <li><a href="{% url 'portfolio_4_column_with_title' %}">4 column with title</a></li>
+                                                        <li><a href="{% url 'portfolio_with_parallex_effect' %}">With parallex effect</a></li>
+                                                        <li><a href="{% url 'portfolio_centered_slides' %}">centered slides</a></li>
+                                                        <li><a href="{% url 'portfolio_vertical_slider' %}">vertical slider with portfolio</a></li>
+                                                        <li><a href="{% url 'portfolio_4_slide_with_center_slider' %}">4 slide with center slider</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -247,18 +247,18 @@
                                                     <a class="menu-head" data-bs-target=".demo2" data-bs-toggle="collapse"
                                                        href="#">portfolio details</a>
                                                     <ul>
-                                                        <li><a href="portfolio-detail4.html">Container layout</a>
+                                                        <li><a href="{% url 'portfolio_details_container_layout' %}">Container layout</a>
                                                         </li>
-                                                        <li><a href="portfolio-detail3.html">Full width</a>
+                                                        <li><a href="{% url 'portfolio_details_full_width' %}">Full width</a>
                                                         </li>
-                                                        <li><a href="portfolio-detail2.html">With Big breadcrumb</a>
+                                                        <li><a href="{% url 'portfolio_details_with_big_breadcrumb' %}">With Big breadcrumb</a>
                                                         </li>
-                                                        <li><a href="portfolio-detail.html">Details with slider</a></li>
-                                                        <li><a href="portfolio-detail6.html">Video Portfolio</a>
+                                                        <li><a href="{% url 'portfolio_details_details_wit_slider' %}">Details with slider</a></li>
+                                                        <li><a href="{% url 'portfolio_details_video_portfolio' %}">Video Portfolio</a>
                                                         </li>
-                                                        <li><a href="portfolio-detail5.html">Two images layout</a>
+                                                        <li><a href="{% url 'portfolio_details_two_images_layout' %}">Two images layout</a>
                                                         </li>
-                                                        <li><a href="portfolio-detail7.html">left side images</a>
+                                                        <li><a href="{% url 'portfolio_details_left_side_images' %}">left side images</a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -268,19 +268,19 @@
                                                     <a class="menu-head" data-bs-target=".demo2" data-bs-toggle="collapse"
                                                        href="#">Trending Layouts</a>
                                                     <ul>
-                                                        <li><a href="portfolio-creative-1.html">Trending Layout 1</a>
+                                                        <li><a href="{% url 'trending_layout_1' %}">Trending Layout 1</a>
                                                         </li>
-                                                        <li><a href="portfolio-creative-2.html">Trending Layout 2</a>
+                                                        <li><a href="{% url 'trending_layout_2' %}">Trending Layout 2</a>
                                                         </li>
-                                                        <li><a href="portfolio-creative-3.html">Trending Layout 3</a>
+                                                        <li><a href="{% url 'trending_layout_3' %}">Trending Layout 3</a>
                                                         </li>
-                                                        <li><a href="portfolio-creative-4.html">Trending Layout 4</a>
+                                                        <li><a href="{% url 'trending_layout_4' %}">Trending Layout 4</a>
                                                         </li>
-                                                        <li><a href="portfolio-modern-4-col.html">Trending Layout 5</a>
+                                                        <li><a href="{% url 'trending_layout_5' %}">Trending Layout 5</a>
                                                         </li>
-                                                        <li><a href="portfolio-modern-3-col.html">Trending Layout 6</a>
+                                                        <li><a href="{% url 'trending_layout_6' %}">Trending Layout 6</a>
                                                         </li>
-                                                        <li><a href="portfolio-modern-2-col.html">Trending Layout 7</a>
+                                                        <li><a href="{% url 'trending_layout_7' %}">Trending Layout 7</a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -290,12 +290,12 @@
                                                     <a class="menu-head" data-bs-target=".demo2" data-bs-toggle="collapse"
                                                        href="#">Masonry Style</a>
                                                     <ul>
-                                                        <li><a href="portfolio-2-col.html">2 Column</a></li>
-                                                        <li><a href="portfolio-3-col.html">3 Column</a></li>
-                                                        <li><a href="portfolio-4-col.html">4 Column</a></li>
-                                                        <li><a href="portfolio1.html">Creative Layout 1</a></li>
-                                                        <li><a href="portfolio2.html">Creative layout 2</a></li>
-                                                        <li><a href="portfolio3.html">Creative Layout 3</a></li>
+                                                        <li><a href="{% url 'portfolio_masonry_2_column' %}">2 Column</a></li>
+                                                        <li><a href="{% url 'portfolio_masonry_3_column' %}">3 Column</a></li>
+                                                        <li><a href="{% url 'portfolio_masonry_4_column' %}">4 Column</a></li>
+                                                        <li><a href="{% url 'portfolio_masonry_creative_layout_1' %}">Creative Layout 1</a></li>
+                                                        <li><a href="{% url 'portfolio_masonry_creative_layout_2' %}">Creative layout 2</a></li>
+                                                        <li><a href="{% url 'portfolio_masonry_creative_layout_3' %}">Creative Layout 3</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -313,19 +313,19 @@
                                                     <a class="menu-head" data-bs-target=".demo2" data-bs-toggle="collapse"
                                                        href="#">shop categories</a>
                                                     <ul>
-                                                        <li><a href="category-page-leftsidebar(4-grid).html">left
+                                                        <li><a href="{% url 'shop_categories_left_sidebar' %}">left
                                                             sidebar</a></li>
-                                                        <li><a href="category-page-leftsidebar(2-grid).html">two
+                                                        <li><a href="{% url 'shop_categories_two_sidebar' %}">two
                                                             grid</a></li>
-                                                        <li><a href="category-page-leftsidebar(3-grid).html">three
+                                                        <li><a href="{% url 'shop_categories_three_sidebar' %}">three
                                                             grid</a></li>
-                                                        <li><a href="category-page-leftsidebar(6-grid).html">six
+                                                        <li><a href="{% url 'shop_categories_six_sidebar' %}">six
                                                             grid</a></li>
-                                                        <li><a href="category-page-rightsidebar(4-grid).html">right
+                                                        <li><a href="{% url 'shop_categories_right_sidebar' %}">right
                                                             sidebar <i class="fa fa-magic color-animated"></i></a></li>
-                                                        <li><a href="category-page-rightsidebar(2-grid).html">right 2
+                                                        <li><a href="{% url 'shop_categories_right_2_grid' %}">right 2
                                                             grid</a></li>
-                                                        <li><a href="category-page-rightsidebar(3-grid).html">right 3
+                                                        <li><a href="{% url 'shop_categories_right_3_grid' %}">right 3
                                                             grid</a></li>
                                                     </ul>
                                                 </div>
@@ -334,42 +334,42 @@
                                                 <a class="menu-head" data-bs-target=".demo2" data-bs-toggle="collapse"
                                                    href="#">shop categories</a>
                                                 <ul>
-                                                    <li><a href="category-page-rightsidebar(6-grid).html">right 6
+                                                    <li><a href="{% url 'shop_categories_right_6_grid' %}">right 6
                                                         grid</a></li>
-                                                    <li><a href="category-page-nosidebar(4-grid).html">no sidebar</a>
+                                                    <li><a href="{% url 'shop_categories_no_sidebar' %}">no sidebar</a>
                                                     </li>
-                                                    <li><a href="category-page-nosidebar(2-grid).html">no sidebar 2
+                                                    <li><a href="{% url 'shop_categories_no_sidebar_2' %}">no sidebar 2
                                                         grid</a></li>
-                                                    <li><a href="category-page-nosidebar(3-grid).html">no sidebar 3
+                                                    <li><a href="{% url 'shop_categories_no_sidebar_3' %}">no sidebar 3
                                                         grid</a></li>
-                                                    <li><a href="category-page-nosidebar(6-grid).html">no sidebar 6
+                                                    <li><a href="{% url 'shop_categories_no_sidebar_6' %}">no sidebar 6
                                                         grid</a></li>
-                                                    <li><a href="category-page(metro).html">category metro</a></li>
+                                                    <li><a href="{% url 'shop_categories_metro' %}">category metro</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col menu-container">
                                                 <a class="menu-head" data-bs-target=".demo2" data-bs-toggle="collapse"
                                                    href="#">product pages</a>
                                                 <ul>
-                                                    <li><a href="product-page(no-sidebar).html">no sidebar</a></li>
-                                                    <li><a href="product-page(left-sidebar).html">left sidebar</a></li>
-                                                    <li><a href="product-page(right-sidebar).html">right sidebar</a>
+                                                    <li><a href="{% url 'shop_product_no_sidebar' %}">no sidebar</a></li>
+                                                    <li><a href="{% url 'shop_product_left_sidebar' %}">left sidebar</a></li>
+                                                    <li><a href="{% url 'shop_product_right_sidebar' %}">right sidebar</a>
                                                     </li>
-                                                    <li><a href="product-page(3-column).html">3 grid<i class="fa fa-thumbs-o-up color-animated"></i></a></li>
-                                                    <li><a href="product-page(3-col-left).html">3 grid-left </a></li>
-                                                    <li><a href="product-page(3-col-right).html">3 grid-right</a></li>
+                                                    <li><a href="{% url 'shop_product_3_grid' %}">3 grid<i class="fa fa-thumbs-o-up color-animated"></i></a></li>
+                                                    <li><a href="{% url 'shop_product_3_grid_left' %}">3 grid-left </a></li>
+                                                    <li><a href="{% url 'shop_product_3_grid_right' %}">3 grid-right</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col menu-container">
                                                 <a class="menu-head" data-bs-target=".demo2" data-bs-toggle="collapse"
                                                    href="#">product pages</a>
                                                 <ul>
-                                                    <li><a href="product-page(accordian).html">accordian</a></li>
-                                                    <li><a href="product-page(bundle).html">bundle<i class="fa fa-chain-broken color-animated"></i></a></li>
-                                                    <li><a href="product-page(image-swatch).html">image swatch</a></li>
-                                                    <li><a href="product-page(image-outside).html">image outside</a>
+                                                    <li><a href="{% url 'shop_product_accordian' %}">accordian</a></li>
+                                                    <li><a href="{% url 'shop_product_bundle' %}">bundle<i class="fa fa-chain-broken color-animated"></i></a></li>
+                                                    <li><a href="{% url 'shop_product_image_swatch' %}">image swatch</a></li>
+                                                    <li><a href="{% url 'shop_product_image_outside' %}">image outside</a>
                                                     </li>
-                                                    <li><a href="product-page(sticky).html">image sticky</a></li>
+                                                    <li><a href="{% url 'shop_product_image_sticky' %}">image sticky</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col ">
@@ -377,13 +377,13 @@
                                                     <a class="menu-head" data-bs-target=".demo2" data-bs-toggle="collapse"
                                                        href="#">shop pages</a>
                                                     <ul>
-                                                        <li><a href="cart.html">cart <i class="fa fa-cart-plus color-animated"></i></a></li>
-                                                        <li><a href="checkout.html">checkout</a></li>
-                                                        <li><a href="compare.html">compare</a></li>
-                                                        <li><a href="compare-2.html">compare 2</a></li>
-                                                        <li><a href="signup.html">sign up</a></li>
-                                                        <li><a href="login.html">login</a></li>
-                                                        <li><a href="wishlist.html">wishlist</a></li>
+                                                        <li><a href="{% url 'shop_pages_cart' %}">cart <i class="fa fa-cart-plus color-animated"></i></a></li>
+                                                        <li><a href="{% url 'shop_pages_checkout' %}">checkout</a></li>
+                                                        <li><a href="{% url 'shop_pages_compare' %}">compare</a></li>
+                                                        <li><a href="{% url 'shop_pages_compare_2' %}">compare 2</a></li>
+                                                        <li><a href="{% url 'shop_pages_signup' %}">sign up</a></li>
+                                                        <li><a href="{% url 'shop_pages_login' %}">login</a></li>
+                                                        <li><a href="{% url 'shop_pages_wishlist' %}">wishlist</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -400,11 +400,11 @@
                                                     <a class="menu-head" data-bs-target=".demo2" data-bs-toggle="collapse"
                                                        href="#">header options</a>
                                                     <ul>
-                                                        <li><a href="header-light.html">light header</a></li>
-                                                        <li><a href="header-dark.html">dark header</a></li>
-                                                        <li><a href="header-transparent.html">Glass header</a></li>
-                                                        <li><a href="header-center-logo.html">Logo Center</a></li>
-                                                        <li><a href="header-right-navigation.html">header right
+                                                        <li><a href="{% url 'features_light_header' %}">light header</a></li>
+                                                        <li><a href="{% url 'features_dark_header' %}">dark header</a></li>
+                                                        <li><a href="{% url 'features_glass_header' %}">Glass header</a></li>
+                                                        <li><a href="{% url 'features_logo_center' %}">Logo Center</a></li>
+                                                        <li><a href="{% url 'features_header_right_navigation' %}">header right
                                                             navigation</a></li>
                                                     </ul>
                                                 </div>
@@ -414,15 +414,15 @@
                                                     <a class="menu-head" data-bs-target=".demo2" data-bs-toggle="collapse"
                                                        href="#">breadcrumb option</a>
                                                     <ul>
-                                                        <li><a href="breadcrumb.html">Classic Types</a></li>
-                                                        <li><a href="breadcrumb-left.html">breadcrumb left</a></li>
-                                                        <li><a href="breadcrumb-right.html">breadcrumb right</a></li>
-                                                        <li><a href="breadcrumb-center.html">breadcrumb center</a></li>
-                                                        <li><a href="breadcrumb-dark.html">breadcrumb dark</a></li>
-                                                        <li><a href="breadcrumb-parallex-background.html">parallex background</a></li>
-                                                        <li><a href="breadcrumb-background.html">with background</a></li>
-                                                        <li><a href="breadcrumb-gallery-background.html">gallery background</a></li>
-                                                        <li><a href="breadcrumb-video-background.html">video background</a></li>
+                                                        <li><a href="{% url 'features_classic_types' %}">Classic Types</a></li>
+                                                        <li><a href="{% url 'features_breadcrumb_left' %}">breadcrumb left</a></li>
+                                                        <li><a href="{% url 'features_breadcrumb_right' %}">breadcrumb right</a></li>
+                                                        <li><a href="{% url 'features_breadcrumb_center' %}">breadcrumb center</a></li>
+                                                        <li><a href="{% url 'features_breadcrumb_dark' %}">breadcrumb dark</a></li>
+                                                        <li><a href="{% url 'features_parallex_background' %}">parallex background</a></li>
+                                                        <li><a href="{% url 'features_with_background' %}">with background</a></li>
+                                                        <li><a href="{% url 'features_gallery_background' %}">gallery background</a></li>
+                                                        <li><a href="{% url 'features_video_background' %}">video background</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -431,12 +431,12 @@
                                                     <a class="menu-head" data-bs-target=".demo2" data-bs-toggle="collapse"
                                                        href="#">footer options</a>
                                                     <ul>
-                                                        <li><a href="footer-default.html">footer default</a></li>
-                                                        <li><a href="footer3-light.html">footer light</a></li>
-                                                        <li><a href="footer3-dark.html">footer dark</a></li>
-                                                        <li><a href="footer1-light.html">footer dark light</a></li>
-                                                        <li><a href="footer1-dark.html">footer dark gradient </a></li>
-                                                        <li><a href="footer2-light.html">footer creative</a></li>
+                                                        <li><a href="{% url 'features_footer_default' %}">footer default</a></li>
+                                                        <li><a href="{% url 'features_footer_light' %}">footer light</a></li>
+                                                        <li><a href="{% url 'features_footer_dark' %}">footer dark</a></li>
+                                                        <li><a href="{% url 'features_footer_dark_light' %}">footer dark light</a></li>
+                                                        <li><a href="{% url 'features_footer_dark_gradient' %}">footer dark gradient </a></li>
+                                                        <li><a href="{% url 'features_footer_creative' %}">footer creative</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -445,11 +445,11 @@
                                                     <a class="menu-head" data-bs-target=".demo2" data-bs-toggle="collapse"
                                                        href="#">gallery types</a>
                                                     <ul>
-                                                        <li><a href="zoom-gallery.html">zoom gallery</a></li>
-                                                        <li><a href="popup-with-form.html">form in popup</a></li>
-                                                        <li><a href="popup-with-modal.html">modal in popup</a></li>
-                                                        <li><a href="popup-with-youtube.html">youtube in popup</a></li>
-                                                        <li><a href="popup-with-googlemap.html">Map in popup</a>
+                                                        <li><a href="{% url 'features_zoom_gallery' %}">zoom gallery</a></li>
+                                                        <li><a href="{% url 'features_form_in_popup' %}">form in popup</a></li>
+                                                        <li><a href="{% url 'features_modal_in_popup' %}">modal in popup</a></li>
+                                                        <li><a href="{% url 'features_youtube_in_popup' %}">youtube in popup</a></li>
+                                                        <li><a href="{% url 'features_map_in_popup' %}">Map in popup</a>
                                                         </li>
                                                     </ul>
                                                 </div>

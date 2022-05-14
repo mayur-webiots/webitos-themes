@@ -8,3 +8,20 @@ today's update:
 - added authentication in wingo template
 - added to-do functionality in wingo.
 - started working on unice template.
+
+
+problems:
+
+blog>blog mix layout>list full width no side bar.. nav bar not visible, and not working
+blog>blog details>gallery layout... when you  open the image there is not close buton.
+
+blog>blog-masonry>2 columns and left columns have same template.
+masonry grid list mix and list - full with no sidebar has same template
+
+masonry_grid_list_creative_mix and list_mix_with_no_sidebar has same template
+
+list full width no side bar  and masonry_grid_list_mix has same template
+
+footer2-dark.html file not there 
+
+in mobile view if you open menu bar eveything is too fast.

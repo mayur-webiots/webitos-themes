@@ -20,7 +20,7 @@
         items: 6,
         nav: false,
         dots: false,
-        navText: ['<img src="../assets/images/agency/testimonial/left.png">', '<img src="../assets/images/agency/testimonial/right.png">'],
+        navText: ['<img src="static/assets/images/agency/testimonial/left.png">', '<img src="static/assets/images/agency/testimonial/right.png">'],
         autoplay: true,
         slideSpeed: 300,
         paginationSpeed: 400,

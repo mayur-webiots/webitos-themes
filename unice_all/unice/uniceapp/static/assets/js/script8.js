@@ -13,7 +13,7 @@ $('.slider-1').owlCarousel({
     slideSpeed: 2000,
     autoplayHoverPause: true,
     nav: true,
-    navText: ['<img src="../assets/images/saas1/left.png">', '<img src="../assets/images/saas1/right.png">'],
+    navText: ['<img src="static/assets/images/saas1/left.png">', '<img src="static/assets/images/saas1/right.png">'],
     responsive: {
         0: {
             items: 1

@@ -13,3 +13,37 @@
 			(all element pages)
 			
 	
+	
+	home>pages:
+		agency_layout.html
+		index.html
+		app_landing_layout
+		events_layout
+		gym_layout
+		music_layout
+		resume-layout
+		sass_modern_layout
+		sass_layout
+		wedding_layout
+		yoga_layout
+		ecommerce_layout
+		portfoilio-metro
+		
+	blog>page:
+		blog grid view>
+			blog-leftsidebar
+			blog-rightsidebar
+			blog-nosidebar
+			blog-full-width-left-sidebar
+			blog-full-width-right-sidebar
+			blog-full-width-nosidebar
+		
+		blog list view>
+			blog-list-leftsidebar
+			blog-list-rightsidebar
+			blog-list-nosidebar
+			
+		blog list creative>
+			blog-creative-left-sidebar
+			blog-creative-left-sidebar
+			

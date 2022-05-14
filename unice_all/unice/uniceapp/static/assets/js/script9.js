@@ -66,7 +66,7 @@ $('#testimonial').owlCarousel({
     autoHeight: true,
     nav: true,
     dots: false,
-    navText: ['<img src="../assets/images/music/gallery/gallery-icon/left.png">', '<img src="../assets/images/music/gallery/gallery-icon/right.png">'],
+    navText: ['<img src="static/assets/images/music/gallery/gallery-icon/left.png">', '<img src="static/assets/images/music/gallery/gallery-icon/right.png">'],
     autoplay: true,
     slideSpeed: 300,
     paginationSpeed: 400,

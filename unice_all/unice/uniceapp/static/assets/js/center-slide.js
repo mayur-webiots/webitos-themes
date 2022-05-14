@@ -8,7 +8,7 @@
         autoHeight: true,
         nav: false,
         margin: 0,
-        navText: ['<img src="../assets/images/music/gallery/gallery-icon/left.png">', '<img src="../assets/images/music/gallery/gallery-icon/right.png">'],
+        navText: ['<img src="static/assets/images/music/gallery/gallery-icon/left.png">', '<img src="static/assets/images/music/gallery/gallery-icon/right.png">'],
         autoplay: true,
         center: true,
         slideSpeed: 300,
