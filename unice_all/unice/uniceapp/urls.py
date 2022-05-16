@@ -121,6 +121,7 @@ urlpatterns = [
     path('portfolio_centered_slides',views.portfolio_centered_slides,name='portfolio_centered_slides'),
     path('portfolio_vertical_slider',views.portfolio_vertical_slider,name='portfolio_vertical_slider'),
     path('portfolio_4_slide_with_center_slider',views.portfolio_4_slide_with_center_slider,name='portfolio_4_slide_with_center_slider'),
+    path('portfolio_title_2',views.portfolio_title_2,name='portfolio_title_2'),
 
     # portfolio details paths
 

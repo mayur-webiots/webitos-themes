@@ -3,48 +3,70 @@ from django.shortcuts import render
 # Create your views here.
 
 # Home views
+default_layout = 'agency'
+default_header = 'dark'
+
+header_logos = {
+    "black_logo":'static/assets/images/logo/5.png',
+    "white_logo": 'static/assets/images/logo/1.png',
+    "pink_logo": 'static/assets/images/logo/3.png',
+}
 
 def index(request):
-    return render(request,'home/index.html')
+    context={"header_classes":"app1 nav-abs custom-scroll","header_image":header_logos["white_logo"]}
+    return render(request,'home/index.html',context)
 
 def agency(request):
-    return render(request,'home/agency_layout.html')
+    context = {"header_classes":"agency nav-fix custom-scroll","header_image":"static/assets/images/logo/9.png"}
+    return render(request,'home/agency_layout.html',context)
 
 def app_landing_1(request):
-    return render(request,'home/index.html')
+    context={"header_classes":"app1 nav-abs custom-scroll","header_image":header_logos["white_logo"]}
+    return render(request,'home/index.html',context)
 
 def app_landing_2(request):
-    return render(request,'home/app_landing_layout.html')
+    context={"header_classes":"app2 loding-header nav-abs custom-scroll","header_image":"static/assets/images/logo/1.png","header_animation":True}
+    return render(request,'home/app_landing_layout.html',context)
 
 def event(request):
-    return render(request,'home/events_layout.html')
+    context={"header_classes":"event loding-header nav-abs custom-scroll nav-lg","header_image":header_logos["white_logo"],"body_classes":"event"}
+    return render(request,'home/events_layout.html',context)
 
 def gym(request):
-    return render(request,'home/gym_layout.html')
+    context={'header_classes':"gym loding-header nav-abs custom-scroll nav-lg","header_image":header_logos["white_logo"]}
+    return render(request,'home/gym_layout.html',context)
 
 def music(request):
-    return render(request,'home/music_layout.html')
+    context={"header_classes":"music loding-header header-fixed","header_image":header_logos["white_logo"],"body_classes":"bg-black music"}
+    return render(request,'home/music_layout.html',context)
 
 def resume(request):
-    return render(request,'home/resume_layout.html')
+    context={"header_classes":"resume loding-header nav-abs custom-scroll","header_image":header_logos["black_logo"]}
+    return render(request,'home/resume_layout.html',context)
 
 def saas1(request):
-    return render(request,'home/sass_modern_layout.html')
+    context={"header_classes":"saas1 header-fixed loding-header position-absolute  custom-scroll nav-lg","header_image":header_logos["pink_logo"]}
+    return render(request,'home/sass_modern_layout.html',context)
 
 def saas2(request):
-    return render(request,'home/sass_layout.html')
+    context={"header_classes":"saas2 loding-header nav-abs custom-scroll","header_image":header_logos["white_logo"]}
+    return render(request,'home/sass_layout.html',context)
 
 def wedding(request):
-    return render(request,'home/wedding_layout.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'home/wedding_layout.html',context)
 
 def yoga(request):
-    return render(request,'home/yoga_layout.html')
+    context ={}
+    return render(request,'home/yoga_layout.html',context)
 
 def ecommerce(request):
-    return render(request,'home/ecommerce_layout.html')
+    context={'header_classes':'ecommerce nav-fix','header_image':header_logos["black_logo"]}
+    return render(request,'home/ecommerce_layout.html',context)
 
 def portfolio_metro(request):
-    return render(request,'home/portfolio-metro.html')
+    context={'header_classes':'dark loding-header custom-scroll nav-lg','body_classes':'agency','header_image':header_logos["black_logo"]}
+    return render(request,'home/portfolio-metro.html',context)
 
 
 # blog views
@@ -52,476 +74,619 @@ def portfolio_metro(request):
 # blog grid views
 
 def left_sidebar(request):
-    return render(request,'blog/blog-grid-view/blog-leftsidebar.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-grid-view/blog-leftsidebar.html',context)
 
 def right_sidebar(request):
-    return render(request,'blog/blog-grid-view/blog-rightsidebar.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-grid-view/blog-rightsidebar.html',context)
 
 def no_sidebar(request):
-    return render(request,'blog/blog-grid-view/blog-nosidebar.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-grid-view/blog-nosidebar.html',context)
 
 def full_width_left__sidebar(request):
-    return render(request,'blog/blog-grid-view/blog-full-width-left-sidebar.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-grid-view/blog-full-width-left-sidebar.html',context)
 
 def full_width_right_sidebar(request):
-    return render(request,'blog/blog-grid-view/blog-full-width-right-sidebar.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-grid-view/blog-full-width-right-sidebar.html',context)
 
 def full_width_no_sidebar(request):
-    return render(request,'blog/blog-grid-view/blog-full-width-nosidebar.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-grid-view/blog-full-width-nosidebar.html',context)
 
     # blog list view
 
 def list_view_left_sidebar(request):
-    return render(request,'blog/blog-list-view/blog-list-leftsidebar.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-list-view/blog-list-leftsidebar.html',context)
 
 def list_view_right_sidebar(request):
-    return render(request,'blog/blog-list-view/blog-list-rightsidebar.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-list-view/blog-list-rightsidebar.html',context)
 
 def list_view_no_sidebar(request):
-    return render(request,'blog/blog-list-view/blog-list-nosidebar.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-list-view/blog-list-nosidebar.html',context)
 
     # blog list creative
 
 def creative_left_sidebar(request):
-    return render(request,'blog/blog-list-creative/blog-creative-left-sidebar.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-list-creative/blog-creative-left-sidebar.html',context)
 
 def creative_right_sidebar(request):
-    return render(request,'blog/blog-list-creative/blog-creative-right-sidebar.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-list-creative/blog-creative-right-sidebar.html',context)
 
 def creative_no_sidebar(request):
-    return render(request,'blog/blog-list-creative/blog-creative-no-sidebar.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-list-creative/blog-creative-no-sidebar.html',context)
 
     # blog mix layout
 
 def list_mix_with_left_sidebar(request):
-    return render(request,'blog/blog-mix-layout/blog-list-mix-left-sidebar.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-mix-layout/blog-list-mix-left-sidebar.html',context)
 
 def list_mix_with_right_sidebar(request):
-    return render(request,'blog/blog-mix-layout/blog-list-mix-right-sidebar.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-mix-layout/blog-list-mix-right-sidebar.html',context)
 
 def list_mix_with_no_sidebar(request):
-    return render(request,'blog/blog-mix-layout/blog-list-mix-no-sidebar.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-mix-layout/blog-list-mix-no-sidebar.html',context)
 
 def list_full_width_no_sidebar(request):
-    return render(request,'blog/blog-mix-layout/blog-list-full-width-no-sidebar.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-mix-layout/blog-list-full-width-no-sidebar.html',context)
 
 def grid_mix_with_right_sidebar(request):
-    return render(request,'blog/blog-mix-layout/blog-grid-mix-with-right-sidebar.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-mix-layout/blog-grid-mix-with-right-sidebar.html',context)
 
 def grid_mix_with_no_sidebar(request):
-    return render(request,'blog/blog-mix-layout/blog-list-post-full-width-no-sidebar.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-mix-layout/blog-list-post-full-width-no-sidebar.html',context)
 
     # blog details
 
 def details_left_sidebar(request):
-    return render(request,'blog/blog-details/blog-detail-left-sidebar.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-details/blog-detail-left-sidebar.html',context)
 
 def details_right_sidebar(request):
-    return render(request,'blog/blog-details/blog-detail.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-details/blog-detail.html',context)
 
 def details_no_sidebar(request):
-    return render(request,'blog/blog-details/blog-detail-no-sidebar.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-details/blog-detail-no-sidebar.html',context)
 
 def details_gallery_layout(request):
-    return render(request,'blog/blog-details/blog-detail-gallery.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-details/blog-detail-gallery.html',context)
 
 def details_video_layout(request):
-    return render(request,'blog/blog-details/blog-detail-video.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-details/blog-detail-video.html',context)
 
     # blog masonry
 
 def masonry_2_columns(request):
-    return render(request,'blog/blog-masonry/blog-masonry-left-side.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-masonry/blog-masonry-left-side.html',context)
 
 def masonry_3_columns(request):
-    return render(request,'blog/blog-masonry/blog-masonry-full-3-col.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-masonry/blog-masonry-full-3-col.html',context)
 
 def masonry_4_columns(request):
-    return render(request,'blog/blog-masonry/blog-masonry-full-4-col.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-masonry/blog-masonry-full-4-col.html',context)
 
 def masonry_left_columns(request):
-    return render(request,'blog/blog-masonry/blog-masonry-left-side.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-masonry/blog-masonry-left-side.html',context)
 
 def masonry_right_sidebar(request):
-    return render(request,'blog/blog-masonry/blog-masonry-right-side.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-masonry/blog-masonry-right-side.html',context)
 
 def masonry_no_sidebar(request):
-    return render(request,'blog/blog-masonry/blog-masonry-no-side.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-masonry/blog-masonry-no-side.html',context)
 
 def masonry_grid_list_mix(request):
-    return render(request,'blog/blog-masonry/blog-list-full-width-no-sidebar.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-masonry/blog-list-full-width-no-sidebar.html',context)
 
 def masonry_grid_list_creative_mix(request):
-    return render(request,'blog/blog-masonry/blog-list-mix-no-sidebar.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'blog/blog-masonry/blog-list-mix-no-sidebar.html',context)
 
 
 # pages views 
 
 def pages_404(request):
-    return render(request,'pages/404.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'pages/404.html',context)
 
 def faqs(request):
-    return render(request,'pages/faq.html')
+    context={"header":"dark","layout":"agency"}
+    return render(request,'pages/faq.html',context)
 
 def collection(request):
-    return render(request,'pages/collection.html')
+    context={"header":"dark","layout":"agency"}
+    return render(request,'pages/collection.html',context)
 
 def typography(request):
-    return render(request,'pages/typography.html')
+    context={"header":"dark","layout":"agency"}
+    return render(request,'pages/typography.html',context)
 
 def maintenance(request):
-    return render(request,'pages/maintenance.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'pages/maintenance.html',context)
 
 def about_us(request):
-    return render(request,'pages/about-us.html')
+    context={"header":"dark","layout":"agency"} 
+    return render(request,'pages/about-us.html',context)
 
     # team pages views
 def team(request):
-    return render(request,'pages/team.html')
+    context={"header":"dark","layout":"agency"} 
+    return render(request,'pages/team/team.html',context)
 
 def team_grid(request):
-    return render(request,'pages/team-grid.html')
+    context={"header":"dark","layout":"agency"} 
+    return render(request,'pages/team/team-grid.html',context)
 
 def team_list(request):
-    return render(request,'pages/team-list.html')
+    context={"header":"dark","layout":"agency"} 
+    return render(request,'pages/team/team-list.html',context)
 
     # coming soon pages views
 
 def coming_soon_1(request):
-    return render(request,'pages/coming-soon.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'pages/coming-soon.html',context)
 
 def coming_soon_2(request):
-    return render(request,'pages/coming-soon2.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'pages/coming-soon2.html',context)
 
 # elements views
 
 def alerts(request):
-    return render(request,'elements/alert.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'elements/alert.html',context)
 
 def accordion(request):
-    return render(request,'elements/accordion.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'elements/accordion.html',context)
 
 def boxshadow(request):
-    return render(request,'elements/boxshadow.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'elements/boxshadow.html',context)
 
 def buttons(request):
-    return render(request,'elements/button.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'elements/button.html',context)
 
 def contact(request):
-    return render(request,'elements/contact.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'elements/contact.html',context)
 
 def event_schedule(request):
-    return render(request,'elements/event-schedule.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'elements/event-schedule.html',context)
 
 def gallery(request):
-    return render(request,'elements/gallery.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'elements/gallery.html',context)
 
 def pricing(request):
-    return render(request,'elements/pricing.html')
+    context = {"header":"dark","layout":""}
+    return render(request,'elements/pricing.html',context)
 
 def counter(request):
-    return render(request,'elements/counter.html')
+    context = {"header":"dark","layout":"+ "}
+    return render(request,'elements/counter.html',context)
 
 def countdown(request):
-    return render(request,'elements/countdown.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'elements/countdown.html',context)
 
 def progress_bar(request):
-    return render(request,'elements/progress.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'elements/progress.html',context)
 
 def testimonial(request):
-    return render(request,'elements/testimonial.html')
+    context = {"header":"dark","layout":""}
+    return render(request,'elements/testimonial.html',context)
 
 def video(request):
-    return render(request,'elements/video.html')
+    context = {"header":"header-absolute","layout":"agency"}
+    return render(request,'elements/video.html',context)
 
 def service(request):
-    return render(request,'elements/services.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'elements/services.html',context)
 
 def subscribe(request):
-    return render(request,'elements/subscribe.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'elements/subscribe.html',context)
 
 # portfolio views
 
     # portolio views
 
 def portfolio_2_column(request):
-    return render(request,'portfolio/portfolio/portfolio-basic-2-col.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'portfolio/portfolio/portfolio-basic-2-col.html',context)
 
 def portfolio_3_column(request):
-    return render(request,'portfolio/portfolio/portfolio-basic-3-col.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'portfolio/portfolio/portfolio-basic-3-col.html',context)
 
 def portfolio_4_column(request):
-    return render(request,'portfolio/portfolio/portfolio-basic-4-col.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'portfolio/portfolio/portfolio-basic-4-col.html',context)
 
 def portfolio_3_column_with_title(request):
-    return render(request,'portfolio/portfolio/portfolio-title-3-col.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'portfolio/portfolio/portfolio-title-3-col.html',context)
 
 def portfolio_4_column_with_title(request):
-    return render(request,'portfolio/portfolio/portfolio-title-4-col.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'portfolio/portfolio/portfolio-title-4-col.html',context)
 
 def portfolio_with_parallex_effect(request):
-    return render(request,'portfolio/portfolio/portfolio-parallex.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'portfolio/portfolio/portfolio-parallex.html',context)
 
 def portfolio_centered_slides(request):
-    return render(request,'portfolio/portfolio/portfolio-centered-slides.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'portfolio/portfolio/portfolio-centered-slides.html',context)
 
 def portfolio_vertical_slider(request):
-    return render(request,'portfolio/portfolio/portfolio-full-screen-vertical.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'portfolio/portfolio/portfolio-full-screen-vertical.html',context)
 
 def portfolio_4_slide_with_center_slider(request):
-    return render(request,'portfolio/portfolio/portfolio-multiple-carousel.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'portfolio/portfolio/portfolio-multiple-carousel.html',context)
 
 def portfolio_title_2(request):
-    return render(request,'portfolio/portfolio/portfolio-title-2-col.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'portfolio/portfolio/portfolio-title-2-col.html',context)
 
     # porfolio details views
 
 def portfolio_details_container_layout(request):
-    return render(request,'portfolio/portfolio-details/portfolio-detail4.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'portfolio/portfolio-details/portfolio-detail4.html',context)
 
 def portfolio_details_full_width(request):
-    return render(request,'portfolio/portfolio-details/portfolio-detail3.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'portfolio/portfolio-details/portfolio-detail3.html',context)
 
 def portfolio_details_with_big_breadcrumb(request):
-    return render(request,'portfolio/portfolio-details/portfolio-detail2.html')
+    context = {"header":"position-absolute"}
+    return render(request,'portfolio/portfolio-details/portfolio-detail2.html',context)
 
 def portfolio_details_details_wit_slider(request):
-    return render(request,'portfolio/portfolio-details/portfolio-detail.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'portfolio/portfolio-details/portfolio-detail.html',context)
 
 def portfolio_details_video_portfolio(request):
-    return render(request,'portfolio/portfolio-details/portfolio-details6.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'portfolio/portfolio-details/portfolio-detail6.html',context)
 
 def portfolio_details_two_images_layout(request):
-    return render(request,'portfolio/portfolio-details/portfolio-detail5.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'portfolio/portfolio-details/portfolio-detail5.html',context)
 
 def portfolio_details_left_side_images(request):
-    return render(request,'portfolio/portfolio-details/portfolio-detail7.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'portfolio/portfolio-details/portfolio-detail7.html',context)
 
     # trending layouts views
 
 def trending_layout_1(request):
-    return render(request,'portfolio/trending-layouts/portfolio-creative-1.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'portfolio/trending-layouts/portfolio-creative-1.html',context)
 
 def trending_layout_2(request):
-    return render(request,'portfolio/trending-layouts/portfolio-creative-2.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'portfolio/trending-layouts/portfolio-creative-2.html',context)
 
 def trending_layout_3(request):
-    return render(request,'portfolio/trending-layouts/portfolio-creative-3.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'portfolio/trending-layouts/portfolio-creative-3.html',context)
 
 def trending_layout_4(request):
-    return render(request,'portfolio/trending-layouts/portfolio-creative-4.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'portfolio/trending-layouts/portfolio-creative-4.html',context)
 
 def trending_layout_5(request):
-    return render(request,'portfolio/trending-layouts/portfolio-modern-4-col.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'portfolio/trending-layouts/portfolio-modern-4-col.html',context)
 
 def trending_layout_6(request):
-    return render(request,'portfolio/trending-layouts/portfolio-modern-3-col.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'portfolio/trending-layouts/portfolio-modern-3-col.html',context)
 
 def trending_layout_7(request):
-    return render(request,'portfolio/trending-layouts/portfolio-modern-2-col.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'portfolio/trending-layouts/portfolio-modern-2-col.html',context)
 
     # masonry style views
 
 def portfolio_masonry_2_column(request):
-    return render(request,'portfolio/masonry-style/portfolio-2-col.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'portfolio/masonry-style/portfolio-2-col.html',context)
 
 def portfolio_masonry_3_column(request):
-    return render(request,'portfolio/masonry-style/portfolio-3-col.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'portfolio/masonry-style/portfolio-3-col.html',context)
 
 def portfolio_masonry_4_column(request):
-    return render(request,'portfolio/masonry-style/portfolio-4-col.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'portfolio/masonry-style/portfolio-4-col.html',context)
 
 def portfolio_masonry_creative_layout_1(request):
-    return render(request,'portfolio/masonry-style/portfolio1.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'portfolio/masonry-style/portfolio1.html',context)
 
 def portfolio_masonry_creative_layout_2(request):
-    return render(request,'portfolio/masonry-style/portfolio2.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'portfolio/masonry-style/portfolio2.html',context)
 
 def portfolio_masonry_creative_layout_3(request):
-    return render(request,'portfolio/masonry-style/portfolio3.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'portfolio/masonry-style/portfolio3.html',context)
 
 # shop views
 
     # shop categories views:
 
 def shop_categories_left_sidebar(request):
-    return render(request,'shop/shop-categories/category-page-leftsidebar(4-grid).html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'shop/shop-categories/category-page-leftsidebar(4-grid).html',context)
 
 def shop_categories_two_sidebar(request):
-    return render(request,'shop/shop-categories/category-page-leftsidebar(2-grid).html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'shop/shop-categories/category-page-leftsidebar(2-grid).html',context)
 
 def shop_categories_three_sidebar(request):
-    return render(request,'shop/shop-categories/category-page-leftsidebar(3-grid).html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'shop/shop-categories/category-page-leftsidebar(3-grid).html',context)
 
 def shop_categories_six_sidebar(request):
-    return render(request,'shop/shop-categories/category-page-leftsidebar(6-grid).html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'shop/shop-categories/category-page-leftsidebar(6-grid).html',context)
 
 def shop_categories_right_sidebar(request):
-    return render(request,'shop/shop-categories/category-page-rightsidebar(4-grid).html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'shop/shop-categories/category-page-rightsidebar(4-grid).html',context)
 
 def shop_categories_right_2_grid(request):
-    return render(request,'shop/shop-categories/category-page-rightsidebar(2-grid).html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'shop/shop-categories/category-page-rightsidebar(2-grid).html',context)
 
 def shop_categories_right_3_grid(request):
-    return render(request,'shop/shop-categories/category-page-rightsidebar(3-grid).html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'shop/shop-categories/category-page-rightsidebar(3-grid).html',context)
 
 def shop_categories_right_6_grid(request):
-    return render(request,'shop/shop-categories/category-page-rightsidebar(6-grid).html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'shop/shop-categories/category-page-rightsidebar(6-grid).html',context)
 
 def shop_categories_no_sidebar(request):
-    return render(request,'shop/shop-categories/category-page-nosidebar(4-grid).html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'shop/shop-categories/category-page-nosidebar(4-grid).html',context)
 
 def shop_categories_no_sidebar_2(request):
-    return render(request,'shop/shop-categories/category-page-nosidebar(2-grid).html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'shop/shop-categories/category-page-nosidebar(2-grid).html',context)
 
 def shop_categories_no_sidebar_3(request):
-    return render(request,'shop/shop-categories/category-page-nosidebar(3-grid).html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'shop/shop-categories/category-page-nosidebar(3-grid).html',context)
 
 def shop_categories_no_sidebar_6(request):
-    return render(request,'shop/shop-categories/category-page-nosidebar(6-grid).html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'shop/shop-categories/category-page-nosidebar(6-grid).html',context)
 
 def shop_categories_metro(request):
-    return render(request,'shop/shop-categories/category-page(metro).html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'shop/shop-categories/category-page(metro).html',context)
 
     # product pages views
 
 def shop_product_no_sidebar(request):
-    return render(request,'shop/product-pages/product-page(no-sidebar).html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'shop/product-pages/product-page(no-sidebar).html',context)
 
 def shop_product_left_sidebar(request):
-    return render(request,'shop/product-pages/product-page(left-sidebar).html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'shop/product-pages/product-page(left-sidebar).html',context)
 
 def shop_product_right_sidebar(request):
-    return render(request,'shop/product-pages/product-page(right-sidebar).html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'shop/product-pages/product-page(right-sidebar).html',context)
 
 def shop_product_3_grid(request):
-    return render(request,'shop/product-pages/product-page(3-column).html')
+    context = {"layout":default_layout,"header":"dark position-relative nav-lg"}
+    return render(request,'shop/product-pages/product-page(3-column).html',context)
 
 def shop_product_3_grid_left(request):
-    return render(request,'shop/product-pages/product-page(3-col-left).html')
+    context = {"layout":default_layout,"header":"dark position-relative nav-lg"}
+    return render(request,'shop/product-pages/product-page(3-col-left).html',context)
 
 def shop_product_3_grid_right(request):
-    return render(request,'shop/product-pages/product-page(3-col-right).html')
+    context = {"layout":default_layout,"header":"dark position-relative nav-lg"}
+    return render(request,'shop/product-pages/product-page(3-col-right).html',context)
 
 def shop_product_accordian(request):
-    return render(request,'shop/product-pages/product-page(accordian).html')
+    context = {"layout":default_layout,"header":"dark position-relative nav-lg"}
+    return render(request,'shop/product-pages/product-page(accordian).html',context)
 
 def shop_product_bundle(request):
-    return render(request,'shop/product-pages/product-page(bundle).html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'shop/product-pages/product-page(bundle).html',context)
 
 def shop_product_image_swatch(request):
-    return render(request,'shop/product-pages/product-page(image-swatch).html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'shop/product-pages/product-page(image-swatch).html',context)
 
 def shop_product_image_outside(request):
-    return render(request,'shop/product-pages/product-page(image-outside).html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'shop/product-pages/product-page(image-outside).html',context)
 
 def shop_product_image_sticky(request):
-    return render(request,'shop/product-pages/product-page(sticky).html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'shop/product-pages/product-page(sticky).html',context)
 
     # shop pages views
 
 def shop_pages_cart(request):
-    return render(request,'shop/shop-pages/cart.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'shop/shop-pages/cart.html',context)
 
 def shop_pages_checkout(request):
-    return render(request,'shop/shop-pages/checkout.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'shop/shop-pages/checkout.html',context)
 
 def shop_pages_compare(request):
-    return render(request,'shop/shop-pages/compare.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'shop/shop-pages/compare.html',context)
 
 def shop_pages_compare_2(request):
-    return render(request,'shop/shop-pages/compare-2.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'shop/shop-pages/compare-2.html',context)
 
 def shop_pages_signup(request):
-    return render(request,'shop/shop-pages/signup.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'shop/shop-pages/signup.html',context)
 
 def shop_pages_login(request):
-    return render(request,'shop/shop-pages/login.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'shop/shop-pages/login.html',context)
 
 def shop_pages_wishlist(request):
-    return render(request,'shop/shop-pages/wishlist.html')
+    context = {"layout":default_layout,"header":default_header}
+    return render(request,'shop/shop-pages/wishlist.html',context)
 
 # features views
 
     # header options views
 
 def features_light_header(request):
-    return render(request,'features/header-option/header-light.html')
+    context = {"header":"dark","layout":""}
+    return render(request,'features/header-option/header-light.html',context)
 
 def features_dark_header(request):
-    return render(request,'features/header-option/header-dark.html')
+    context = {"header":"header-absolute","layout":""}
+    return render(request,'features/header-option/header-dark.html',context)
 
 def features_glass_header(request):
-    return render(request,'features/header-option/header-transparent.html')
+    context = {"header":"dark","layout":""}
+    return render(request,'features/header-option/header-transparent.html',context)
 
 def features_logo_center(request):
-    return render(request,'features/header-option/header-center-logo.html')
+    context = {"header":"yoga nav-abs header-rel","layout":""} 
+    return render(request,'features/header-option/header-center-logo.html',context)
 
 def features_header_right_navigation(request):
-    return render(request,'features/header-option/header-right-navigation.html')
+    context = {"header":"app1 nav-abs ","layout":""}
+    return render(request,'features/header-option/header-right-navigation.html',context)
 
     # breadcrumb option views
 
 def features_classic_types(request):
-    return render(request,'features/breadcrumb-option/breadcrumb.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'features/breadcrumb-option/breadcrumb.html',context)
 
 def features_breadcrumb_left(request):
-    return render(request,'features/breadcrumb-option/breadcrumb-left.html')
+    context = {"header":"dark","layout":""}
+    return render(request,'features/breadcrumb-option/breadcrumb-left.html',context)
 
 def features_breadcrumb_right(request):
-    return render(request,'features/breadcrumb-option/breadcrumb-right.html')
+    context = {"header":"dark","layout":""}
+    return render(request,'features/breadcrumb-option/breadcrumb-right.html',context)
 
 def features_breadcrumb_center(request):
-    return render(request,'features/breadcrumb-option/breadcrumb-center.html')
+    context = {"header":"dark","layout":""}
+    return render(request,'features/breadcrumb-option/breadcrumb-center.html',context)
 
 def features_breadcrumb_dark(request):
-    return render(request,'features/breadcrumb-option/breadcrumb-dark.html')
+    context = {"header":"header-absolute","layout":""}
+    return render(request,'features/breadcrumb-option/breadcrumb-dark.html',context)
 
 def features_parallex_background(request):
-    return render(request,'features/breadcrumb-option/breadcrumb-parallex-background.html')
+    context = {"header":"header-absolute","layout":""}
+    return render(request,'features/breadcrumb-option/breadcrumb-parallex-background.html',context)
 
 def features_with_background(request):
-    return render(request,'features/breadcrumb-option/breadcrumb-background.html')
+    context = {"header":"header-absolute","layout":""}
+    return render(request,'features/breadcrumb-option/breadcrumb-background.html',context)
 
 def features_gallery_background(request):
-    return render(request,'features/breadcrumb-option/breadcrumb-gallery-background.html')
+    context = {"header":"header-absolute","layout":""}
+    return render(request,'features/breadcrumb-option/breadcrumb-gallery-background.html',context)
 
 def features_video_background(request):
-    return render(request,'features/breadcrumb-option/breadcrumb-video-background.html')
+    context = {"header":"header-absolute","layout":""}
+    return render(request,'features/breadcrumb-option/breadcrumb-video-background.html',context)
 
     # footer options views
 
 def features_footer_default(request):
-    return render(request,'features/footer-options/footer-default.html')
+    context = {"header":"dark","layout":""}
+    return render(request,'features/footer-options/footer-default.html',context)
 
 def features_footer_light(request):
-    return render(request,'features/footer-options/footer3-light.html')
+    context = {"header":"dark","layout":""}
+    return render(request,'features/footer-options/footer3-light.html',context)
 
 def features_footer_dark(request):
-    return render(request,'features/footer-options/footer3-dark.html')
+    context = {"header":"dark","layout":""}
+    return render(request,'features/footer-options/footer3-dark.html',context)
 
 def features_footer_dark_light(request):
-    return render(request,'features/footer-options/footer1-light.html')
+    context = {"header":"dark","layout":""}
+    return render(request,'features/footer-options/footer1-light.html',context)
 
 def features_footer_dark_gradient(request):
-    return render(request,'features/footer-options/footer1-dark.html')
+    context = {"header":"dark","layout":""}
+    return render(request,'features/footer-options/footer1-dark.html',context)
 
 def features_footer_creative(request):
-    return render(request,'features/footer-options/footer2-light.html')
+    context = {"header":"dark","layout":""}
+    return render(request,'features/footer-options/footer2-light.html',context)
 
     # gallery types views
 
 def features_zoom_gallery(request):
-    return render(request,'features/gallery-types/zoom-gallery.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'features/gallery-types/zoom-gallery.html',context)
 
 def features_form_in_popup(request):
-    return render(request,'features/gallery-types/popup-with-form.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'features/gallery-types/popup-with-form.html',context)
 
 def features_modal_in_popup(request):
-    return render(request,'features/gallery-types/popup-with-modal.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'features/gallery-types/popup-with-modal.html',context)
 
 def features_youtube_in_popup(request):
-    return render(request,'features/gallery-types/popup-with-youtube.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'features/gallery-types/popup-with-youtube.html',context)
 
 def features_map_in_popup(request):
-    return render(request,'features/gallery-types/popup-with-googlemap.html')
+    context = {"header":"dark","layout":"agency"}
+    return render(request,'features/gallery-types/popup-with-googlemap.html',context)
