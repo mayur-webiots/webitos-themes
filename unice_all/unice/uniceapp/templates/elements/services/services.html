@@ -1,0 +1,20 @@
+{% extends 'base.html' %}{% load static %}
+{% block content %}
+<!--breadcrumb section start-->
+<section class="agency breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12"><h2 class="breadcrumb-text text-center">elements with servies</h2>
+                <ul class="breadcrumb justify-content-center">
+
+                    <li><a href="#">elements</a></li>
+                    <li>servies</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--breadcrumb section end-->
+{% include 'elements/services/components/services-1-2.html' %}
+{% include 'elements/services/components/services-3-4.html' %}
+{% endblock content %}

@@ -1,0 +1,45 @@
+{% extends 'base.html' %}{% load static %}
+{% block css %}
+  <!--owl carousel css-->
+  <link href="{% static 'assets/css/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/css/owl.theme.default.min.css' %}" rel="stylesheet">
+<!--magnific popup css-->
+<link href="{% static 'assets/css/magnific-popup.css' %}" rel="stylesheet">  
+{% endblock css %}
+{% block content %}
+<!--breadcrumb section start-->
+<section class="agency breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="breadcrumb-text text-center">blog with gallery-layout</h2>
+                <ul class="breadcrumb justify-content-center">
+
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">blog details</a></li>
+                    <li>gallery layout</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--breadcrumb section end-->
+
+<!-- section start -->
+<section class="agency blog-sec blog-sidebar single_blog_item">
+    <div class="container">
+        <div class="row">
+            {% include 'blog/blog-details/blog-detail-gallery/components/blog-main.html' %}
+            {% include 'blog/blog-details/blog-detail-gallery/components/blog-side.html' %}
+            
+        </div>
+    </div>
+</section>
+{% endblock content %}
+{% block scriptcontent %}
+<!--owl js-->
+<script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+
+<script src="{% static 'assets/js/blog-detail.js' %}"></script>
+
+{% endblock scriptcontent %}

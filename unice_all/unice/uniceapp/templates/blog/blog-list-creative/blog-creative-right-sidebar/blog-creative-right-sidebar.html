@@ -1,0 +1,31 @@
+{% extends 'base.html' %}{% load static %}
+{% block content %}
+
+<!--breadcrumb section start-->
+<section class="agency breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="breadcrumb-text text-center">blog with right-sidebar</h2>
+                <ul class="breadcrumb justify-content-center">
+
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">blog list creative</a></li>
+                    <li>right sidebar</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--breadcrumb section end-->
+
+<!-- section start -->
+<section class="agency blog blog-sec blog-sidebar blog-split sider">
+    <div class="container">
+        <div class="row ps-0 pe-0">
+            {% include 'blog/blog-list-creative/blog-creative-right-sidebar/components/blog-main.html' %}
+            {% include 'blog/blog-list-creative/blog-creative-right-sidebar/components/blog-side.html' %}
+        </div>
+    </div>
+</section>
+{% endblock content %}

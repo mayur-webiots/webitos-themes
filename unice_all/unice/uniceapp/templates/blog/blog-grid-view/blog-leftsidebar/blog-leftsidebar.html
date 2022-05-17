@@ -1,0 +1,45 @@
+{% extends 'base.html' %}{% load static %}
+{% block content %}
+
+<!--breadcrumb section start-->
+<section class="agency breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="breadcrumb-text text-center">blog with left-sidebar</h2>
+                <ul class="breadcrumb justify-content-center">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Blog Grid View</a></li>
+                    <li>Left Sidebar</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--breadcrumb section end-->
+
+<!-- section start -->
+<section class="agency blog blog-sec blog-sidebar">
+    <div class="container">
+        <div class="row">
+            {% include 'blog/blog-grid-view/blog-leftsidebar/components/blog-main.html' %}
+            {% include 'blog/blog-grid-view/blog-leftsidebar/components/blog-side.html' %}
+            
+        </div>
+    </div>
+</section>
+{% endblock content %}
+{% block scriptcontent %}
+<script>
+    function collapSection() {
+        var x = document.getElementById("togglebtn");
+        if ((x.style.opacity === "0") && (x.style.visibility === "hidden")) {
+            x.style.opacity = "1";
+            x.style.visibility = "visible";
+        } else {
+            x.style.opacity = "0";
+            x.style.visibility = "hidden";
+        }
+    }
+</script>
+{% endblock scriptcontent %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}{% load static %}
+{% block content %}
+
+<!-- breadcrumb section start -->
+<section class="agency breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="breadcrumb-text text-center">blog with full width left-sidebar)</h2>
+                <ul class="breadcrumb justify-content-center">
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">blog grid view</a></li>
+                    <li>full width left sidebar</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- breadcrumb section end -->
+
+<!-- section start -->
+<section class="agency blog blog-sec blog-sidebar sider">
+    <div class="container">
+        <div class="row">
+            {% include 'blog/blog-grid-view/blog-full-width-left-sidebar/components/blog-main.html' %}
+            {% include 'blog/blog-grid-view/blog-full-width-left-sidebar/components/blog-side.html' %}
+        </div>
+    </div>
+</section>
+{% endblock content %}

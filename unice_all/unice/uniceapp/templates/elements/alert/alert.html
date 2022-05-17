@@ -1,0 +1,38 @@
+{% extends 'base.html' %}{% load static %}
+{% block css %}
+<!--magnific popup css-->
+<link href="{% static 'assets/css/magnific-popup.css' %}" rel="stylesheet">
+{% endblock css %}
+{% block content %}
+<!--breadcrumb section start-->
+<section class="agency breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12"><h2 class="breadcrumb-text text-center">elements with alerts</h2>
+                <ul class="breadcrumb justify-content-center">
+
+                    <li><a href="#">elements</a></li>
+                    <li>alerts</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--breadcrumb section end-->
+
+<!-- alert section start-->
+<section class="alert-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                {% include 'elements/alert/components/alerts-1.html' %}
+                {% include 'elements/alert/components/alerts-2.html' %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}
+{% block scriptcontent %}
+<!--magnific popup js-->
+<script src="{% static 'assets/js/magnific-popup.js' %}"></script>
+{% endblock scriptcontent %}

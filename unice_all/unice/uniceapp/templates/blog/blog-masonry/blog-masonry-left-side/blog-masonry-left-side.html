@@ -1,0 +1,40 @@
+{% extends 'base.html' %}{% load static %}
+{% block css %}
+<!--magnific popup css-->
+<link href="{% static 'assets/css/magnific-popup.css' %}" rel="stylesheet">
+{% endblock css %}
+{% block content %}
+<!--breadcrumb section start-->
+<section class="agency breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="breadcrumb-text text-center">blog with 2-columns</h2>
+                <ul class="breadcrumb justify-content-center">
+
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">blog masonry</a></li>
+                    <li>2 columns</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--breadcrumb section start-->
+
+<!-- section start -->
+<section class="portfolio-section agency blog blog-sec blog-sidebar sider">
+    <div class="container">
+        <div class="row">
+            {% include 'blog/blog-masonry/blog-masonry-left-side/components/blog-main.html' %}
+            {% include 'blog/blog-masonry/blog-masonry-left-side/components/blog-side.html' %}
+        </div>
+    </div>
+</section>
+{% endblock content %}
+{% block scriptcontent %}
+<!--magnific popup js-->
+<script src="{% static 'assets/js/magnific-popup.js' %}"></script>
+<script src="{% static 'assets/js/isotope.min.js' %}"></script>
+<script src="{% static 'assets/js/portfolio.js' %}"></script>
+{% endblock scriptcontent %}

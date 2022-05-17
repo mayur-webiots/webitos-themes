@@ -16,6 +16,7 @@ in features when in dark mode, logo turn to white so have to change url in heade
 
 
 
+
 blog>blog mix layout>list full width no side bar.. nav bar not visible, and not working
 blog>blog details>gallery layout... when you  open the image there is not close buton.
 blog>blog mix layout>blog list mix left sidebar... has side bar on right.
@@ -37,13 +38,23 @@ in mobile view if you open menu bar eveything is too fast.
 
 when converted to rtl > unice written as ecinu.
 
+when converted to rtl and turn on dark mode then logo remains black.
 
 
 header_classes, body_classes, header_image
 
-continue from shop>product-page(bundle)
 
 16-05-2022:
 today's udpate:
 - created base file and other layout files and extended most of the files from it.
 - arround 20 files left to extend
+
+continue from shop>product-page(bundle)
+
+add a logic for the breadcrumbs in feature and every other 
+
+17-05-2022
+    today's update:
+    - converted 50% of the page of unice template into components.
+
+tommorow continue from pages folder.

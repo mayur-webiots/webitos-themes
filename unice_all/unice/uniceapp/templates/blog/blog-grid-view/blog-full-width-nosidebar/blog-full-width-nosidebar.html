@@ -1,0 +1,39 @@
+{% extends 'base.html' %}{% load static %}
+{% block css %}
+<!--owl carousel css-->
+<link href="{% static 'assets/css/owl.carousel.min.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/owl.theme.default.min.css' %}" rel="stylesheet">
+<!-- AOS css-->
+<link href="{% static 'assets/css/aos.css' %}" rel="stylesheet" type="text/css">
+<!--magnific popup css-->
+<link href="{% static 'assets/css/magnific-popup.css' %}" rel="stylesheet">
+{% endblock css %}
+{% block content %}
+
+<!-- breadcrumb section start -->
+<section class="agency breadcrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="breadcrumb-text text-center">blog with full width no-sidebar</h2>
+                <ul class="breadcrumb justify-content-center">
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">blog grid view</a></li>
+                    <li>full width no sidebar</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- breadcrumb section end -->
+
+<!-- section start -->
+<section class="agency blog blog-sec">
+    <div class="container no-side">
+        <div class="row">
+            {% include 'blog/blog-grid-view/blog-full-width-nosidebar/components/blog-top.html' %}
+            {% include 'blog/blog-grid-view/blog-full-width-nosidebar/components/blog-bottom.html' %}
+        </div>
+    </div>
+</section>
+{% endblock content %}
