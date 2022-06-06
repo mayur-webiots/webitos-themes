@@ -1,0 +1,19 @@
+continue from:
+no need to convert email template and invoice template into nuxt.
+- create folder structures from voxo plus,
+
+
+use bootstrap 5 and do not use bootstrap-vue
+
+
+for sliders:
+use:
+vue slick carousel
+
+
+extra:vue awesome 
+
+https://codesandbox.io/s/ru0kq?file=/pages/index.vue:0-1605
+
+
+

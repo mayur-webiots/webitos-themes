@@ -229,4 +229,8 @@ urlpatterns = [
     path('features_youtube_in_popup',views.features_youtube_in_popup,name='features_youtube_in_popup'),
     path('features_map_in_popup',views.features_map_in_popup,name='features_map_in_popup'),
 
+    # documentation path
+
+    path('documentation',views.documentation,name='documentation'),
+
 ]

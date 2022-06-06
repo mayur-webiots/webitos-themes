@@ -1,0 +1,1402 @@
+[
+  {
+    "name": "blog-blog-detail",
+    "path": "/blog/blog-detail",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/blog/blog-detail.vue",
+    "chunkName": "pages/blog/blog-detail",
+    "_name": "_1c6e12bf"
+  },
+  {
+    "name": "blog-blog-leftsidebar",
+    "path": "/blog/blog-leftsidebar",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/blog/blog-leftsidebar.vue",
+    "chunkName": "pages/blog/blog-leftsidebar",
+    "_name": "_325c82f7"
+  },
+  {
+    "name": "blog-blog-nosidebar",
+    "path": "/blog/blog-nosidebar",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/blog/blog-nosidebar.vue",
+    "chunkName": "pages/blog/blog-nosidebar",
+    "_name": "_12092106"
+  },
+  {
+    "name": "blog-blog-rightsidebar",
+    "path": "/blog/blog-rightsidebar",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/blog/blog-rightsidebar.vue",
+    "chunkName": "pages/blog/blog-rightsidebar",
+    "_name": "_4a92f7a4"
+  },
+  {
+    "name": "collection-full-width",
+    "path": "/collection/full-width",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/collection/full-width.vue",
+    "chunkName": "pages/collection/full-width",
+    "_name": "_b57c570e"
+  },
+  {
+    "name": "collection-list-view",
+    "path": "/collection/list-view",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/collection/list-view.vue",
+    "chunkName": "pages/collection/list-view",
+    "_name": "_3dce61da"
+  },
+  {
+    "name": "collection-metro",
+    "path": "/collection/metro",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/collection/metro.vue",
+    "chunkName": "pages/collection/metro",
+    "_name": "_1a1f5eb8"
+  },
+  {
+    "name": "collection-no-sidebar",
+    "path": "/collection/no-sidebar",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/collection/no-sidebar.vue",
+    "chunkName": "pages/collection/no-sidebar",
+    "_name": "_61991ec1"
+  },
+  {
+    "name": "collection-right-sidebar",
+    "path": "/collection/right-sidebar",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/collection/right-sidebar.vue",
+    "chunkName": "pages/collection/right-sidebar",
+    "_name": "_939c136c"
+  },
+  {
+    "name": "collection-sidebar-popup",
+    "path": "/collection/sidebar-popup",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/collection/sidebar-popup.vue",
+    "chunkName": "pages/collection/sidebar-popup",
+    "_name": "_5111149a"
+  },
+  {
+    "name": "collection-six-grid",
+    "path": "/collection/six-grid",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/collection/six-grid.vue",
+    "chunkName": "pages/collection/six-grid",
+    "_name": "_082ecafc"
+  },
+  {
+    "name": "collection-three-grid",
+    "path": "/collection/three-grid",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/collection/three-grid.vue",
+    "chunkName": "pages/collection/three-grid",
+    "_name": "_d67739f4"
+  },
+  {
+    "name": "page-404",
+    "path": "/page/404",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/404.vue",
+    "chunkName": "pages/page/404",
+    "_name": "_4cac33f0"
+  },
+  {
+    "name": "page-about",
+    "path": "/page/about",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/about.vue",
+    "chunkName": "pages/page/about",
+    "_name": "_1ac65fdd"
+  },
+  {
+    "name": "page-collection",
+    "path": "/page/collection",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/collection.vue",
+    "chunkName": "pages/page/collection",
+    "_name": "_02452cfe"
+  },
+  {
+    "name": "page-coming-soon",
+    "path": "/page/coming-soon",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/coming-soon.vue",
+    "chunkName": "pages/page/coming-soon",
+    "_name": "_1fe99217"
+  },
+  {
+    "name": "page-faq",
+    "path": "/page/faq",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/faq.vue",
+    "chunkName": "pages/page/faq",
+    "_name": "_f4caee34"
+  },
+  {
+    "name": "page-lookbook",
+    "path": "/page/lookbook",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/lookbook.vue",
+    "chunkName": "pages/page/lookbook",
+    "_name": "_00aa6568"
+  },
+  {
+    "name": "page-order-success",
+    "path": "/page/order-success",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/order-success.vue",
+    "chunkName": "pages/page/order-success",
+    "_name": "_2a66a558"
+  },
+  {
+    "name": "page-review",
+    "path": "/page/review",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/review.vue",
+    "chunkName": "pages/page/review",
+    "_name": "_7a5c2cb8"
+  },
+  {
+    "name": "page-search",
+    "path": "/page/search",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/search.vue",
+    "chunkName": "pages/page/search",
+    "_name": "_7df019f0"
+  },
+  {
+    "name": "page-typography",
+    "path": "/page/typography",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/typography.vue",
+    "chunkName": "pages/page/typography",
+    "_name": "_7a66430f"
+  },
+  {
+    "name": "product-bundle-product",
+    "path": "/product/bundle-product",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/product/bundle-product.vue",
+    "chunkName": "pages/product/bundle-product",
+    "_name": "_b986e7d8"
+  },
+  {
+    "name": "product-four-image",
+    "path": "/product/four-image",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/product/four-image.vue",
+    "chunkName": "pages/product/four-image",
+    "_name": "_316bb138"
+  },
+  {
+    "name": "shop-bags",
+    "path": "/shop/bags",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/bags/index.vue",
+    "chunkName": "pages/shop/bags/index",
+    "_name": "_6a687a47"
+  },
+  {
+    "name": "shop-beauty",
+    "path": "/shop/beauty",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/beauty/index.vue",
+    "chunkName": "pages/shop/beauty/index",
+    "_name": "_76a8c7d8"
+  },
+  {
+    "name": "shop-electronics-1",
+    "path": "/shop/electronics-1",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/electronics-1/index.vue",
+    "chunkName": "pages/shop/electronics-1/index",
+    "_name": "_6c7c0756"
+  },
+  {
+    "name": "shop-fashion",
+    "path": "/shop/fashion",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/fashion/index.vue",
+    "chunkName": "pages/shop/fashion/index",
+    "_name": "_e9bb289c"
+  },
+  {
+    "name": "shop-fashion-2",
+    "path": "/shop/fashion-2",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/fashion-2/index.vue",
+    "chunkName": "pages/shop/fashion-2/index",
+    "_name": "_2c8ec552"
+  },
+  {
+    "name": "shop-fashion-3",
+    "path": "/shop/fashion-3",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/fashion-3/index.vue",
+    "chunkName": "pages/shop/fashion-3/index",
+    "_name": "_7e9d5018"
+  },
+  {
+    "name": "shop-flower",
+    "path": "/shop/flower",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/flower/index.vue",
+    "chunkName": "pages/shop/flower/index",
+    "_name": "_236da6f7"
+  },
+  {
+    "name": "shop-furniture",
+    "path": "/shop/furniture",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/furniture/index.vue",
+    "chunkName": "pages/shop/furniture/index",
+    "_name": "_2d8a2ca8"
+  },
+  {
+    "name": "shop-gym",
+    "path": "/shop/gym",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/gym/index.vue",
+    "chunkName": "pages/shop/gym/index",
+    "_name": "_13293f75"
+  },
+  {
+    "name": "shop-jewellery",
+    "path": "/shop/jewellery",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/jewellery/index.vue",
+    "chunkName": "pages/shop/jewellery/index",
+    "_name": "_344858bd"
+  },
+  {
+    "name": "shop-kids",
+    "path": "/shop/kids",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/kids/index.vue",
+    "chunkName": "pages/shop/kids/index",
+    "_name": "_8f90566e"
+  },
+  {
+    "name": "shop-pets",
+    "path": "/shop/pets",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/pets/index.vue",
+    "chunkName": "pages/shop/pets/index",
+    "_name": "_3ac9fe60"
+  },
+  {
+    "name": "shop-shoes",
+    "path": "/shop/shoes",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/shoes/index.vue",
+    "chunkName": "pages/shop/shoes/index",
+    "_name": "_1bdbc0a2"
+  },
+  {
+    "name": "shop-tools",
+    "path": "/shop/tools",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/tools/index.vue",
+    "chunkName": "pages/shop/tools/index",
+    "_name": "_4eb99856"
+  },
+  {
+    "name": "shop-vegetables",
+    "path": "/shop/vegetables",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/vegetables/index.vue",
+    "chunkName": "pages/shop/vegetables/index",
+    "_name": "_4d00cfce"
+  },
+  {
+    "name": "shop-watch",
+    "path": "/shop/watch",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/watch/index.vue",
+    "chunkName": "pages/shop/watch/index",
+    "_name": "_ecdde46e"
+  },
+  {
+    "name": "blog-widgets-blog-list",
+    "path": "/blog/widgets/blog-list",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/blog/widgets/blog-list.vue",
+    "chunkName": "pages/blog/widgets/blog-list",
+    "_name": "_5533b3ac"
+  },
+  {
+    "name": "blog-widgets-blog-sidebar",
+    "path": "/blog/widgets/blog-sidebar",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/blog/widgets/blog-sidebar.vue",
+    "chunkName": "pages/blog/widgets/blog-sidebar",
+    "_name": "_1b59b684"
+  },
+  {
+    "name": "page-account-cart",
+    "path": "/page/account/cart",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/account/cart.vue",
+    "chunkName": "pages/page/account/cart",
+    "_name": "_d40d5fbc"
+  },
+  {
+    "name": "page-account-checkout",
+    "path": "/page/account/checkout",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/account/checkout.vue",
+    "chunkName": "pages/page/account/checkout",
+    "_name": "_7bf15a48"
+  },
+  {
+    "name": "page-account-contact",
+    "path": "/page/account/contact",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/account/contact.vue",
+    "chunkName": "pages/page/account/contact",
+    "_name": "_1413040e"
+  },
+  {
+    "name": "page-account-dashboard",
+    "path": "/page/account/dashboard",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/account/dashboard.vue",
+    "chunkName": "pages/page/account/dashboard",
+    "_name": "_4bdc7302"
+  },
+  {
+    "name": "page-account-forget-password",
+    "path": "/page/account/forget-password",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/account/forget-password.vue",
+    "chunkName": "pages/page/account/forget-password",
+    "_name": "_1f1c8a2e"
+  },
+  {
+    "name": "page-account-login",
+    "path": "/page/account/login",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/account/login.vue",
+    "chunkName": "pages/page/account/login",
+    "_name": "_8eb73f52"
+  },
+  {
+    "name": "page-account-login-firebase",
+    "path": "/page/account/login-firebase",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/account/login-firebase.vue",
+    "chunkName": "pages/page/account/login-firebase",
+    "_name": "_6af4c6ed"
+  },
+  {
+    "name": "page-account-profile",
+    "path": "/page/account/profile",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/account/profile.vue",
+    "chunkName": "pages/page/account/profile",
+    "_name": "_1c3a7d17"
+  },
+  {
+    "name": "page-account-register",
+    "path": "/page/account/register",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/account/register.vue",
+    "chunkName": "pages/page/account/register",
+    "_name": "_820f75b6"
+  },
+  {
+    "name": "page-account-wishlist",
+    "path": "/page/account/wishlist",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/account/wishlist.vue",
+    "chunkName": "pages/page/account/wishlist",
+    "_name": "_13236b47"
+  },
+  {
+    "name": "page-compare-compare-1",
+    "path": "/page/compare/compare-1",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/compare/compare-1.vue",
+    "chunkName": "pages/page/compare/compare-1",
+    "_name": "_b8d95822"
+  },
+  {
+    "name": "page-compare-compare-2",
+    "path": "/page/compare/compare-2",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/compare/compare-2.vue",
+    "chunkName": "pages/page/compare/compare-2",
+    "_name": "_b8bd2920"
+  },
+  {
+    "name": "page-element-banner",
+    "path": "/page/element/banner",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/element/banner.vue",
+    "chunkName": "pages/page/element/banner",
+    "_name": "_63051f7f"
+  },
+  {
+    "name": "page-element-category",
+    "path": "/page/element/category",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/element/category.vue",
+    "chunkName": "pages/page/element/category",
+    "_name": "_333dbcde"
+  },
+  {
+    "name": "page-element-collection-banner",
+    "path": "/page/element/collection-banner",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/element/collection-banner.vue",
+    "chunkName": "pages/page/element/collection-banner",
+    "_name": "_5dfd53b8"
+  },
+  {
+    "name": "page-element-home-slider",
+    "path": "/page/element/home-slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/element/home-slider.vue",
+    "chunkName": "pages/page/element/home-slider",
+    "_name": "_400a91cc"
+  },
+  {
+    "name": "page-element-logo-slider",
+    "path": "/page/element/logo-slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/element/logo-slider.vue",
+    "chunkName": "pages/page/element/logo-slider",
+    "_name": "_5d568980"
+  },
+  {
+    "name": "page-element-multi-slider",
+    "path": "/page/element/multi-slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/element/multi-slider.vue",
+    "chunkName": "pages/page/element/multi-slider",
+    "_name": "_c426f0f0"
+  },
+  {
+    "name": "page-element-product-slider",
+    "path": "/page/element/product-slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/element/product-slider.vue",
+    "chunkName": "pages/page/element/product-slider",
+    "_name": "_72f8615c"
+  },
+  {
+    "name": "page-element-product-tabs",
+    "path": "/page/element/product-tabs",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/element/product-tabs.vue",
+    "chunkName": "pages/page/element/product-tabs",
+    "_name": "_016635af"
+  },
+  {
+    "name": "page-element-service",
+    "path": "/page/element/service",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/element/service.vue",
+    "chunkName": "pages/page/element/service",
+    "_name": "_0213ab1c"
+  },
+  {
+    "name": "page-portfolio-masonary-fullwidth",
+    "path": "/page/portfolio/masonary-fullwidth",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/portfolio/masonary-fullwidth.vue",
+    "chunkName": "pages/page/portfolio/masonary-fullwidth",
+    "_name": "_16a89abb"
+  },
+  {
+    "name": "page-portfolio-mesonary-grid-2",
+    "path": "/page/portfolio/mesonary-grid-2",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/portfolio/mesonary-grid-2.vue",
+    "chunkName": "pages/page/portfolio/mesonary-grid-2",
+    "_name": "_72063d1a"
+  },
+  {
+    "name": "page-portfolio-mesonary-grid-3",
+    "path": "/page/portfolio/mesonary-grid-3",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/portfolio/mesonary-grid-3.vue",
+    "chunkName": "pages/page/portfolio/mesonary-grid-3",
+    "_name": "_71ea0e18"
+  },
+  {
+    "name": "page-portfolio-mesonary-grid-4",
+    "path": "/page/portfolio/mesonary-grid-4",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/portfolio/mesonary-grid-4.vue",
+    "chunkName": "pages/page/portfolio/mesonary-grid-4",
+    "_name": "_71cddf16"
+  },
+  {
+    "name": "page-portfolio-portfolio-2-col",
+    "path": "/page/portfolio/portfolio-2-col",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/portfolio/portfolio-2-col.vue",
+    "chunkName": "pages/page/portfolio/portfolio-2-col",
+    "_name": "_4d52ac29"
+  },
+  {
+    "name": "page-portfolio-portfolio-3-col",
+    "path": "/page/portfolio/portfolio-3-col",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/portfolio/portfolio-3-col.vue",
+    "chunkName": "pages/page/portfolio/portfolio-3-col",
+    "_name": "_3cd1c9ac"
+  },
+  {
+    "name": "page-portfolio-portfolio-4-col",
+    "path": "/page/portfolio/portfolio-4-col",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/portfolio/portfolio-4-col.vue",
+    "chunkName": "pages/page/portfolio/portfolio-4-col",
+    "_name": "_75db8a2b"
+  },
+  {
+    "name": "product-sidebar-no-sidebar",
+    "path": "/product/sidebar/no-sidebar",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/product/sidebar/no-sidebar.vue",
+    "chunkName": "pages/product/sidebar/no-sidebar",
+    "_name": "_aad32c5a"
+  },
+  {
+    "name": "product-sidebar-right-sidebar",
+    "path": "/product/sidebar/right-sidebar",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/product/sidebar/right-sidebar.vue",
+    "chunkName": "pages/product/sidebar/right-sidebar",
+    "_name": "_db960c10"
+  },
+  {
+    "name": "product-three-column-thumbnail-bottom",
+    "path": "/product/three-column/thumbnail-bottom",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/product/three-column/thumbnail-bottom.vue",
+    "chunkName": "pages/product/three-column/thumbnail-bottom",
+    "_name": "_61b17f54"
+  },
+  {
+    "name": "product-three-column-thumbnail-left",
+    "path": "/product/three-column/thumbnail-left",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/product/three-column/thumbnail-left.vue",
+    "chunkName": "pages/product/three-column/thumbnail-left",
+    "_name": "_0e8120f2"
+  },
+  {
+    "name": "product-three-column-thumbnail-right",
+    "path": "/product/three-column/thumbnail-right",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/product/three-column/thumbnail-right.vue",
+    "chunkName": "pages/product/three-column/thumbnail-right",
+    "_name": "_022fd17e"
+  },
+  {
+    "name": "product-thumbnail-image-image-outside",
+    "path": "/product/thumbnail-image/image-outside",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/product/thumbnail-image/image-outside.vue",
+    "chunkName": "pages/product/thumbnail-image/image-outside",
+    "_name": "_6c6456de"
+  },
+  {
+    "name": "product-thumbnail-image-left-image",
+    "path": "/product/thumbnail-image/left-image",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/product/thumbnail-image/left-image.vue",
+    "chunkName": "pages/product/thumbnail-image/left-image",
+    "_name": "_2af21e7a"
+  },
+  {
+    "name": "product-thumbnail-image-right-image",
+    "path": "/product/thumbnail-image/right-image",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/product/thumbnail-image/right-image.vue",
+    "chunkName": "pages/product/thumbnail-image/right-image",
+    "_name": "_6e8aa156"
+  },
+  {
+    "name": "page-account-auth-auth",
+    "path": "/page/account/auth/auth",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/page/account/auth/auth.js",
+    "chunkName": "pages/page/account/auth/auth",
+    "_name": "_16eb095c"
+  },
+  {
+    "name": "shop-bags-components-banner",
+    "path": "/shop/bags/components/banner",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/bags/components/banner.vue",
+    "chunkName": "pages/shop/bags/components/banner",
+    "_name": "_402a568c"
+  },
+  {
+    "name": "shop-bags-components-blog",
+    "path": "/shop/bags/components/blog",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/bags/components/blog.vue",
+    "chunkName": "pages/shop/bags/components/blog",
+    "_name": "_14781fb0"
+  },
+  {
+    "name": "shop-bags-components-category",
+    "path": "/shop/bags/components/category",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/bags/components/category.vue",
+    "chunkName": "pages/shop/bags/components/category",
+    "_name": "_7ea317e8"
+  },
+  {
+    "name": "shop-bags-components-category2",
+    "path": "/shop/bags/components/category2",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/bags/components/category2.vue",
+    "chunkName": "pages/shop/bags/components/category2",
+    "_name": "_5537b6d6"
+  },
+  {
+    "name": "shop-bags-components-categorytab",
+    "path": "/shop/bags/components/categorytab",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/bags/components/categorytab.vue",
+    "chunkName": "pages/shop/bags/components/categorytab",
+    "_name": "_41640c8e"
+  },
+  {
+    "name": "shop-bags-components-instagram",
+    "path": "/shop/bags/components/instagram",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/bags/components/instagram.vue",
+    "chunkName": "pages/shop/bags/components/instagram",
+    "_name": "_2d5f4c94"
+  },
+  {
+    "name": "shop-bags-components-productcategoryslider",
+    "path": "/shop/bags/components/productcategoryslider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/bags/components/productcategoryslider.vue",
+    "chunkName": "pages/shop/bags/components/productcategoryslider",
+    "_name": "_531115f0"
+  },
+  {
+    "name": "shop-bags-components-productslider",
+    "path": "/shop/bags/components/productslider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/bags/components/productslider.vue",
+    "chunkName": "pages/shop/bags/components/productslider",
+    "_name": "_36fb8772"
+  },
+  {
+    "name": "shop-bags-components-services",
+    "path": "/shop/bags/components/services",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/bags/components/services.vue",
+    "chunkName": "pages/shop/bags/components/services",
+    "_name": "_846fd128"
+  },
+  {
+    "name": "shop-bags-components-slider",
+    "path": "/shop/bags/components/slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/bags/components/slider.vue",
+    "chunkName": "pages/shop/bags/components/slider",
+    "_name": "_5f57ebef"
+  },
+  {
+    "name": "shop-beauty-components-about",
+    "path": "/shop/beauty/components/about",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/beauty/components/about.vue",
+    "chunkName": "pages/shop/beauty/components/about",
+    "_name": "_ed951484"
+  },
+  {
+    "name": "shop-beauty-components-blog",
+    "path": "/shop/beauty/components/blog",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/beauty/components/blog.vue",
+    "chunkName": "pages/shop/beauty/components/blog",
+    "_name": "_1ff527fe"
+  },
+  {
+    "name": "shop-beauty-components-instagram",
+    "path": "/shop/beauty/components/instagram",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/beauty/components/instagram.vue",
+    "chunkName": "pages/shop/beauty/components/instagram",
+    "_name": "_870bea3a"
+  },
+  {
+    "name": "shop-beauty-components-product-slider",
+    "path": "/shop/beauty/components/product-slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/beauty/components/product-slider.vue",
+    "chunkName": "pages/shop/beauty/components/product-slider",
+    "_name": "_a53616c4"
+  },
+  {
+    "name": "shop-beauty-components-slider",
+    "path": "/shop/beauty/components/slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/beauty/components/slider.vue",
+    "chunkName": "pages/shop/beauty/components/slider",
+    "_name": "_e6793000"
+  },
+  {
+    "name": "shop-beauty-components-top-product-slider",
+    "path": "/shop/beauty/components/top-product-slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/beauty/components/top-product-slider.vue",
+    "chunkName": "pages/shop/beauty/components/top-product-slider",
+    "_name": "_01749496"
+  },
+  {
+    "name": "shop-beauty-components-video-tutorial",
+    "path": "/shop/beauty/components/video-tutorial",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/beauty/components/video-tutorial.vue",
+    "chunkName": "pages/shop/beauty/components/video-tutorial",
+    "_name": "_8b79e5e2"
+  },
+  {
+    "name": "shop-electronics-1-components-collection_banner",
+    "path": "/shop/electronics-1/components/collection_banner",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/electronics-1/components/collection_banner.vue",
+    "chunkName": "pages/shop/electronics-1/components/collection_banner",
+    "_name": "_78aad8fe"
+  },
+  {
+    "name": "shop-electronics-1-components-product_tab",
+    "path": "/shop/electronics-1/components/product_tab",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/electronics-1/components/product_tab.vue",
+    "chunkName": "pages/shop/electronics-1/components/product_tab",
+    "_name": "_03883e4e"
+  },
+  {
+    "name": "shop-electronics-1-components-slider",
+    "path": "/shop/electronics-1/components/slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/electronics-1/components/slider.vue",
+    "chunkName": "pages/shop/electronics-1/components/slider",
+    "_name": "_15a8c8fd"
+  },
+  {
+    "name": "shop-fashion-2-components-banner",
+    "path": "/shop/fashion-2/components/banner",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/fashion-2/components/banner.vue",
+    "chunkName": "pages/shop/fashion-2/components/banner",
+    "_name": "_8d62406c"
+  },
+  {
+    "name": "shop-fashion-2-components-collection",
+    "path": "/shop/fashion-2/components/collection",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/fashion-2/components/collection.vue",
+    "chunkName": "pages/shop/fashion-2/components/collection",
+    "_name": "_65f8933c"
+  },
+  {
+    "name": "shop-fashion-2-components-collection-banner",
+    "path": "/shop/fashion-2/components/collection-banner",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/fashion-2/components/collection-banner.vue",
+    "chunkName": "pages/shop/fashion-2/components/collection-banner",
+    "_name": "_25b1f2e6"
+  },
+  {
+    "name": "shop-fashion-2-components-instagram",
+    "path": "/shop/fashion-2/components/instagram",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/fashion-2/components/instagram.vue",
+    "chunkName": "pages/shop/fashion-2/components/instagram",
+    "_name": "_2e82a784"
+  },
+  {
+    "name": "shop-fashion-2-components-product",
+    "path": "/shop/fashion-2/components/product",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/fashion-2/components/product.vue",
+    "chunkName": "pages/shop/fashion-2/components/product",
+    "_name": "_e826667e"
+  },
+  {
+    "name": "shop-fashion-2-components-slider",
+    "path": "/shop/fashion-2/components/slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/fashion-2/components/slider.vue",
+    "chunkName": "pages/shop/fashion-2/components/slider",
+    "_name": "_38bbf6ff"
+  },
+  {
+    "name": "shop-fashion-3-components-banner",
+    "path": "/shop/fashion-3/components/banner",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/fashion-3/components/banner.vue",
+    "chunkName": "pages/shop/fashion-3/components/banner",
+    "_name": "_0380790b"
+  },
+  {
+    "name": "shop-fashion-3-components-product_slider",
+    "path": "/shop/fashion-3/components/product_slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/fashion-3/components/product_slider.vue",
+    "chunkName": "pages/shop/fashion-3/components/product_slider",
+    "_name": "_9ea472e0"
+  },
+  {
+    "name": "shop-fashion-3-components-product_tab",
+    "path": "/shop/fashion-3/components/product_tab",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/fashion-3/components/product_tab.vue",
+    "chunkName": "pages/shop/fashion-3/components/product_tab",
+    "_name": "_42302b76"
+  },
+  {
+    "name": "shop-fashion-3-components-slider",
+    "path": "/shop/fashion-3/components/slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/fashion-3/components/slider.vue",
+    "chunkName": "pages/shop/fashion-3/components/slider",
+    "_name": "_fa24df80"
+  },
+  {
+    "name": "shop-fashion-components-banner",
+    "path": "/shop/fashion/components/banner",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/fashion/components/banner.vue",
+    "chunkName": "pages/shop/fashion/components/banner",
+    "_name": "_85f204b6"
+  },
+  {
+    "name": "shop-fashion-components-blog",
+    "path": "/shop/fashion/components/blog",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/fashion/components/blog.vue",
+    "chunkName": "pages/shop/fashion/components/blog",
+    "_name": "_2c60f14a"
+  },
+  {
+    "name": "shop-fashion-components-collection_banner",
+    "path": "/shop/fashion/components/collection_banner",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/fashion/components/collection_banner.vue",
+    "chunkName": "pages/shop/fashion/components/collection_banner",
+    "_name": "_a063a8f8"
+  },
+  {
+    "name": "shop-fashion-components-instagram",
+    "path": "/shop/fashion/components/instagram",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/fashion/components/instagram.vue",
+    "chunkName": "pages/shop/fashion/components/instagram",
+    "_name": "_0546106e"
+  },
+  {
+    "name": "shop-fashion-components-logo_slider",
+    "path": "/shop/fashion/components/logo_slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/fashion/components/logo_slider.vue",
+    "chunkName": "pages/shop/fashion/components/logo_slider",
+    "_name": "_45527ccc"
+  },
+  {
+    "name": "shop-fashion-components-product_slider",
+    "path": "/shop/fashion/components/product_slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/fashion/components/product_slider.vue",
+    "chunkName": "pages/shop/fashion/components/product_slider",
+    "_name": "_02c9ddac"
+  },
+  {
+    "name": "shop-fashion-components-product_tab",
+    "path": "/shop/fashion/components/product_tab",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/fashion/components/product_tab.vue",
+    "chunkName": "pages/shop/fashion/components/product_tab",
+    "_name": "_5a3311c8"
+  },
+  {
+    "name": "shop-fashion-components-services",
+    "path": "/shop/fashion/components/services",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/fashion/components/services.vue",
+    "chunkName": "pages/shop/fashion/components/services",
+    "_name": "_77049cd2"
+  },
+  {
+    "name": "shop-fashion-components-slider",
+    "path": "/shop/fashion/components/slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/fashion/components/slider.vue",
+    "chunkName": "pages/shop/fashion/components/slider",
+    "_name": "_3c7414da"
+  },
+  {
+    "name": "shop-flower-components-blog",
+    "path": "/shop/flower/components/blog",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/flower/components/blog.vue",
+    "chunkName": "pages/shop/flower/components/blog",
+    "_name": "_919d9f40"
+  },
+  {
+    "name": "shop-flower-components-category_tab",
+    "path": "/shop/flower/components/category_tab",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/flower/components/category_tab.vue",
+    "chunkName": "pages/shop/flower/components/category_tab",
+    "_name": "_fa68e2dc"
+  },
+  {
+    "name": "shop-flower-components-collection_banner",
+    "path": "/shop/flower/components/collection_banner",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/flower/components/collection_banner.vue",
+    "chunkName": "pages/shop/flower/components/collection_banner",
+    "_name": "_3b7c129f"
+  },
+  {
+    "name": "shop-flower-components-instagram",
+    "path": "/shop/flower/components/instagram",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/flower/components/instagram.vue",
+    "chunkName": "pages/shop/flower/components/instagram",
+    "_name": "_5fb5ac38"
+  },
+  {
+    "name": "shop-flower-components-product_slider",
+    "path": "/shop/flower/components/product_slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/flower/components/product_slider.vue",
+    "chunkName": "pages/shop/flower/components/product_slider",
+    "_name": "_2934f7ef"
+  },
+  {
+    "name": "shop-flower-components-services",
+    "path": "/shop/flower/components/services",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/flower/components/services.vue",
+    "chunkName": "pages/shop/flower/components/services",
+    "_name": "_4729501c"
+  },
+  {
+    "name": "shop-flower-components-slider",
+    "path": "/shop/flower/components/slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/flower/components/slider.vue",
+    "chunkName": "pages/shop/flower/components/slider",
+    "_name": "_380f909f"
+  },
+  {
+    "name": "shop-flower-components-top_products",
+    "path": "/shop/flower/components/top_products",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/flower/components/top_products.vue",
+    "chunkName": "pages/shop/flower/components/top_products",
+    "_name": "_5c5e5468"
+  },
+  {
+    "name": "shop-furniture-components-blog",
+    "path": "/shop/furniture/components/blog",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/furniture/components/blog.vue",
+    "chunkName": "pages/shop/furniture/components/blog",
+    "_name": "_c6f35656"
+  },
+  {
+    "name": "shop-furniture-components-category_tab",
+    "path": "/shop/furniture/components/category_tab",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/furniture/components/category_tab.vue",
+    "chunkName": "pages/shop/furniture/components/category_tab",
+    "_name": "_b3f923f2"
+  },
+  {
+    "name": "shop-furniture-components-collection_banner",
+    "path": "/shop/furniture/components/collection_banner",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/furniture/components/collection_banner.vue",
+    "chunkName": "pages/shop/furniture/components/collection_banner",
+    "_name": "_5a02d76c"
+  },
+  {
+    "name": "shop-furniture-components-parallax_banner",
+    "path": "/shop/furniture/components/parallax_banner",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/furniture/components/parallax_banner.vue",
+    "chunkName": "pages/shop/furniture/components/parallax_banner",
+    "_name": "_7e267cf1"
+  },
+  {
+    "name": "shop-furniture-components-slider",
+    "path": "/shop/furniture/components/slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/furniture/components/slider.vue",
+    "chunkName": "pages/shop/furniture/components/slider",
+    "_name": "_1cad6bd4"
+  },
+  {
+    "name": "shop-gym-components-blog",
+    "path": "/shop/gym/components/blog",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/gym/components/blog.vue",
+    "chunkName": "pages/shop/gym/components/blog",
+    "_name": "_e8427944"
+  },
+  {
+    "name": "shop-gym-components-collection-banner",
+    "path": "/shop/gym/components/collection-banner",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/gym/components/collection-banner.vue",
+    "chunkName": "pages/shop/gym/components/collection-banner",
+    "_name": "_ab623aa2"
+  },
+  {
+    "name": "shop-gym-components-instagram",
+    "path": "/shop/gym/components/instagram",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/gym/components/instagram.vue",
+    "chunkName": "pages/shop/gym/components/instagram",
+    "_name": "_96dc74b4"
+  },
+  {
+    "name": "shop-gym-components-logo-slider",
+    "path": "/shop/gym/components/logo-slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/gym/components/logo-slider.vue",
+    "chunkName": "pages/shop/gym/components/logo-slider",
+    "_name": "_243f4492"
+  },
+  {
+    "name": "shop-gym-components-product-list",
+    "path": "/shop/gym/components/product-list",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/gym/components/product-list.vue",
+    "chunkName": "pages/shop/gym/components/product-list",
+    "_name": "_074fd578"
+  },
+  {
+    "name": "shop-gym-components-slider",
+    "path": "/shop/gym/components/slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/gym/components/slider.vue",
+    "chunkName": "pages/shop/gym/components/slider",
+    "_name": "_d0b747c6"
+  },
+  {
+    "name": "shop-gym-components-top-collection",
+    "path": "/shop/gym/components/top-collection",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/gym/components/top-collection.vue",
+    "chunkName": "pages/shop/gym/components/top-collection",
+    "_name": "_42697ed2"
+  },
+  {
+    "name": "shop-jewellery-components-category",
+    "path": "/shop/jewellery/components/category",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/jewellery/components/category.vue",
+    "chunkName": "pages/shop/jewellery/components/category",
+    "_name": "_0994cc02"
+  },
+  {
+    "name": "shop-jewellery-components-instagram",
+    "path": "/shop/jewellery/components/instagram",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/jewellery/components/instagram.vue",
+    "chunkName": "pages/shop/jewellery/components/instagram",
+    "_name": "_0143f35e"
+  },
+  {
+    "name": "shop-jewellery-components-parallax-banner",
+    "path": "/shop/jewellery/components/parallax-banner",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/jewellery/components/parallax-banner.vue",
+    "chunkName": "pages/shop/jewellery/components/parallax-banner",
+    "_name": "_635ae8ce"
+  },
+  {
+    "name": "shop-jewellery-components-product-slider",
+    "path": "/shop/jewellery/components/product-slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/jewellery/components/product-slider.vue",
+    "chunkName": "pages/shop/jewellery/components/product-slider",
+    "_name": "_971fbdfa"
+  },
+  {
+    "name": "shop-jewellery-components-product-tab",
+    "path": "/shop/jewellery/components/product-tab",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/jewellery/components/product-tab.vue",
+    "chunkName": "pages/shop/jewellery/components/product-tab",
+    "_name": "_2f021de3"
+  },
+  {
+    "name": "shop-jewellery-components-services",
+    "path": "/shop/jewellery/components/services",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/jewellery/components/services.vue",
+    "chunkName": "pages/shop/jewellery/components/services",
+    "_name": "_06ae6f62"
+  },
+  {
+    "name": "shop-jewellery-components-slider",
+    "path": "/shop/jewellery/components/slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/jewellery/components/slider.vue",
+    "chunkName": "pages/shop/jewellery/components/slider",
+    "_name": "_3a806d36"
+  },
+  {
+    "name": "shop-kids-components-collection_banner",
+    "path": "/shop/kids/components/collection_banner",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/kids/components/collection_banner.vue",
+    "chunkName": "pages/shop/kids/components/collection_banner",
+    "_name": "_3a530ee6"
+  },
+  {
+    "name": "shop-kids-components-collection_slider",
+    "path": "/shop/kids/components/collection_slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/kids/components/collection_slider.vue",
+    "chunkName": "pages/shop/kids/components/collection_slider",
+    "_name": "_62438fc2"
+  },
+  {
+    "name": "shop-kids-components-instagram",
+    "path": "/shop/kids/components/instagram",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/kids/components/instagram.vue",
+    "chunkName": "pages/shop/kids/components/instagram",
+    "_name": "_7bc35dd2"
+  },
+  {
+    "name": "shop-kids-components-logo_slider",
+    "path": "/shop/kids/components/logo_slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/kids/components/logo_slider.vue",
+    "chunkName": "pages/shop/kids/components/logo_slider",
+    "_name": "_7890f6d6"
+  },
+  {
+    "name": "shop-kids-components-parallax_banner",
+    "path": "/shop/kids/components/parallax_banner",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/kids/components/parallax_banner.vue",
+    "chunkName": "pages/shop/kids/components/parallax_banner",
+    "_name": "_242095f4"
+  },
+  {
+    "name": "shop-kids-components-product_slider",
+    "path": "/shop/kids/components/product_slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/kids/components/product_slider.vue",
+    "chunkName": "pages/shop/kids/components/product_slider",
+    "_name": "_a4bfee7e"
+  },
+  {
+    "name": "shop-kids-components-slider",
+    "path": "/shop/kids/components/slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/kids/components/slider.vue",
+    "chunkName": "pages/shop/kids/components/slider",
+    "_name": "_c50cd91e"
+  },
+  {
+    "name": "shop-pets-components-blog",
+    "path": "/shop/pets/components/blog",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/pets/components/blog.vue",
+    "chunkName": "pages/shop/pets/components/blog",
+    "_name": "_4bc2620e"
+  },
+  {
+    "name": "shop-pets-components-collection-banner",
+    "path": "/shop/pets/components/collection-banner",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/pets/components/collection-banner.vue",
+    "chunkName": "pages/shop/pets/components/collection-banner",
+    "_name": "_65fc6a18"
+  },
+  {
+    "name": "shop-pets-components-logo-slider",
+    "path": "/shop/pets/components/logo-slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/pets/components/logo-slider.vue",
+    "chunkName": "pages/shop/pets/components/logo-slider",
+    "_name": "_ac37c488"
+  },
+  {
+    "name": "shop-pets-components-parallax-banner",
+    "path": "/shop/pets/components/parallax-banner",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/pets/components/parallax-banner.vue",
+    "chunkName": "pages/shop/pets/components/parallax-banner",
+    "_name": "_0aa3caca"
+  },
+  {
+    "name": "shop-pets-components-product-slider",
+    "path": "/shop/pets/components/product-slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/pets/components/product-slider.vue",
+    "chunkName": "pages/shop/pets/components/product-slider",
+    "_name": "_56390196"
+  },
+  {
+    "name": "shop-pets-components-slider",
+    "path": "/shop/pets/components/slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/pets/components/slider.vue",
+    "chunkName": "pages/shop/pets/components/slider",
+    "_name": "_560fecf8"
+  },
+  {
+    "name": "shop-pets-components-top-collection",
+    "path": "/shop/pets/components/top-collection",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/pets/components/top-collection.vue",
+    "chunkName": "pages/shop/pets/components/top-collection",
+    "_name": "_8a5ff6a6"
+  },
+  {
+    "name": "shop-shoes-components-about",
+    "path": "/shop/shoes/components/about",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/shoes/components/about.vue",
+    "chunkName": "pages/shop/shoes/components/about",
+    "_name": "_3b23fab4"
+  },
+  {
+    "name": "shop-shoes-components-blog",
+    "path": "/shop/shoes/components/blog",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/shoes/components/blog.vue",
+    "chunkName": "pages/shop/shoes/components/blog",
+    "_name": "_4857704b"
+  },
+  {
+    "name": "shop-shoes-components-brand",
+    "path": "/shop/shoes/components/brand",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/shoes/components/brand.vue",
+    "chunkName": "pages/shop/shoes/components/brand",
+    "_name": "_5c1095ae"
+  },
+  {
+    "name": "shop-shoes-components-category",
+    "path": "/shop/shoes/components/category",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/shoes/components/category.vue",
+    "chunkName": "pages/shop/shoes/components/category",
+    "_name": "_5cedff27"
+  },
+  {
+    "name": "shop-shoes-components-category2",
+    "path": "/shop/shoes/components/category2",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/shoes/components/category2.vue",
+    "chunkName": "pages/shop/shoes/components/category2",
+    "_name": "_40e98f1b"
+  },
+  {
+    "name": "shop-shoes-components-category3",
+    "path": "/shop/shoes/components/category3",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/shoes/components/category3.vue",
+    "chunkName": "pages/shop/shoes/components/category3",
+    "_name": "_40f7a69c"
+  },
+  {
+    "name": "shop-shoes-components-collectionbanner",
+    "path": "/shop/shoes/components/collectionbanner",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/shoes/components/collectionbanner.vue",
+    "chunkName": "pages/shop/shoes/components/collectionbanner",
+    "_name": "_05714b1a"
+  },
+  {
+    "name": "shop-shoes-components-collectionslider",
+    "path": "/shop/shoes/components/collectionslider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/shoes/components/collectionslider.vue",
+    "chunkName": "pages/shop/shoes/components/collectionslider",
+    "_name": "_7cb471a8"
+  },
+  {
+    "name": "shop-shoes-components-collectiontab",
+    "path": "/shop/shoes/components/collectiontab",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/shoes/components/collectiontab.vue",
+    "chunkName": "pages/shop/shoes/components/collectiontab",
+    "_name": "_b4b1d144"
+  },
+  {
+    "name": "shop-shoes-components-instagram",
+    "path": "/shop/shoes/components/instagram",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/shoes/components/instagram.vue",
+    "chunkName": "pages/shop/shoes/components/instagram",
+    "_name": "_191124d9"
+  },
+  {
+    "name": "shop-shoes-components-productSlider",
+    "path": "/shop/shoes/components/productSlider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/shoes/components/productSlider.vue",
+    "chunkName": "pages/shop/shoes/components/productSlider",
+    "_name": "_409f9157"
+  },
+  {
+    "name": "shop-shoes-components-service",
+    "path": "/shop/shoes/components/service",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/shoes/components/service.vue",
+    "chunkName": "pages/shop/shoes/components/service",
+    "_name": "_e1a77bc8"
+  },
+  {
+    "name": "shop-shoes-components-slider",
+    "path": "/shop/shoes/components/slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/shoes/components/slider.vue",
+    "chunkName": "pages/shop/shoes/components/slider",
+    "_name": "_18a581ca"
+  },
+  {
+    "name": "shop-tools-components-about",
+    "path": "/shop/tools/components/about",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/tools/components/about.vue",
+    "chunkName": "pages/shop/tools/components/about",
+    "_name": "_3caaccbe"
+  },
+  {
+    "name": "shop-tools-components-category",
+    "path": "/shop/tools/components/category",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/tools/components/category.vue",
+    "chunkName": "pages/shop/tools/components/category",
+    "_name": "_28e65d1a"
+  },
+  {
+    "name": "shop-tools-components-logo_slider",
+    "path": "/shop/tools/components/logo_slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/tools/components/logo_slider.vue",
+    "chunkName": "pages/shop/tools/components/logo_slider",
+    "_name": "_ff26c1ee"
+  },
+  {
+    "name": "shop-tools-components-product-slider",
+    "path": "/shop/tools/components/product-slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/tools/components/product-slider.vue",
+    "chunkName": "pages/shop/tools/components/product-slider",
+    "_name": "_9fb2ffca"
+  },
+  {
+    "name": "shop-tools-components-product-tab-slider",
+    "path": "/shop/tools/components/product-tab-slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/tools/components/product-tab-slider.vue",
+    "chunkName": "pages/shop/tools/components/product-tab-slider",
+    "_name": "_ab7ea75a"
+  },
+  {
+    "name": "shop-tools-components-select-vehical",
+    "path": "/shop/tools/components/select-vehical",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/tools/components/select-vehical.vue",
+    "chunkName": "pages/shop/tools/components/select-vehical",
+    "_name": "_0d6a10ae"
+  },
+  {
+    "name": "shop-tools-components-service",
+    "path": "/shop/tools/components/service",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/tools/components/service.vue",
+    "chunkName": "pages/shop/tools/components/service",
+    "_name": "_a2f24c6e"
+  },
+  {
+    "name": "shop-tools-components-slider",
+    "path": "/shop/tools/components/slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/tools/components/slider.vue",
+    "chunkName": "pages/shop/tools/components/slider",
+    "_name": "_42f2c07d"
+  },
+  {
+    "name": "shop-vegetables-components-banner",
+    "path": "/shop/vegetables/components/banner",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/vegetables/components/banner.vue",
+    "chunkName": "pages/shop/vegetables/components/banner",
+    "_name": "_3277d07e"
+  },
+  {
+    "name": "shop-vegetables-components-blog",
+    "path": "/shop/vegetables/components/blog",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/vegetables/components/blog.vue",
+    "chunkName": "pages/shop/vegetables/components/blog",
+    "_name": "_0d047877"
+  },
+  {
+    "name": "shop-vegetables-components-product_slider",
+    "path": "/shop/vegetables/components/product_slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/vegetables/components/product_slider.vue",
+    "chunkName": "pages/shop/vegetables/components/product_slider",
+    "_name": "_461a4f46"
+  },
+  {
+    "name": "shop-vegetables-components-services",
+    "path": "/shop/vegetables/components/services",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/vegetables/components/services.vue",
+    "chunkName": "pages/shop/vegetables/components/services",
+    "_name": "_735cb4b3"
+  },
+  {
+    "name": "shop-vegetables-components-slider",
+    "path": "/shop/vegetables/components/slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/vegetables/components/slider.vue",
+    "chunkName": "pages/shop/vegetables/components/slider",
+    "_name": "_66312ef6"
+  },
+  {
+    "name": "shop-vegetables-components-special_products",
+    "path": "/shop/vegetables/components/special_products",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/vegetables/components/special_products.vue",
+    "chunkName": "pages/shop/vegetables/components/special_products",
+    "_name": "_278b5902"
+  },
+  {
+    "name": "shop-watch-components-blog",
+    "path": "/shop/watch/components/blog",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/watch/components/blog.vue",
+    "chunkName": "pages/shop/watch/components/blog",
+    "_name": "_5067b8b2"
+  },
+  {
+    "name": "shop-watch-components-category",
+    "path": "/shop/watch/components/category",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/watch/components/category.vue",
+    "chunkName": "pages/shop/watch/components/category",
+    "_name": "_4d7487e4"
+  },
+  {
+    "name": "shop-watch-components-categorytabs",
+    "path": "/shop/watch/components/categorytabs",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/watch/components/categorytabs.vue",
+    "chunkName": "pages/shop/watch/components/categorytabs",
+    "_name": "_0c2754e8"
+  },
+  {
+    "name": "shop-watch-components-collectionbanners",
+    "path": "/shop/watch/components/collectionbanners",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/watch/components/collectionbanners.vue",
+    "chunkName": "pages/shop/watch/components/collectionbanners",
+    "_name": "_fb9f27ee"
+  },
+  {
+    "name": "shop-watch-components-instagram",
+    "path": "/shop/watch/components/instagram",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/watch/components/instagram.vue",
+    "chunkName": "pages/shop/watch/components/instagram",
+    "_name": "_27b104d2"
+  },
+  {
+    "name": "shop-watch-components-logo_slider",
+    "path": "/shop/watch/components/logo_slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/watch/components/logo_slider.vue",
+    "chunkName": "pages/shop/watch/components/logo_slider",
+    "_name": "_2ad76b95"
+  },
+  {
+    "name": "shop-watch-components-product_slider",
+    "path": "/shop/watch/components/product_slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/watch/components/product_slider.vue",
+    "chunkName": "pages/shop/watch/components/product_slider",
+    "_name": "_6722c1c1"
+  },
+  {
+    "name": "shop-watch-components-services",
+    "path": "/shop/watch/components/services",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/watch/components/services.vue",
+    "chunkName": "pages/shop/watch/components/services",
+    "_name": "_53414124"
+  },
+  {
+    "name": "shop-watch-components-slider",
+    "path": "/shop/watch/components/slider",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/watch/components/slider.vue",
+    "chunkName": "pages/shop/watch/components/slider",
+    "_name": "_5dc54c71"
+  },
+  {
+    "name": "shop-watch-components-timer_banner",
+    "path": "/shop/watch/components/timer_banner",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/watch/components/timer_banner.vue",
+    "chunkName": "pages/shop/watch/components/timer_banner",
+    "_name": "_91928714"
+  },
+  {
+    "name": "shop-watch-components-top_products",
+    "path": "/shop/watch/components/top_products",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/shop/watch/components/top_products.vue",
+    "chunkName": "pages/shop/watch/components/top_products",
+    "_name": "_a42a27c4"
+  },
+  {
+    "name": "collection-leftsidebar-id",
+    "path": "/collection/leftsidebar/:id?",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/collection/leftsidebar/_id.vue",
+    "chunkName": "pages/collection/leftsidebar/_id",
+    "_name": "_42f70b7f"
+  },
+  {
+    "name": "product-sidebar-id",
+    "path": "/product/sidebar/:id?",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/product/sidebar/_id.vue",
+    "chunkName": "pages/product/sidebar/_id",
+    "_name": "_3b1645c7"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/home/archana/Documents/mayur/webitos-themes/multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_73d0d09c"
+  }
+]

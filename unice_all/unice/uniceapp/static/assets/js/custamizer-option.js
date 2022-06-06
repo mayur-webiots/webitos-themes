@@ -1,6 +1,33 @@
 (function ($) {
     "use strict";
+    $(document).ready(function(){
+        console.log('documents ready');
+        $('body').addClass(localStorage.getItem('theme_mode'));
+        var theme_mode = localStorage.getItem('theme_mode');
+        if (theme_mode==='dark') {
+            $('.theme-layout-version').text('Light');
+            console.log('in dark mode');
+        }
+        else{
+            console.log('in light mode');
 
+            $('#theme-dark').remove();
+            $('.theme-layout-version').text('Dark');
+        }
+        var layout = localStorage.getItem('layout');
+        if(layout == 'ltr'){
+            $('body').addClass('ltr')
+            $('body').removeClass('rtl')
+            $('#ltr_btn').hide();
+            $('#rtl_btn').show();
+        }else if(layout == 'rtl'){
+            $('body').addClass('rtl');
+            $('body').removeClass('ltr');
+            $('#rtl_btn').hide();
+            $('#ltr_btn').show();
+
+        }
+    })
     /*************************
         rtl and dark js start
      *************************/
@@ -12,12 +39,14 @@
         $("#ltr_btn").on('click', function (){
             $('body').addClass('ltr');
             $('body').removeClass('rtl');
+            localStorage.setItem('layout','ltr')
             $('#ltr_btn').hide();
             $('#rtl_btn').show();
         });
         $("#rtl_btn").on('click', function (){
             $('body').addClass('rtl');
             $('body').removeClass('ltr');
+            localStorage.setItem('layout','rtl')
             $('#rtl_btn').hide();
             $('#ltr_btn').show();
         });
@@ -31,12 +60,22 @@
             $(this).toggleClass('dark');
             $('body').removeClass('dark');
             if($('.theme-layout-version').hasClass('dark')){
-                $('.theme-layout-version').text('Light');
+                localStorage.setItem('theme_mode','dark');
                 $('body').addClass('dark');
             }else{
-                $('#theme-dark').remove();
-                $('.theme-layout-version').text('Dark');
+                localStorage.setItem('theme_mode',"");
             }
+            var theme_mode = localStorage.getItem('theme_mode');
+        if (theme_mode==='dark') {
+            $('.theme-layout-version').text('Light');
+            console.log('in dark mode');
+        }
+        else{
+            console.log('in light mode');
+
+            $('#theme-dark').remove();
+            $('.theme-layout-version').text('Dark');
+        }
    });
 
 

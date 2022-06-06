@@ -1,0 +1,222 @@
+{
+  "data": [
+    {
+      "title": "watches",
+      "active": false,
+      "children": [
+        {
+          "heading": "Watch Brands",
+          "items": [
+            {
+              "title": "Coros",
+              "path": "#",
+              "type": "link"
+            },
+            {
+              "title": "Titan",
+              "path": "#",
+              "type": "link"
+            },
+            {
+              "title": "Citizen",
+              "path": "#",
+              "type": "link"
+            },
+            {
+              "title": "Casio",
+              "path": "#",
+              "type": "link"
+            },
+            {
+              "title": "Movado",
+              "path": "#",
+              "type": "link"
+            },
+            {
+              "title": "Tissot",
+              "path": "#",
+              "type": "link"
+            }
+          ]
+        },
+        {
+          "heading": "Watch Display",
+          "items": [
+            {
+              "title": "Analog",
+              "path": "#",
+              "type": "link"
+            },
+            {
+              "title": "Digital",
+              "path": "#",
+              "type": "link"
+            },
+            {
+              "title": "Hybrid",
+              "path": "#",
+              "type": "link"
+            },
+            {
+              "title": "Tactile",
+              "path": "#",
+              "type": "link"
+            },
+            {
+              "title": "Touchscreen",
+              "path": "#",
+              "type": "link"
+            }
+          ]
+        },
+
+        {
+          "heading": "Watch Style",
+          "items": [
+            {
+              "title": "Casual",
+              "path": "#",
+              "type": "link"
+            },
+            {
+              "title": "Dress",
+              "path": "#",
+              "type": "link"
+            },
+            {
+              "title": "Fashion",
+              "path": "#",
+              "type": "link"
+            },
+            {
+              "title": "Luxury",
+              "path": "#",
+              "type": "link"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Footwear",
+      "path": "#",
+      "type": "link"
+    },
+    {
+      "title": "Clothing",
+      "active": false,
+      "children": [
+        {
+          "heading": "Women's fashion",
+          "items": [
+            {
+              "title": "Dress",
+              "path": "#",
+              "type": "link"
+            },
+            {
+              "title": "Skirts",
+              "path": "#",
+              "type": "link"
+            },
+            {
+              "title": "Western Wear",
+              "path": "#",
+              "type": "link"
+            },
+            {
+              "title": "Ethanic Wear",
+              "path": "#",
+              "type": "link"
+            },
+            {
+              "title": "Sports Wear",
+              "path": "#",
+              "type": "link"
+            }
+          ]
+        },
+        {
+          "heading": "Men's fashion",
+          "items": [
+            {
+              "title": "Sports Wear",
+              "path": "#",
+              "type": "link"
+            },
+            {
+              "title": "Ethanic Wear",
+              "path": "#",
+              "type": "link"
+            },
+            {
+              "title": "Western Wear",
+              "path": "#",
+              "type": "link"
+            }
+          ]
+        },
+        {
+          "heading": "Accesories",
+          "items": [
+            {
+              "title": "Earrings",
+              "path": "#",
+              "type": "link"
+            },
+            {
+              "title": "Fashion Jewellery",
+              "path": "#",
+              "type": "link"
+            },
+            {
+              "title": "Ties",
+              "path": "#",
+              "type": "link"
+            },
+            {
+              "title": "Caps And Hats",
+              "path": "#",
+              "type": "link"
+            },
+            {
+              "title": "Cuffinks",
+              "path": "#",
+              "type": "link"
+            },
+            {
+              "title": "Precious Jewellery",
+              "path": "#",
+              "type": "link"
+            },
+            {
+              "title": "Necklace",
+              "path": "#",
+              "type": "link"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Accessories",
+      "path": "#",
+      "type": "link"
+    },
+    {
+      "title": "Home & Decor",
+      "path": "#",
+      "type": "link"
+    },
+    {
+      "title": "Bags",
+      "path": "#",
+      "type": "link"
+    },
+    {
+      "title": "Kitchan",
+      "path": "#",
+      "type": "link"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": "voxo-nuxt-2"
+	},
+	{
+		"path": "voxo_html/template/front-end"
+	},
+	{
+		"path": "../multicart_all/multicart_nuxt/multikart-responsive-vuejs-ecommerce-template/frontend"
+	}
+],
+  "settings": {}
+}

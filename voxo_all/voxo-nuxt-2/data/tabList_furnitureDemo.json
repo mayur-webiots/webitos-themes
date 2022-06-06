@@ -1,0 +1,53 @@
+{
+  "data": [
+    {
+      "name": "Camera",
+      "active": false,
+      "linkId": "camera-tab",
+      "target": "#Camera",
+      "displayTitle": "Lamps"
+    },
+    {
+      "name": "Audio",
+      "active": false,
+      "linkId": "audio-tab",
+      "target": "#Audio",
+      "displayTitle": "Sofa-set"
+    },
+    {
+      "name": "Navigation",
+      "active": false,
+      "linkId": "navigation-tab",
+      "target": "#Navigation",
+      "displayTitle": "Tables"
+    },
+    {
+      "name": "others",
+      "active": true,
+      "linkId": "other-tab",
+      "target": "#Others",
+      "displayTitle": "Mixer"
+    },
+    {
+      "name": "phones",
+      "active": false,
+      "linkId": "phones-tab",
+      "target": "#Phones",
+      "displayTitle": "Chair"
+    },
+    {
+      "name": "Computer",
+      "active": false,
+      "linkId": "camera-tab",
+      "target": "#Computer",
+      "displayTitle": "Beds"
+    },
+    {
+      "name": "Accesories",
+      "active": false,
+      "linkId": "camera-tab",
+      "target": "#Accesories",
+      "displayTitle": "Window"
+    }
+  ]
+}

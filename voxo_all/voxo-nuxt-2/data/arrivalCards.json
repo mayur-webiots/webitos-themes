@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "productName": "Orange Arm Chair",
+      "subHeading": "Fully comfirtable",
+      "price": "32.87",
+      "stars": 2,
+      "rightBadge": "30 %OFF",
+      "image": "2.jpg"
+    },
+    {
+      "productName": "Fancy Yellow Chair",
+      "subHeading": "Fully comfirtable",
+      "price": "32.87",
+      "stars": 4,
+      "leftBadge": "NEW",
+      "image": "2.jpg"
+    },
+    {
+      "productName": "Orange Arm Chair",
+      "subHeading": "Fully comfirtable",
+      "price": "32.87",
+      "stars": 2,
+      "leftBadge": "NEW",
+      "rightBadge": "50% OFF",
+      "image": "2.jpg"
+    },
+    {
+      "productName": "Orange Arm Chair",
+      "subHeading": "Fully comfirtable",
+      "price": "32.87",
+      "stars": 2,
+      "leftBadge": "NEW",
+      "rightBadge": "50% OFF",
+      "image": "2.jpg"
+    },
+    {
+      "productName": "Orange Arm Chair",
+      "subHeading": "Fully comfirtable",
+      "price": "32.87",
+      "stars": 2,
+      "leftBadge": "NEW",
+      "rightBadge": "50% OFF",
+      "image": "2.jpg"
+    },
+    {
+      "productName": "Orange Arm Chair",
+      "subHeading": "Fully comfirtable",
+      "price": "32.87",
+      "stars": 2,
+      "leftBadge": "NEW",
+      "rightBadge": "50% OFF",
+      "image": "2.jpg"
+    },
+    {
+      "productName": "Orange Arm Chair",
+      "subHeading": "Fully comfirtable",
+      "price": "32.87",
+      "stars": 2,
+      "leftBadge": "NEW",
+      "rightBadge": "50% OFF",
+      "image": "2.jpg"
+    },
+    {
+      "productName": "Orange Arm Chair",
+      "subHeading": "Fully comfirtable",
+      "price": "32.87",
+      "stars": 5,
+      "leftBadge": "NEW",
+      "rightBadge": "50% OFF",
+      "image": "2.jpg"
+    }
+  ]
+}

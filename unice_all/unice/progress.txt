@@ -11,11 +11,10 @@ today's update:
 
 
 problems:
-MTD:
-in features when in dark mode, logo turn to white so have to change url in header.
 
 
 
+in mobile view if you open menu bar eveything is too fast.
 
 blog>blog mix layout>list full width no side bar.. nav bar not visible, and not working
 blog>blog details>gallery layout... when you  open the image there is not close buton.
@@ -34,12 +33,12 @@ list full width no side bar  and masonry_grid_list_mix has same template
 
 footer2-dark.html file not there 
 
-in mobile view if you open menu bar eveything is too fast.
 
 when converted to rtl > unice written as ecinu.
 
-when converted to rtl and turn on dark mode then logo remains black.
+when converted to rtl and turn on dark mode then logo remains black. (try in ecommerce layout)
 
+add link of documentation in navbar or somewhere
 
 header_classes, body_classes, header_image
 
